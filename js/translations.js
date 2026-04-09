@@ -12,8 +12,8 @@ const translations = {
     'nav.certifications': 'Certifications',
 
     'about.subtitle': 'Lead Business Intelligence Analyst · Tokyo, Japan',
-    'about.bio1': "Economist by training, data professional by practice. Over the past 6+ years I've built analytics infrastructure that turns raw data into real decisions — dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.",
-    'about.bio2': 'Currently based in Tokyo, working as Lead BI Analyst at Montecable. I operate at the intersection of technology and business strategy — helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.',
+    'about.bio1': "Economist by training, data professional by practice. Over the past 6+ years, across telecom, e-commerce and consulting, I've built analytics infrastructure that turns raw data into real decisions: dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.",
+    'about.bio2': 'Currently based in Tokyo, working as Lead BI Analyst at Montecable. I work at the intersection of technology and business strategy, helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.',
 
     'section.experience': 'Experience',
     'section.education': 'Education',
@@ -26,21 +26,21 @@ const translations = {
     'exp1.dates': 'July 2025 – Present',
     'exp1.badge1': '$20K saved',
     'exp1.badge2': 'BI Migration',
-    'exp1.desc': 'Led the full migration of the BI ecosystem from Qlik Sense to Power BI — rebuilding data models, recreating dashboards, and redesigning reporting pipelines while integrating CRM and operational data sources. The result: improved data quality and approximately $20,000 in annual savings on licensing and infrastructure. Beyond the technical migration, drove the adoption of a more data-driven culture by documenting key metrics, aligning definitions across departments, and positioning the BI team as the company\'s central reference point for data and analytics.',
+    'exp1.desc': 'Led the full migration of the BI ecosystem from Qlik Sense to Power BI, rebuilding data models, recreating dashboards, and redesigning reporting pipelines while integrating CRM and operational data sources. The result: improved data quality and approximately $20,000 in annual savings on licensing and infrastructure. Beyond the technical migration, drove the adoption of a more data-driven culture by documenting key metrics, aligning definitions across departments, and positioning the BI team as the company\'s central reference point for data and analytics.',
 
     'exp2.title': 'Fraud Prevention Senior Analyst',
     'exp2.company': 'Mercado Libre',
     'exp2.dates': 'July 2024 – June 2025',
     'exp2.badge1': '$310K+ prevented',
     'exp2.badge2': 'Fraud Analytics',
-    'exp2.desc': 'Worked inside Mercado Libre\'s logistics network analyzing shipping and operational datasets to surface anomalous patterns and fraud signals. The work contributed to detecting and preventing losses exceeding $310K annually. Built analytical models and monitoring dashboards to support faster risk mitigation, and collaborated with operations, engineering, and regional teams to translate findings into actions aligned with real operational constraints — not just theoretical models.',
+    'exp2.desc': 'Worked inside Mercado Libre\'s logistics network analyzing shipping and operational datasets to surface anomalous patterns and fraud signals. The work contributed to detecting and preventing losses exceeding $310K annually. Built analytical models and monitoring dashboards to support faster risk mitigation, and collaborated with operations, engineering, and regional teams to translate findings into actions that reflected real operational constraints, not just theoretical models.',
 
     'exp3.title': 'Senior Business Intelligence Analyst',
     'exp3.company': 'Montecable',
     'exp3.dates': 'January 2021 – July 2024',
     'exp3.badge1': '13% churn reduction',
     'exp3.badge2': '$113K revenue uplift',
-    'exp3.desc': 'Designed and maintained executive and operational dashboards that tracked customer behavior, commercial performance, and business KPIs — giving leadership a clearer picture of what was happening and why. Beyond reporting, developed churn prediction and conversion models using statistical and ML techniques, translating analytical findings into targeted retention strategies that reduced annual churn by 13% and generated an estimated $113K increase in annual revenue.',
+    'exp3.desc': 'Designed and maintained executive and operational dashboards that tracked customer behavior, commercial performance, and business KPIs, giving leadership a clearer picture of what was happening and why. Beyond reporting, developed churn prediction and conversion models using statistical and ML techniques, translating analytical findings into targeted retention strategies that reduced annual churn by 13% and generated an estimated $113K increase in annual revenue.',
 
     'exp4.title': 'Data Analyst',
     'exp4.company': 'Tata Consultancy Services',
@@ -64,7 +64,7 @@ const translations = {
     'skills.languages.list': 'Python · R · SQL · Alteryx',
     'skills.cloud.list': 'BigQuery · Excel',
     'skills.method.title': 'Technical Expertise',
-    'skills.m1': 'Predictive Modeling & Machine Learning — Churn, Fraud Detection',
+    'skills.m1': 'Predictive Modeling & Machine Learning (Churn, Fraud Detection)',
     'skills.m2': 'KPI Design & Dashboard Architecture',
     'skills.m3': 'Data Pipeline Design & BI Migration',
     'skills.method2.title': 'Methodologies',
@@ -105,8 +105,8 @@ const translations = {
     'nav.certifications': 'Certificaciones',
 
     'about.subtitle': 'Analista BI Líder · Tokio, Japón',
-    'about.bio1': 'Economista de formación y profesional de datos en la práctica. Durante más de 6 años he construido la infraestructura analítica que convierte datos en decisiones reales — dashboards que realmente se usan, modelos predictivos que guían la estrategia, y pipelines que mantienen todo en movimiento.',
-    'about.bio2': 'Actualmente en Tokio como Analista BI Líder en Montecable. Trabajo en la intersección entre tecnología y estrategia de negocio — ayudando a los equipos a ver con claridad y actuar con confianza. Los números y resultados están en la sección Experiencia más abajo.',
+    'about.bio1': 'Economista de formación y profesional de datos en la práctica. Durante más de 6 años, trabajando en telecomunicaciones, e-commerce y consultoría, he construido la infraestructura analítica que convierte datos en decisiones reales: dashboards que realmente se usan, modelos predictivos que guían la estrategia, y pipelines que mantienen todo en movimiento.',
+    'about.bio2': 'Actualmente en Tokio como Analista BI Líder en Montecable. Trabajo en la intersección entre tecnología y estrategia de negocio, ayudando a los equipos a ver con claridad y actuar con confianza. Los números y resultados están en la sección Experiencia más abajo.',
 
     'section.experience': 'Experiencia',
     'section.education': 'Formación',
@@ -133,7 +133,7 @@ const translations = {
     'exp3.dates': 'Enero 2021 – Julio 2024',
     'exp3.badge1': '13% reducción de churn',
     'exp3.badge2': '$113K de ingresos extra',
-    'exp3.desc': 'Diseñé y mantuve dashboards ejecutivos y operativos para monitorear comportamiento de clientes, desempeño comercial y KPIs clave — dando a la dirección una visión más clara de lo que ocurría y por qué. Más allá del reporting, desarrollé modelos de predicción de churn y conversión con técnicas estadísticas y de ML, traduciendo los hallazgos en estrategias de retención focalizadas que redujeron el churn anual un 13% y generaron un incremento estimado de $113K en ingresos anuales.',
+    'exp3.desc': 'Diseñé y mantuve dashboards ejecutivos y operativos para monitorear comportamiento de clientes, desempeño comercial y KPIs clave, dando a la dirección una visión más clara de lo que ocurría y por qué. Más allá del reporting, desarrollé modelos de predicción de churn y conversión con técnicas estadísticas y de ML, traduciendo los hallazgos en estrategias de retención focalizadas que redujeron el churn anual un 13% y generaron un incremento estimado de $113K en ingresos anuales.',
 
     'exp4.title': 'Analista de Datos',
     'exp4.company': 'Tata Consultancy Services',
@@ -157,7 +157,7 @@ const translations = {
     'skills.languages.list': 'Python · R · SQL · Alteryx',
     'skills.cloud.list': 'BigQuery · Excel',
     'skills.method.title': 'Especialización Técnica',
-    'skills.m1': 'Modelado Predictivo y Machine Learning — Churn, Detección de Fraude',
+    'skills.m1': 'Modelado Predictivo y Machine Learning (Churn, Detección de Fraude)',
     'skills.m2': 'Diseño de KPIs y Arquitectura de Dashboards',
     'skills.m3': 'Diseño de Pipelines de Datos y Migración de BI',
     'skills.method2.title': 'Metodologías',
@@ -198,7 +198,7 @@ const translations = {
     'nav.certifications': '資格・実績',
 
     'about.subtitle': 'リードBIアナリスト · 東京',
-    'about.bio1': '経済学を学び、データの専門家として実践を積んできました。この6年以上、生のデータを実際の意思決定につなげる分析基盤を構築してきました——実際に使われるダッシュボード、戦略を支える予測モデル、業務を動かし続けるデータパイプラインです。',
+    'about.bio1': '経済学を学び、データの専門家として実践を積んできました。この6年以上、通信・EC・コンサルティングの各分野にわたり、生のデータを実際の意思決定につなげる分析基盤を構築してきました。実際に使われるダッシュボード、戦略を支える予測モデル、業務を動かし続けるデータパイプラインがその成果です。',
     'about.bio2': '現在は東京を拠点に、MontecableのリードBIアナリストとして活動しています。テクノロジーとビジネス戦略の接点で、チームが明確に判断し、自信を持って行動できるよう支援しています。具体的な数字と成果は、下の職務経歴セクションをご覧ください。',
 
     'section.experience': '職務経歴',
@@ -250,7 +250,7 @@ const translations = {
     'skills.languages.list': 'Python · R · SQL · Alteryx',
     'skills.cloud.list': 'BigQuery · Excel',
     'skills.method.title': '技術的専門分野',
-    'skills.m1': '予測モデリング・機械学習 — 解約予測、不正検知',
+    'skills.m1': '予測モデリング・機械学習（解約予測、不正検知）',
     'skills.m2': 'KPI設計・ダッシュボードアーキテクチャ',
     'skills.m3': 'データパイプライン設計・BI移行',
     'skills.method2.title': '方法論',
