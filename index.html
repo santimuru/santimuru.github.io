@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Santiago Martinez Pezzatti — Lead BI Analyst, Economist & Data Professional." />
-        <meta name="author" content="Santiago Martinez Pezzatti" />
+        <meta name="description" content="Santiago Martinez — Lead BI Analyst, Economist & Data Professional." />
+        <meta name="author" content="Santiago Martinez" />
         <title>Santiago Martinez | BI Analyst & Economist</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,10 +14,10 @@
         <style>
             /* Language switcher */
             .lang-switcher {
-                margin-top: 1.25rem;
                 display: flex;
                 gap: 0.35rem;
                 justify-content: center;
+                padding: 0.75rem 0 0.5rem;
             }
             .lang-btn {
                 background: transparent;
@@ -118,6 +118,15 @@
                 color: #495057;
                 font-size: 0.9rem;
             }
+
+            /* Profile photo — force circular crop */
+            .img-profile {
+                width: 10rem !important;
+                height: 10rem !important;
+                object-fit: cover;
+                object-position: center 20%;
+                border-radius: 50% !important;
+            }
         </style>
     </head>
     <body id="page-top">
@@ -126,7 +135,13 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none" data-key="nav.name">Santiago Martinez</span>
                 <span class="d-none d-lg-block">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Santiago Martinez Pezzatti" />
+                    <!-- Language switcher — desktop sidebar, above photo -->
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+                        <button class="lang-btn" data-lang="es" onclick="setLang('es')">ES</button>
+                        <button class="lang-btn" data-lang="ja" onclick="setLang('ja')">日本語</button>
+                    </div>
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Santiago Martinez" />
                 </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,8 +156,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" data-key="nav.interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications" data-key="nav.certifications">Certifications</a></li>
                 </ul>
-                <!-- Language switcher -->
-                <div class="lang-switcher">
+                <!-- Language switcher — mobile menu only -->
+                <div class="lang-switcher d-lg-none">
                     <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
                     <button class="lang-btn" data-lang="es" onclick="setLang('es')">ES</button>
                     <button class="lang-btn" data-lang="ja" onclick="setLang('ja')">日本語</button>
@@ -158,15 +173,15 @@
                 <div class="resume-section-content">
                     <h1 class="mb-0">
                         Santiago
-                        <span class="text-primary">Martinez Pezzatti</span>
+                        <span class="text-primary">Martinez</span>
                     </h1>
                     <div class="subheading mb-5">
                         <span data-key="about.subtitle">Lead Business Intelligence Analyst · Tokyo, Japan</span>
                         &nbsp;·&nbsp;
                         <a href="mailto:santiagomwp@gmail.com">santiagomwp@gmail.com</a>
                     </div>
-                    <p class="lead mb-3" data-key="about.bio1">Economist and data professional with 6+ years of experience in business intelligence, fraud prevention, and analytics. I build dashboards, predictive models, and data pipelines that drive measurable outcomes — from reducing churn by 13% to preventing over $310K in annual fraud losses.</p>
-                    <p class="lead mb-5" data-key="about.bio2">Currently based in Tokyo as Lead BI Analyst at Montecable, where I led a full migration from Qlik Sense to Power BI and help position data as a strategic asset across the organization.</p>
+                    <p class="lead mb-3" data-key="about.bio1">Economist by training, data professional by practice. Over the past 6+ years I've built analytics infrastructure that turns raw data into real decisions — dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.</p>
+                    <p class="lead mb-5" data-key="about.bio2">Currently based in Tokyo, working as Lead BI Analyst at Montecable. I operate at the intersection of technology and business strategy — helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.</p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/santiago-martinez-pezzatti-4241a3165/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/santimuru" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -296,11 +311,15 @@
                         <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.cloud.list">BigQuery · Excel</span></li>
                     </ul>
 
-                    <div class="subheading mb-3" data-key="skills.method.title">Methodologies</div>
-                    <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m1">Machine Learning & Predictive Modeling (Churn, Fraud Detection)</span></li>
+                    <div class="subheading mb-3" data-key="skills.method.title">Technical Expertise</div>
+                    <ul class="fa-ul mb-4">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m1">Predictive Modeling & Machine Learning — Churn, Fraud Detection</span></li>
                         <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m2">KPI Design & Dashboard Architecture</span></li>
                         <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m3">Data Pipeline Design & BI Migration</span></li>
+                    </ul>
+
+                    <div class="subheading mb-3" data-key="skills.method2.title">Methodologies</div>
+                    <ul class="fa-ul mb-0">
                         <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m4">Agile · Six Sigma</span></li>
                     </ul>
                 </div>

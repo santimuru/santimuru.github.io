@@ -12,8 +12,8 @@ const translations = {
     'nav.certifications': 'Certifications',
 
     'about.subtitle': 'Lead Business Intelligence Analyst · Tokyo, Japan',
-    'about.bio1': 'Economist and data professional with 6+ years of experience in business intelligence, fraud prevention, and analytics. I build dashboards, predictive models, and data pipelines that drive measurable outcomes — from reducing churn by 13% to preventing over $310K in annual fraud losses.',
-    'about.bio2': 'Currently based in Tokyo as Lead BI Analyst at Montecable, where I led a full migration from Qlik Sense to Power BI and help position data as a strategic asset across the organization.',
+    'about.bio1': "Economist by training, data professional by practice. Over the past 6+ years I've built analytics infrastructure that turns raw data into real decisions — dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.",
+    'about.bio2': 'Currently based in Tokyo, working as Lead BI Analyst at Montecable. I operate at the intersection of technology and business strategy — helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.',
 
     'section.experience': 'Experience',
     'section.education': 'Education',
@@ -63,10 +63,11 @@ const translations = {
     'skills.tools.list': 'Power BI · Tableau · Qlik Sense · Looker Studio',
     'skills.languages.list': 'Python · R · SQL · Alteryx',
     'skills.cloud.list': 'BigQuery · Excel',
-    'skills.method.title': 'Methodologies',
-    'skills.m1': 'Machine Learning & Predictive Modeling (Churn, Fraud Detection)',
+    'skills.method.title': 'Technical Expertise',
+    'skills.m1': 'Predictive Modeling & Machine Learning — Churn, Fraud Detection',
     'skills.m2': 'KPI Design & Dashboard Architecture',
     'skills.m3': 'Data Pipeline Design & BI Migration',
+    'skills.method2.title': 'Methodologies',
     'skills.m4': 'Agile · Six Sigma',
 
     'interests.p1': 'Outside of data and analytics, I enjoy traveling and experiencing different cultures — something living in Japan has made a daily part of my life. I\'m a board game enthusiast and value the strategic thinking they require.',
@@ -104,8 +105,8 @@ const translations = {
     'nav.certifications': 'Certificaciones',
 
     'about.subtitle': 'Analista BI Líder · Tokio, Japón',
-    'about.bio1': 'Economista y profesional de datos con más de 6 años de experiencia en inteligencia de negocios, prevención de fraude y analítica. Construyo dashboards, modelos predictivos y pipelines de datos que generan resultados concretos — desde reducir el churn un 13% hasta prevenir más de $310K en pérdidas anuales por fraude.',
-    'about.bio2': 'Actualmente basado en Tokio como Analista BI Líder en Montecable, donde lideré la migración completa de Qlik Sense a Power BI y trabajo para posicionar los datos como un activo estratégico en toda la organización.',
+    'about.bio1': 'Economista de formación y profesional de datos en la práctica. Durante más de 6 años he construido la infraestructura analítica que convierte datos en decisiones reales — dashboards que realmente se usan, modelos predictivos que guían la estrategia, y pipelines que mantienen todo en movimiento.',
+    'about.bio2': 'Actualmente en Tokio como Analista BI Líder en Montecable. Trabajo en la intersección entre tecnología y estrategia de negocio — ayudando a los equipos a ver con claridad y actuar con confianza. Los números y resultados están en la sección Experiencia más abajo.',
 
     'section.experience': 'Experiencia',
     'section.education': 'Formación',
@@ -155,10 +156,11 @@ const translations = {
     'skills.tools.list': 'Power BI · Tableau · Qlik Sense · Looker Studio',
     'skills.languages.list': 'Python · R · SQL · Alteryx',
     'skills.cloud.list': 'BigQuery · Excel',
-    'skills.method.title': 'Metodologías',
-    'skills.m1': 'Machine Learning y Modelado Predictivo (Churn, Detección de Fraude)',
+    'skills.method.title': 'Especialización Técnica',
+    'skills.m1': 'Modelado Predictivo y Machine Learning — Churn, Detección de Fraude',
     'skills.m2': 'Diseño de KPIs y Arquitectura de Dashboards',
     'skills.m3': 'Diseño de Pipelines de Datos y Migración de BI',
+    'skills.method2.title': 'Metodologías',
     'skills.m4': 'Agile · Six Sigma',
 
     'interests.p1': 'Fuera de los datos y la analítica, disfruto viajar y conocer diferentes culturas — algo que vivir en Japón ha convertido en parte de mi vida cotidiana. Soy fanático de los juegos de mesa y valoro el pensamiento estratégico que requieren.',
@@ -196,8 +198,8 @@ const translations = {
     'nav.certifications': '資格・実績',
 
     'about.subtitle': 'リードBIアナリスト · 東京',
-    'about.bio1': 'ビジネスインテリジェンス、不正防止、データ分析の分野で6年以上の経験を持つ経済学者・データプロフェッショナルです。ダッシュボード、予測モデル、データパイプラインを構築し、解約率13%削減や年間$310K超の不正損失防止など、具体的なビジネス成果を実現してきました。',
-    'about.bio2': '現在は東京を拠点に、MontecableのリードBIアナリストとして、Qlik SenseからPower BIへの移行を主導し、データを組織全体の戦略的資産として位置づける取り組みを行っています。',
+    'about.bio1': '経済学を学び、データの専門家として実践を積んできました。この6年以上、生のデータを実際の意思決定につなげる分析基盤を構築してきました——実際に使われるダッシュボード、戦略を支える予測モデル、業務を動かし続けるデータパイプラインです。',
+    'about.bio2': '現在は東京を拠点に、MontecableのリードBIアナリストとして活動しています。テクノロジーとビジネス戦略の接点で、チームが明確に判断し、自信を持って行動できるよう支援しています。具体的な数字と成果は、下の職務経歴セクションをご覧ください。',
 
     'section.experience': '職務経歴',
     'section.education': '学歴',
@@ -247,10 +249,11 @@ const translations = {
     'skills.tools.list': 'Power BI · Tableau · Qlik Sense · Looker Studio',
     'skills.languages.list': 'Python · R · SQL · Alteryx',
     'skills.cloud.list': 'BigQuery · Excel',
-    'skills.method.title': '方法論',
-    'skills.m1': '機械学習・予測モデリング（解約予測、不正検知）',
+    'skills.method.title': '技術的専門分野',
+    'skills.m1': '予測モデリング・機械学習 — 解約予測、不正検知',
     'skills.m2': 'KPI設計・ダッシュボードアーキテクチャ',
     'skills.m3': 'データパイプライン設計・BI移行',
+    'skills.method2.title': '方法論',
     'skills.m4': 'アジャイル · シックスシグマ',
 
     'interests.p1': 'データと分析の外では、旅行と異文化体験を楽しんでいます。日本での生活がそれを日常にしてくれました。ボードゲームが趣味で、そこに必要な戦略的思考が好きです。',
