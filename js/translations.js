@@ -12,6 +12,7 @@ const translations = {
     'nav.certifications': 'Certifications',
 
     'about.subtitle': 'Lead Business Intelligence Analyst · Tokyo, Japan',
+    'about.cv.download': 'Download CV',
     'about.bio1': "Economist by training, data professional by practice. Over the past 6+ years, across telecom, e-commerce and consulting, I've built analytics infrastructure that turns raw data into real decisions: dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.",
     'about.bio2': 'Currently based in Tokyo, working as Lead BI Analyst at Montecable. I work at the intersection of technology and business strategy, helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.',
 
@@ -104,6 +105,7 @@ const translations = {
     'nav.certifications': 'Certificaciones',
 
     'about.subtitle': 'Analista BI Líder · Tokio, Japón',
+    'about.cv.download': 'Descargar CV',
     'about.bio1': 'Economista de formación y profesional de datos en la práctica. Durante más de 6 años, trabajando en telecomunicaciones, e-commerce y consultoría, he construido la infraestructura analítica que convierte datos en decisiones reales: dashboards que realmente se usan, modelos predictivos que guían la estrategia, y pipelines que mantienen todo en movimiento.',
     'about.bio2': 'Actualmente en Tokio como Analista BI Líder en Montecable. Trabajo en la intersección entre tecnología y estrategia de negocio, ayudando a los equipos a ver con claridad y actuar con confianza. Los números y resultados están en la sección Experiencia más abajo.',
 
@@ -196,6 +198,7 @@ const translations = {
     'nav.certifications': '資格・実績',
 
     'about.subtitle': 'リードBIアナリスト · 東京',
+    'about.cv.download': '職務経歴書をダウンロード',
     'about.bio1': '経済学を学び、データの専門家として実践を積んできました。この6年以上、通信・EC・コンサルティングの各分野にわたり、生のデータを実際の意思決定につなげる分析基盤を構築してきました。実際に使われるダッシュボード、戦略を支える予測モデル、業務を動かし続けるデータパイプラインがその成果です。',
     'about.bio2': '現在は東京を拠点に、MontecableのリードBIアナリストとして活動しています。テクノロジーとビジネス戦略の接点で、チームが明確に判断し、自信を持って行動できるよう支援しています。具体的な数字と成果は、下の職務経歴セクションをご覧ください。',
 
@@ -300,6 +303,10 @@ function setLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
+
+  const cvMap = { en: 'assets/cv/cv-en.pdf', es: 'assets/cv/cv-es.pdf', ja: 'assets/cv/cv-ja.pdf' };
+  const cvBtn = document.getElementById('cv-download-btn');
+  if (cvBtn) cvBtn.href = cvMap[lang] || cvMap['en'];
 
   localStorage.setItem('lang', lang);
 }

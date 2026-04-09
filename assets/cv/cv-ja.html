@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>職務経歴書 — Santiago Martinez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @page { size: A4; margin: 15mm 18mm; }
+
+        body {
+            font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+            font-size: 9.5pt;
+            color: #1a1a1a;
+            line-height: 1.7;
+            background: white;
+            max-width: 210mm;
+        }
+
+        /* ── Document title ── */
+        .doc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .doc-title {
+            font-size: 18pt;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: 4px;
+        }
+        .doc-meta {
+            text-align: right;
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* ── Profile block ── */
+        .profile-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+            padding: 12px 14px;
+            margin-bottom: 16px;
+            background: #fafafa;
+        }
+        .profile-info { flex: 1; }
+        .profile-name {
+            font-size: 15pt;
+            font-weight: 700;
+            color: #177e89;
+            letter-spacing: 1px;
+        }
+        .profile-name-reading {
+            font-size: 8.5pt;
+            color: #666;
+            margin-top: 1px;
+            margin-bottom: 6px;
+        }
+        .profile-detail {
+            font-size: 9pt;
+            color: #444;
+            line-height: 1.9;
+        }
+        .profile-detail a { color: #177e89; text-decoration: none; }
+        .profile-photo {
+            width: 80px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center 15%;
+            border: 1px solid #ddd;
+            margin-left: 16px;
+            flex-shrink: 0;
+        }
+        .photo-placeholder {
+            width: 80px;
+            height: 100px;
+            border: 1px solid #ddd;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 7pt;
+            color: #999;
+            margin-left: 16px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        /* ── Sections ── */
+        .cv-section { margin-bottom: 16px; }
+
+        .section-title {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: #fff;
+            background: #177e89;
+            padding: 3px 10px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        /* ── Summary ── */
+        .summary-text {
+            font-size: 9.5pt;
+            color: #333;
+            line-height: 1.8;
+            padding: 0 4px;
+        }
+
+        /* ── Experience table ── */
+        .exp-company-block {
+            margin-bottom: 14px;
+        }
+        .exp-company-header {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            border-bottom: 1px solid #177e89;
+            padding-bottom: 3px;
+            margin-bottom: 6px;
+        }
+        .exp-company-name {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: #177e89;
+        }
+        .exp-company-period {
+            font-size: 8.5pt;
+            color: #555;
+        }
+
+        .exp-detail-grid {
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            gap: 2px 0;
+            font-size: 9pt;
+        }
+        .exp-label {
+            font-weight: 700;
+            color: #555;
+            padding-right: 8px;
+            padding-top: 1px;
+        }
+        .exp-value { color: #333; }
+
+        .exp-role-title {
+            font-weight: 700;
+            color: #1a1a1a;
+            font-size: 9.5pt;
+        }
+
+        .kpi-list {
+            list-style: none;
+            padding: 0;
+        }
+        .kpi-list li {
+            padding-left: 1em;
+            text-indent: -1em;
+            margin-bottom: 1px;
+        }
+        .kpi-list li::before {
+            content: "◆ ";
+            color: #177e89;
+            font-size: 8pt;
+        }
+
+        .badge-inline {
+            display: inline-block;
+            background: rgba(23,126,137,0.1);
+            color: #177e89;
+            border: 1px solid rgba(23,126,137,0.3);
+            border-radius: 3px;
+            padding: 0px 6px;
+            font-size: 8pt;
+            font-weight: 700;
+            margin: 1px 2px;
+        }
+
+        /* ── Skills table ── */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+        }
+        .skills-table th {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 4px 8px;
+            font-weight: 700;
+            color: #444;
+            text-align: left;
+            width: 120px;
+        }
+        .skills-table td {
+            border: 1px solid #ddd;
+            padding: 4px 8px;
+            color: #333;
+        }
+
+        /* ── Education & certs ── */
+        .hist-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+        }
+        .hist-table td {
+            border: 1px solid #ddd;
+            padding: 4px 8px;
+            color: #333;
+            vertical-align: top;
+        }
+        .hist-table td:first-child {
+            white-space: nowrap;
+            width: 90px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Document Header -->
+    <div class="doc-header">
+        <div class="doc-title">職務経歴書</div>
+        <div class="doc-meta">
+            <div>作成日：2026年4月</div>
+            <div>Santiago Martinez</div>
+        </div>
+    </div>
+
+    <!-- Profile Block -->
+    <div class="profile-block">
+        <div class="profile-info">
+            <div class="profile-name">Santiago Martinez</div>
+            <div class="profile-name-reading">サンティアゴ・マルティネス</div>
+            <div class="profile-detail">
+                <div>居住地：東京都</div>
+                <div>E-mail：<a href="mailto:santiagomwp@gmail.com">santiagomwp@gmail.com</a></div>
+                <div>LinkedIn：<a href="https://linkedin.com/in/santiago-martinez-pezzatti-4241a3165">linkedin.com/in/santiagomartinez</a></div>
+                <div>GitHub：<a href="https://github.com/santimuru">github.com/santimuru</a></div>
+            </div>
+        </div>
+        <img src="../img/profile.jpg" class="profile-photo" alt="Santiago Martinez" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="photo-placeholder" style="display:none;">写真</div>
+    </div>
+
+    <!-- Summary -->
+    <div class="cv-section">
+        <div class="section-title">職務要約</div>
+        <div class="summary-text">
+            ビジネスインテリジェンス・データ分析・不正防止の分野で6年以上の経験を持つデータプロフェッショナルです。通信・EC・コンサルティング業界において、データ基盤の構築から経営意思決定支援まで幅広く担当してきました。ダッシュボード開発、予測モデリング、データパイプライン設計を通じ、年間$310K超の不正損失防止、解約率13%削減、$113K増収などの具体的な成果を実現してきました。現在は東京を拠点に、MontecableのリードBIアナリストとして、組織全体のデータ活用推進に取り組んでいます。
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="cv-section">
+        <div class="section-title">職務経歴</div>
+
+        <!-- Montecable Lead -->
+        <div class="exp-company-block">
+            <div class="exp-company-header">
+                <div class="exp-company-name">Montecable</div>
+                <div class="exp-company-period">2025年7月〜現在　｜　東京（リモート兼現地）</div>
+            </div>
+            <div class="exp-detail-grid">
+                <div class="exp-label">役職</div>
+                <div class="exp-value"><span class="exp-role-title">リードBIアナリスト</span></div>
+
+                <div class="exp-label">職務内容</div>
+                <div class="exp-value">
+                    <ul class="kpi-list">
+                        <li>Qlik SenseからPower BIへのBIエコシステム全面移行をリード</li>
+                        <li>データモデルの再構築、ダッシュボード再作成、レポートパイプライン再設計</li>
+                        <li>CRM・オペレーションデータソースの統合と品質管理</li>
+                        <li>部門横断での指標定義統一によるデータドリブン文化の推進</li>
+                    </ul>
+                </div>
+
+                <div class="exp-label">主な実績</div>
+                <div class="exp-value">
+                    <span class="badge-inline">$20K/年　コスト削減</span>
+                    <span style="font-size:8.5pt; color:#444">ライセンス・インフラコストの年間約$20,000削減を実現</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mercado Libre -->
+        <div class="exp-company-block">
+            <div class="exp-company-header">
+                <div class="exp-company-name">Mercado Libre</div>
+                <div class="exp-company-period">2024年7月〜2025年6月　｜　リモート（LATAM）</div>
+            </div>
+            <div class="exp-detail-grid">
+                <div class="exp-label">役職</div>
+                <div class="exp-value"><span class="exp-role-title">不正防止シニアアナリスト</span></div>
+
+                <div class="exp-label">職務内容</div>
+                <div class="exp-value">
+                    <ul class="kpi-list">
+                        <li>物流ネットワーク内の配送・業務データを分析し、異常パターンや不正シグナルを検出</li>
+                        <li>不正検知モデルおよびリアルタイムモニタリングダッシュボードの構築</li>
+                        <li>オペレーション・エンジニアリング・各地域チームと連携した対応策の実装</li>
+                    </ul>
+                </div>
+
+                <div class="exp-label">主な実績</div>
+                <div class="exp-value">
+                    <span class="badge-inline">$310K+/年　損失防止</span>
+                    <span style="font-size:8.5pt; color:#444">年間$310K超の不正損失の検知・防止に貢献</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Montecable Senior -->
+        <div class="exp-company-block">
+            <div class="exp-company-header">
+                <div class="exp-company-name">Montecable</div>
+                <div class="exp-company-period">2021年1月〜2024年7月　｜　モンテビデオ、ウルグアイ</div>
+            </div>
+            <div class="exp-detail-grid">
+                <div class="exp-label">役職</div>
+                <div class="exp-value"><span class="exp-role-title">シニアBIアナリスト</span></div>
+
+                <div class="exp-label">職務内容</div>
+                <div class="exp-value">
+                    <ul class="kpi-list">
+                        <li>顧客行動・商業パフォーマンス・KPIを可視化する経営・業務ダッシュボードの設計・運用</li>
+                        <li>統計および機械学習手法を用いた解約予測・コンバージョンモデルの開発</li>
+                        <li>分析結果を活用したターゲティング型リテンション施策の立案・実行</li>
+                    </ul>
+                </div>
+
+                <div class="exp-label">主な実績</div>
+                <div class="exp-value">
+                    <span class="badge-inline">解約率13%削減</span>
+                    <span class="badge-inline">$113K/年　増収</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TCS -->
+        <div class="exp-company-block">
+            <div class="exp-company-header">
+                <div class="exp-company-name">タタ・コンサルタンシー・サービシズ（TCS）</div>
+                <div class="exp-company-period">2019年10月〜2021年1月</div>
+            </div>
+            <div class="exp-detail-grid">
+                <div class="exp-label">役職</div>
+                <div class="exp-value"><span class="exp-role-title">データアナリスト</span></div>
+                <div class="exp-label">職務内容</div>
+                <div class="exp-value">KPI・業務パフォーマンスデータの分析による非効率性・ボトルネックの特定。データドリブンな業務改善を支援するダッシュボード・レポートの構築。</div>
+            </div>
+        </div>
+
+        <!-- Willis -->
+        <div class="exp-company-block">
+            <div class="exp-company-header">
+                <div class="exp-company-name">ウィリス・タワーズワトソン（WTW）</div>
+                <div class="exp-company-period">2019年1月〜2019年7月</div>
+            </div>
+            <div class="exp-detail-grid">
+                <div class="exp-label">役職</div>
+                <div class="exp-value"><span class="exp-role-title">ジュニアリサーチャー</span></div>
+                <div class="exp-label">職務内容</div>
+                <div class="exp-value">社内研究レポート向けの財務・人材データセットの収集・分析。企業間の年金債務と人材指標の比較調査レポート作成。</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Skills -->
+    <div class="cv-section">
+        <div class="section-title">スキル</div>
+        <table class="skills-table">
+            <tr>
+                <th>BIツール</th>
+                <td>Power BI &nbsp;·&nbsp; Tableau &nbsp;·&nbsp; Qlik Sense &nbsp;·&nbsp; Looker Studio &nbsp;·&nbsp; Alteryx</td>
+            </tr>
+            <tr>
+                <th>言語・データ基盤</th>
+                <td>Python &nbsp;·&nbsp; R &nbsp;·&nbsp; SQL &nbsp;·&nbsp; BigQuery &nbsp;·&nbsp; Excel</td>
+            </tr>
+            <tr>
+                <th>技術的専門分野</th>
+                <td>予測モデリング・機械学習（解約予測、不正検知）&nbsp;·&nbsp; KPI設計・ダッシュボード設計 &nbsp;·&nbsp; データパイプライン設計・BI移行</td>
+            </tr>
+            <tr>
+                <th>方法論</th>
+                <td>アジャイル &nbsp;·&nbsp; シックスシグマ</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Certifications -->
+    <div class="cv-section">
+        <div class="section-title">資格・認定</div>
+        <table class="hist-table">
+            <tr>
+                <td>2023年</td>
+                <td>C1 ビジネス上級（Business Higher） &nbsp;·&nbsp; ケンブリッジ英語検定</td>
+            </tr>
+            <tr>
+                <td>2022年</td>
+                <td>金融市場論（Financial Markets） &nbsp;·&nbsp; イェール大学 / Coursera</td>
+            </tr>
+            <tr>
+                <td>2021年</td>
+                <td>QlikView ビジネスアナリスト認定</td>
+            </tr>
+            <tr>
+                <td>2020年</td>
+                <td>アジャイル手法認定 &nbsp;·&nbsp; シックスシグマ認定</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Education -->
+    <div class="cv-section">
+        <div class="section-title">学歴</div>
+        <table class="hist-table">
+            <tr>
+                <td>2023年12月</td>
+                <td>
+                    <strong>経済学士（Bachelor's Degree in Economics）</strong><br>
+                    ウルグアイ・カトリック大学（Universidad Católica del Uruguay）&nbsp;·&nbsp; モンテビデオ、ウルグアイ<br>
+                    <span style="font-size:8.5pt; color:#666">学業優秀奨学金 &nbsp;·&nbsp; ビッグデータ・金融犯罪の選択科目を履修</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

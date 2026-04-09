@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Santiago Martinez — CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Saira+Extra+Condensed:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @page { size: A4; margin: 14mm 18mm; }
+
+        body {
+            font-family: 'Nunito', -apple-system, sans-serif;
+            font-size: 9.5pt;
+            color: #2d2d2d;
+            line-height: 1.55;
+            background: white;
+            max-width: 210mm;
+        }
+
+        /* ── Header ── */
+        .cv-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 2.5px solid #177e89;
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+        }
+        h1 {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 30pt;
+            font-weight: 700;
+            color: #177e89;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+        .cv-subtitle {
+            font-size: 10pt;
+            color: #444;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+        .cv-contact {
+            text-align: right;
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.8;
+        }
+        .cv-contact a { color: #177e89; text-decoration: none; }
+
+        /* ── Sections ── */
+        .cv-section { margin-bottom: 13px; }
+
+        .cv-section-title {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            color: #177e89;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #177e89;
+            padding-bottom: 2px;
+            margin-bottom: 8px;
+        }
+
+        /* ── Experience ── */
+        .exp-item { margin-bottom: 9px; }
+        .exp-item:last-child { margin-bottom: 0; }
+
+        .exp-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .exp-title { font-weight: 800; font-size: 9.5pt; color: #1a1a1a; }
+        .exp-company { font-weight: 700; color: #177e89; font-size: 9pt; }
+        .exp-dates { font-size: 8pt; color: #666; white-space: nowrap; flex-shrink: 0; }
+
+        .exp-badges {
+            display: flex;
+            gap: 5px;
+            margin: 3px 0 4px;
+        }
+        .badge {
+            background: rgba(23,126,137,0.09);
+            color: #177e89;
+            border: 1px solid rgba(23,126,137,0.28);
+            border-radius: 10px;
+            padding: 1px 8px;
+            font-size: 7.5pt;
+            font-weight: 700;
+        }
+        .exp-desc { font-size: 8.5pt; color: #484848; }
+
+        .exp-item.muted .exp-title { color: #666; }
+        .exp-item.muted .exp-company { color: #999; }
+        .exp-item.muted .exp-desc { color: #777; }
+
+        /* ── Education ── */
+        .edu-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .edu-info { flex: 1; }
+        .edu-name { font-weight: 800; font-size: 9.5pt; }
+        .edu-institution { font-weight: 700; color: #177e89; font-size: 9pt; }
+        .edu-notes { font-size: 8pt; color: #666; margin-top: 2px; }
+        .edu-dates { font-size: 8pt; color: #666; white-space: nowrap; text-align: right; }
+
+        /* ── Skills ── */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 5px 10px;
+            align-items: baseline;
+        }
+        .skill-label { font-weight: 700; color: #177e89; font-size: 9pt; }
+        .skill-value { font-size: 9pt; color: #444; }
+
+        /* ── Certifications ── */
+        .certs { font-size: 8.5pt; color: #444; line-height: 1.8; }
+
+        /* ── Print ── */
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-header">
+        <div>
+            <h1>Santiago Martinez</h1>
+            <div class="cv-subtitle">Lead Business Intelligence Analyst &nbsp;·&nbsp; Data Analyst</div>
+        </div>
+        <div class="cv-contact">
+            <div>Tokyo, Japan</div>
+            <div><a href="mailto:santiagomwp@gmail.com">santiagomwp@gmail.com</a></div>
+            <div><a href="https://linkedin.com/in/santiago-martinez-pezzatti-4241a3165">linkedin.com/in/santiagomartinez</a></div>
+            <div><a href="https://github.com/santimuru">github.com/santimuru</a></div>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <div class="cv-section-title">Profile</div>
+        <p style="font-size:9.5pt; color:#444; line-height:1.6;">
+            Economist by training, data professional by practice. Over 6+ years across telecom, e-commerce and consulting, building analytics infrastructure that turns raw data into real decisions: dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.
+        </p>
+    </div>
+
+    <div class="cv-section">
+        <div class="cv-section-title">Experience</div>
+
+        <div class="exp-item">
+            <div class="exp-row">
+                <div>
+                    <div class="exp-title">Lead Business Intelligence Analyst</div>
+                    <div class="exp-company">Montecable</div>
+                </div>
+                <div class="exp-dates">July 2025 – Present &nbsp;·&nbsp; Tokyo, Japan</div>
+            </div>
+            <div class="exp-badges">
+                <span class="badge">$20K annual savings</span>
+                <span class="badge">Power BI Migration</span>
+            </div>
+            <div class="exp-desc">Led the full migration from Qlik Sense to Power BI, rebuilding data models, dashboards and reporting pipelines while integrating CRM and operational data sources. Drove data-driven culture adoption by documenting key metrics and aligning definitions across departments.</div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-row">
+                <div>
+                    <div class="exp-title">Fraud Prevention Senior Analyst</div>
+                    <div class="exp-company">Mercado Libre</div>
+                </div>
+                <div class="exp-dates">July 2024 – June 2025 &nbsp;·&nbsp; Remote (LATAM)</div>
+            </div>
+            <div class="exp-badges">
+                <span class="badge">$310K+ fraud prevented</span>
+                <span class="badge">Fraud Analytics</span>
+            </div>
+            <div class="exp-desc">Analyzed shipping and operational datasets within Mercado Libre's logistics network to surface fraud signals and anomalous patterns. Built analytical models and monitoring dashboards contributing to over $310K in annual loss prevention.</div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-row">
+                <div>
+                    <div class="exp-title">Senior Business Intelligence Analyst</div>
+                    <div class="exp-company">Montecable</div>
+                </div>
+                <div class="exp-dates">January 2021 – July 2024 &nbsp;·&nbsp; Montevideo, Uruguay</div>
+            </div>
+            <div class="exp-badges">
+                <span class="badge">13% churn reduction</span>
+                <span class="badge">$113K revenue uplift</span>
+            </div>
+            <div class="exp-desc">Designed executive and operational dashboards tracking customer behavior, commercial performance and KPIs. Developed churn prediction and conversion models using statistical and ML techniques, generating a 13% reduction in annual churn and an estimated $113K increase in annual revenue.</div>
+        </div>
+
+        <div class="exp-item muted">
+            <div class="exp-row">
+                <div>
+                    <div class="exp-title">Data Analyst</div>
+                    <div class="exp-company">Tata Consultancy Services</div>
+                </div>
+                <div class="exp-dates">October 2019 – January 2021</div>
+            </div>
+            <div class="exp-desc">Analyzed KPI and operational data to identify inefficiencies and bottlenecks. Built dashboards supporting data-driven improvements in day-to-day operations across teams.</div>
+        </div>
+
+        <div class="exp-item muted">
+            <div class="exp-row">
+                <div>
+                    <div class="exp-title">Junior Researcher</div>
+                    <div class="exp-company">Willis Towers Watson</div>
+                </div>
+                <div class="exp-dates">January 2019 – July 2019</div>
+            </div>
+            <div class="exp-desc">Collected and analyzed structured financial and workforce datasets for internal research reports. Comparative analysis of pension obligations and workforce metrics across companies.</div>
+        </div>
+
+    </div>
+
+    <div class="cv-section">
+        <div class="cv-section-title">Education</div>
+        <div class="edu-row">
+            <div class="edu-info">
+                <span class="edu-name">Bachelor's Degree in Economics</span>
+                &nbsp;·&nbsp;
+                <span class="edu-institution">Universidad Católica del Uruguay</span>
+                <div class="edu-notes">Merit-based scholarship for academic excellence &nbsp;·&nbsp; Elective coursework in Big Data and Financial Crimes</div>
+            </div>
+            <div class="edu-dates">Graduated Dec 2023<br>Montevideo, Uruguay</div>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <div class="cv-section-title">Skills</div>
+        <div class="skills-grid">
+            <div class="skill-label">BI & Visualization</div>
+            <div class="skill-value">Power BI · Tableau · Qlik Sense · Looker Studio · Alteryx</div>
+
+            <div class="skill-label">Languages & Data</div>
+            <div class="skill-value">Python · R · SQL · BigQuery · Excel</div>
+
+            <div class="skill-label">Technical Expertise</div>
+            <div class="skill-value">Predictive Modeling & Machine Learning (Churn, Fraud Detection) · KPI Design & Dashboard Architecture · Data Pipeline Design & BI Migration</div>
+
+            <div class="skill-label">Methodologies</div>
+            <div class="skill-value">Agile · Six Sigma</div>
+        </div>
+    </div>
+
+    <div class="cv-section">
+        <div class="cv-section-title">Certifications</div>
+        <div class="certs">
+            C1 Business Higher · Cambridge English &nbsp;&nbsp;|&nbsp;&nbsp;
+            Financial Markets · Yale University / Coursera &nbsp;&nbsp;|&nbsp;&nbsp;
+            QlikView Business Analyst &nbsp;&nbsp;|&nbsp;&nbsp;
+            Agile Methodologies &nbsp;&nbsp;|&nbsp;&nbsp;
+            Six Sigma
+        </div>
+    </div>
+
+</body>
+</html>
