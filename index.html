@@ -737,6 +737,77 @@
 
         footer a { color: inherit; }
         footer a:hover { color: var(--teal); }
+
+        /* ═══════════════════════════════════════════
+           PROJECT PREVIEW IMAGE
+        ═══════════════════════════════════════════ */
+        .project-preview {
+            position: relative;
+            margin: -1.35rem -1.6rem 1.1rem;
+            border-radius: 9px 9px 0 0;
+            overflow: hidden;
+            height: 180px;
+            background: var(--alt-bg);
+        }
+        .project-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+        .project-card:hover .project-preview img { transform: scale(1.03); }
+        .project-preview-link {
+            position: absolute;
+            inset: 0;
+            background: rgba(23,126,137,0.88);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.84rem;
+            font-family: 'Nunito', sans-serif;
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity 0.22s;
+        }
+        .project-card:hover .project-preview-link { opacity: 1; }
+
+        /* ═══════════════════════════════════════════
+           SKILL PILLS
+        ═══════════════════════════════════════════ */
+        .skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: 0.3rem;
+        }
+        .skill-pill {
+            background: var(--teal-dim);
+            border: 1px solid var(--teal-border);
+            border-radius: 20px;
+            padding: 3px 12px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            color: var(--teal);
+            letter-spacing: 0.02em;
+        }
+
+        /* ═══════════════════════════════════════════
+           FADE-IN ON SCROLL
+        ═══════════════════════════════════════════ */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: none;
+        }
     </style>
 </head>
 <body id="page-top">
@@ -929,6 +1000,12 @@
             <div class="projects-grid">
 
                 <div class="project-card">
+                    <div class="project-preview">
+                        <img src="assets/img/proj-churn.png" alt="Telecom Churn Prediction Dashboard" loading="lazy">
+                        <a class="project-preview-link" href="https://telecom-churn-prediction-santimuru.streamlit.app" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
                     <div class="project-header">
                         <p class="project-title" data-key="proj4.title">Telecom Customer Churn Prediction</p>
                         <a class="project-gh" href="https://github.com/santimuru/telecom-churn-prediction" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -951,6 +1028,12 @@
                 </div>
 
                 <div class="project-card">
+                    <div class="project-preview">
+                        <img src="assets/img/proj-clv.png" alt="Customer Lifetime Value Dashboard" loading="lazy">
+                        <a class="project-preview-link" href="https://customer-clv-prediction-santiagomuru.streamlit.app/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
                     <div class="project-header">
                         <p class="project-title" data-key="proj5.title">Customer Lifetime Value Prediction</p>
                         <a class="project-gh" href="https://github.com/santimuru/customer-clv-prediction" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -1002,12 +1085,24 @@
 
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.tools.title">Tools & Platforms</div>
-                    <p class="skill-text" data-key="skills.tools.list">Power BI · Tableau · Qlik Sense · Looker Studio · Alteryx</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Power BI</span>
+                        <span class="skill-pill">Tableau</span>
+                        <span class="skill-pill">Qlik Sense</span>
+                        <span class="skill-pill">Looker Studio</span>
+                        <span class="skill-pill">Alteryx</span>
+                    </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.data.title">Languages & Data</div>
-                    <p class="skill-text" data-key="skills.languages.list">Python · R · SQL · BigQuery · Excel</p>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">R</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">BigQuery</span>
+                        <span class="skill-pill">Excel</span>
+                    </div>
                 </div>
 
                 <div class="skill-card">
