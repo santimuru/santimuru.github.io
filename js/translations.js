@@ -76,8 +76,10 @@ const translations = {
     'skills.method2.title': 'Methodologies',
     'skills.m4': 'Agile & Six Sigma',
 
-    'interests.p1': 'Outside of data and analytics, I enjoy traveling and experiencing different cultures, something living in Japan has made a daily part of my life. I am a board game enthusiast and value the strategic thinking they require.',
-    'interests.p2': "Cinema is another constant, particularly films that trade spectacle for character. Somewhere along the way I also picked up the habit of treating every problem as a design problem, which turns out to be useful in both work and games.",
+    'skills.lang.title': 'Languages',
+    'skills.lang.1': 'Spanish — Native',
+    'skills.lang.2': 'English — C1 · Cambridge Certified',
+    'skills.lang.3': 'Japanese — Conversational',
 
     'cert.sub1': 'Certifications',
     'cert.sub2': 'Key Impact',
@@ -175,8 +177,10 @@ const translations = {
     'skills.method2.title': 'Metodologías',
     'skills.m4': 'Agile & Six Sigma',
 
-    'interests.p1': 'Fuera de los datos y la analítica, disfruto viajar y conocer culturas nuevas, algo que vivir en Japón convirtió en parte de mi vida cotidiana. Soy fanático de los juegos de mesa y valoro el pensamiento estratégico que requieren.',
-    'interests.p2': 'El cine es otra constante, especialmente las películas que eligen el personaje sobre el espectáculo. Con el tiempo también desarrollé el hábito de ver cada problema como un problema de diseño, lo que resulta útil tanto en el trabajo como en los juegos.',
+    'skills.lang.title': 'Idiomas',
+    'skills.lang.1': 'Español — Nativo',
+    'skills.lang.2': 'Inglés — C1 · Certificado Cambridge',
+    'skills.lang.3': 'Japonés — Nivel conversacional',
 
     'cert.sub1': 'Certificaciones',
     'cert.sub2': 'Impacto Clave',
@@ -274,8 +278,10 @@ const translations = {
     'skills.method2.title': '方法論',
     'skills.m4': 'アジャイル & シックスシグマ',
 
-    'interests.p1': 'データと分析の外では、旅行や異文化との出会いを楽しんでいます。日本での生活がそれを日常にしてくれました。ボードゲームも好きで、そこに必要な戦略的思考が気に入っています。',
-    'interests.p2': '映画も大切な存在で、特に派手さよりも人物描写を選ぶ作品に惹かれます。いつの間にか、あらゆる問題をデザインの問題として捉える習慣が身につきました。仕事でも、ゲームでも、それが役に立っています。',
+    'skills.lang.title': '語学',
+    'skills.lang.1': 'スペイン語 — ネイティブ',
+    'skills.lang.2': '英語 — C1 · ケンブリッジ認定',
+    'skills.lang.3': '日本語 — 日常会話レベル',
 
     'cert.sub1': '資格',
     'cert.sub2': '主な成果',
