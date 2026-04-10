@@ -725,6 +725,33 @@
         }
 
         /* ═══════════════════════════════════════════
+           CONNECT (LinkedIn badge)
+        ═══════════════════════════════════════════ */
+        #connect {
+            background: var(--alt-bg);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+        #connect .connect-title {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--dark);
+            margin-bottom: 0.3rem;
+        }
+        #connect .connect-sub {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1.4rem;
+        }
+        #connect .badge-base {
+            display: inline-block;
+        }
+
+        /* ═══════════════════════════════════════════
            FOOTER
         ═══════════════════════════════════════════ */
         footer {
@@ -1177,12 +1204,22 @@
     </section>
 
 
+    <!-- ══════════════ CONNECT ══════════════ -->
+    <section id="connect">
+        <div class="connect-title" data-key="connect.title">Let's Connect</div>
+        <p class="connect-sub" data-key="connect.sub">Find me on LinkedIn for work, collaborations or just to say hi</p>
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="santiago-martinez-4241a3165" data-version="v1">
+            <a class="badge-base__link LI-simple-link" href="https://jp.linkedin.com/in/santiago-martinez-4241a3165?trk=profile-badge">Santiago Martinez</a>
+        </div>
+    </section>
+
     <footer>
         Santiago Martinez &nbsp;·&nbsp; Tokyo, Japan &nbsp;·&nbsp;
         <a href="mailto:santiagomwp@gmail.com">santiagomwp@gmail.com</a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <script src="js/translations.js"></script>
     <script src="js/scripts.js"></script>
 </body>
