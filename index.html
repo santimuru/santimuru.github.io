@@ -1,374 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Santiago Martinez — Lead BI Analyst based in Tokyo. 6+ years across telecom, e-commerce and consulting." />
-        <meta name="author" content="Santiago Martinez" />
-        <meta property="og:title" content="Santiago Martinez | Data Analyst" />
-        <meta property="og:description" content="Lead BI Analyst based in Tokyo. 6+ years across telecom, e-commerce and consulting." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://santimuru.github.io" />
-        <meta property="og:image" content="https://santimuru.github.io/assets/img/profile.jpg" />
-        <title>Santiago Martinez | Data Analyst</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            /* Language switcher */
-            .lang-switcher {
-                display: flex;
-                gap: 0.35rem;
-                justify-content: center;
-                padding: 0.75rem 0 0.5rem;
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Santiago Martinez — Lead BI Analyst based in Tokyo. 6+ years across telecom, e-commerce and consulting." />
+    <meta name="author" content="Santiago Martinez" />
+    <meta property="og:title" content="Santiago Martinez | Data Analyst" />
+    <meta property="og:description" content="Lead BI Analyst based in Tokyo. 6+ years across telecom, e-commerce and consulting." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://santimuru.github.io" />
+    <meta property="og:image" content="https://santimuru.github.io/assets/img/profile.jpg" />
+    <title>Santiago Martinez | Data Analyst</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+    <style>
+        /* ═══════════════════════════════════════════
+           VARIABLES & RESET
+        ═══════════════════════════════════════════ */
+        :root {
+            --teal:         #177e89;
+            --teal-dim:     rgba(23,126,137,0.10);
+            --teal-border:  rgba(23,126,137,0.28);
+            --dark:         #0d1117;
+            --dark2:        #161b22;
+            --on-dark:      rgba(255,255,255,0.82);
+            --on-dark-muted:rgba(255,255,255,0.46);
+            --body-bg:      #ffffff;
+            --alt-bg:       #f7f8fa;
+            --text:         #1f2937;
+            --text-muted:   #6b7280;
+            --border:       #e5e7eb;
+            --nav-h:        56px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            padding-top: var(--nav-h);
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1rem;
+            color: var(--text);
+            background: var(--body-bg);
+            /* override any StartBootstrap sidebar offset */
+            padding-left: 0 !important;
+        }
+
+        /* ═══════════════════════════════════════════
+           TOP NAV
+        ═══════════════════════════════════════════ */
+        #topNav {
+            position: fixed;
+            inset: 0 0 auto 0;
+            height: var(--nav-h);
+            background: var(--dark);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 1.75rem;
+            gap: 0.5rem;
+        }
+
+        .tn-brand {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--teal);
+            text-decoration: none;
+            letter-spacing: 0.04em;
+            flex-shrink: 0;
+            margin-right: 0.5rem;
+        }
+
+        .tn-links {
+            display: flex;
+            align-items: center;
+            gap: 0.1rem;
+            flex: 1;
+        }
+
+        .tn-links a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 0.3rem 0.65rem;
+            border-radius: 5px;
+            transition: all 0.15s;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+        }
+
+        .tn-links a:hover,
+        .tn-links a.active {
+            color: #fff;
+            background: rgba(255,255,255,0.09);
+        }
+
+        .tn-right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            flex-shrink: 0;
+        }
+
+        .lang-switcher { display: flex; gap: 0.2rem; }
+
+        .lang-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.18);
+            color: rgba(255,255,255,0.48);
+            border-radius: 4px;
+            padding: 2px 8px;
+            cursor: pointer;
+            font-size: 0.7rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            transition: all 0.15s;
+            line-height: 1.5;
+        }
+
+        .lang-btn:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+
+        .lang-btn.active {
+            background: var(--teal);
+            border-color: var(--teal);
+            color: #fff;
+        }
+
+        .tn-cv {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            border: 1px solid var(--teal);
+            color: var(--teal);
+            background: transparent;
+            border-radius: 6px;
+            padding: 4px 14px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            font-family: 'Nunito', sans-serif;
+            text-decoration: none;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+
+        .tn-cv:hover { background: var(--teal); color: #fff; }
+
+        .tn-hamburger {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.18);
+            color: rgba(255,255,255,0.6);
+            border-radius: 5px;
+            padding: 4px 10px;
+            cursor: pointer;
+            font-size: 0.88rem;
+            line-height: 1;
+            display: none;
+        }
+
+        @media (max-width: 860px) {
+            .tn-links { display: none; }
+            .tn-hamburger { display: block; }
+        }
+
+        @media (max-width: 480px) {
+            .tn-cv span { display: none; }
+            #topNav { padding: 0 1rem; }
+        }
+
+        /* Mobile menu */
+        #mobileMenu {
+            position: fixed;
+            top: var(--nav-h);
+            left: 0; right: 0;
+            background: var(--dark2);
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            z-index: 999;
+            display: none;
+            flex-direction: column;
+            padding: 0.4rem 0;
+        }
+
+        #mobileMenu.open { display: flex; }
+
+        #mobileMenu a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 700;
+            padding: 0.7rem 1.75rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: background 0.12s;
+        }
+
+        #mobileMenu a:last-child { border-bottom: none; }
+        #mobileMenu a:hover { background: rgba(255,255,255,0.05); color: #fff; }
+
+        /* ═══════════════════════════════════════════
+           HERO / ABOUT
+        ═══════════════════════════════════════════ */
+        #about {
+            background: var(--dark);
+            padding: 5.5rem 0 5rem;
+        }
+
+        .hero-grid {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (max-width: 680px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
             }
-            .lang-btn {
-                background: transparent;
-                border: 1px solid rgba(255,255,255,0.35);
-                color: rgba(255,255,255,0.7);
-                border-radius: 4px;
-                padding: 3px 10px;
-                cursor: pointer;
-                font-size: 0.72rem;
-                font-family: inherit;
-                letter-spacing: 0.06em;
-                transition: all 0.2s;
-            }
-            .lang-btn:hover {
-                background: rgba(255,255,255,0.12);
-                color: #fff;
-                border-color: rgba(255,255,255,0.7);
-            }
-            .lang-btn.active {
-                background: rgba(255,255,255,0.22);
-                color: #fff;
-                border-color: #fff;
-                font-weight: 700;
-            }
+            .hero-photo-wrap { order: -1; display: flex; justify-content: center; }
+            #about { padding: 3.5rem 0 3.5rem; }
+        }
 
-            /* Experience cards */
-            .exp-card {
-                border-left: 3px solid var(--bs-primary);
-                padding-left: 1.5rem;
-                margin-bottom: 3rem;
-            }
-            .exp-card.muted {
-                border-left-color: #ced4da;
-                opacity: 0.8;
-            }
-            .exp-header {
-                display: flex;
-                flex-direction: column;
-                gap: 0.1rem;
-                margin-bottom: 0.6rem;
-            }
-            @media (min-width: 768px) {
-                .exp-header {
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                }
-            }
-            .exp-dates {
-                color: var(--bs-primary);
-                font-weight: 600;
-                font-size: 0.9rem;
-                white-space: nowrap;
-                margin-top: 0.25rem;
-            }
-            .exp-badges {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.4rem;
-                margin-bottom: 0.85rem;
-            }
-            .exp-badge {
-                background: rgba(23, 126, 137, 0.1);
-                color: var(--bs-primary);
-                border: 1px solid rgba(23, 126, 137, 0.3);
-                border-radius: 20px;
-                padding: 2px 12px;
-                font-size: 0.75rem;
-                font-weight: 700;
-                letter-spacing: 0.03em;
-            }
-            .exp-card.muted .exp-badge {
-                background: #f8f9fa;
-                color: #6c757d;
-                border-color: #dee2e6;
-            }
-            .exp-card p {
-                color: #495057;
-                line-height: 1.75;
-            }
+        h1.hero-name {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: clamp(2.8rem, 7vw, 5rem);
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.5px;
+            line-height: 1;
+            margin: 0 0 0.5rem;
+        }
 
-            /* Impact numbers */
-            .impact-row {
-                display: flex;
-                align-items: baseline;
-                gap: 0.6rem;
-                margin-bottom: 0.5rem;
-            }
-            .impact-num {
-                font-family: 'Saira Extra Condensed', serif;
-                font-size: 1.6rem;
-                font-weight: 700;
-                color: var(--bs-primary);
-                min-width: 5rem;
-                line-height: 1;
-            }
-            .impact-desc {
-                color: #495057;
-                font-size: 0.9rem;
-            }
+        h1.hero-name .accent { color: var(--teal); }
 
-            /* Body font override (Muli deprecated, replaced by Nunito) */
-            body { font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif; }
+        .hero-subtitle {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--on-dark-muted);
+            letter-spacing: 0.05em;
+            margin-bottom: 2rem;
+        }
 
-            /* Profile photo — force circular crop */
-            .img-profile {
-                width: 10rem !important;
-                height: 10rem !important;
-                object-fit: cover;
-                object-position: center 20%;
-                border-radius: 50% !important;
-            }
-        </style>
-    </head>
-    <body id="page-top">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none" data-key="nav.name">Santiago Martinez</span>
-                <span class="d-none d-lg-block">
-                    <!-- Language switcher — desktop sidebar, above photo -->
-                    <div class="lang-switcher">
-                        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
-                        <button class="lang-btn" data-lang="ja" onclick="setLang('ja')">日本語</button>
-                        <button class="lang-btn" data-lang="es" onclick="setLang('es')">ES</button>
-                    </div>
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Santiago Martinez" />
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" data-key="nav.about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" data-key="nav.experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education" data-key="nav.education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" data-key="nav.skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" data-key="nav.interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications" data-key="nav.certifications">Certifications</a></li>
-                </ul>
-                <!-- Language switcher — mobile menu only -->
-                <div class="lang-switcher d-lg-none">
-                    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
-                    <button class="lang-btn" data-lang="ja" onclick="setLang('ja')">日本語</button>
-                    <button class="lang-btn" data-lang="es" onclick="setLang('es')">ES</button>
-                </div>
-            </div>
-        </nav>
+        .hero-bio {
+            font-size: 0.88rem;
+            color: var(--on-dark);
+            line-height: 1.82;
+            margin-bottom: 0.85rem;
+            max-width: 560px;
+        }
 
-        <!-- Page Content -->
-        <div class="container-fluid p-0">
+        @media (max-width: 680px) { .hero-bio { max-width: 100%; } }
 
-            <!-- About -->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Santiago
-                        <span class="text-primary">Martinez</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        <span data-key="about.subtitle">Lead Business Intelligence Analyst · Tokyo, Japan</span>
-                        &nbsp;·&nbsp;
-                        <a href="mailto:santiagomwp@gmail.com">santiagomwp@gmail.com</a>
-                    </div>
-                    <p class="lead mb-3" data-key="about.bio1">Economist by training, data professional by practice. Over the past 6+ years, across telecom, e-commerce and consulting, I've built analytics infrastructure that turns raw data into real decisions: dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.</p>
-                    <p class="lead mb-5" data-key="about.bio2">Currently based in Tokyo, working as Lead BI Analyst at Montecable. I work at the intersection of technology and business strategy, helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.</p>
-                    <div class="social-icons mb-3">
-                        <a class="social-icon" href="https://www.linkedin.com/in/santiago-martinez-pezzatti-4241a3165/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/santimuru" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                    <a id="cv-download-btn" href="assets/cv/cv-en.pdf" download class="btn btn-outline-primary btn-sm">
-                        <i class="fas fa-download me-1"></i> <span data-key="about.cv.download">Download CV</span>
-                    </a>
-                </div>
-            </section>
-            <hr class="m-0" />
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
 
-            <!-- Experience -->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-key="section.experience">Experience</h2>
+        @media (max-width: 680px) { .hero-actions { justify-content: center; } }
 
-                    <!-- Montecable Lead -->
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="mb-0" data-key="exp1.title">Lead Business Intelligence Analyst</h3>
-                                <div class="subheading mb-0" data-key="exp1.company">Montecable</div>
-                            </div>
-                            <span class="exp-dates" data-key="exp1.dates">July 2025 – Present</span>
-                        </div>
-                        <div class="exp-badges">
-                            <span class="exp-badge" data-key="exp1.badge1">$20K saved</span>
-                            <span class="exp-badge" data-key="exp1.badge2">BI Migration</span>
-                        </div>
-                        <p data-key="exp1.desc">Led the full migration of the BI ecosystem from Qlik Sense to Power BI — rebuilding data models, recreating dashboards, and redesigning reporting pipelines while integrating CRM and operational data sources. The result: improved data quality and approximately $20,000 in annual savings on licensing and infrastructure. Beyond the technical migration, drove the adoption of a more data-driven culture by documenting key metrics, aligning definitions across departments, and positioning the BI team as the company's central reference point for data and analytics.</p>
-                    </div>
+        .social-row { display: flex; gap: 0.5rem; }
 
-                    <!-- Mercado Libre -->
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="mb-0" data-key="exp2.title">Fraud Prevention Senior Analyst</h3>
-                                <div class="subheading mb-0" data-key="exp2.company">Mercado Libre</div>
-                            </div>
-                            <span class="exp-dates" data-key="exp2.dates">July 2024 – June 2025</span>
-                        </div>
-                        <div class="exp-badges">
-                            <span class="exp-badge" data-key="exp2.badge1">$310K+ prevented</span>
-                            <span class="exp-badge" data-key="exp2.badge2">Fraud Analytics</span>
-                        </div>
-                        <p data-key="exp2.desc">Worked inside Mercado Libre's logistics network analyzing shipping and operational datasets to surface anomalous patterns and fraud signals. The work contributed to detecting and preventing losses exceeding $310K annually. Built analytical models and monitoring dashboards to support faster risk mitigation, and collaborated with operations, engineering, and regional teams to translate findings into actions aligned with real operational constraints — not just theoretical models.</p>
-                    </div>
+        .social-link {
+            width: 36px; height: 36px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.16);
+            color: rgba(255,255,255,0.5);
+            font-size: 0.88rem;
+            text-decoration: none;
+            transition: all 0.15s;
+        }
 
-                    <!-- Montecable Senior -->
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="mb-0" data-key="exp3.title">Senior Business Intelligence Analyst</h3>
-                                <div class="subheading mb-0" data-key="exp3.company">Montecable</div>
-                            </div>
-                            <span class="exp-dates" data-key="exp3.dates">January 2021 – July 2024</span>
-                        </div>
-                        <div class="exp-badges">
-                            <span class="exp-badge" data-key="exp3.badge1">13% churn reduction</span>
-                            <span class="exp-badge" data-key="exp3.badge2">$113K revenue uplift</span>
-                        </div>
-                        <p data-key="exp3.desc">Designed and maintained executive and operational dashboards that tracked customer behavior, commercial performance, and business KPIs — giving leadership a clearer picture of what was happening and why. Beyond reporting, developed churn prediction and conversion models using statistical and ML techniques, translating analytical findings into targeted retention strategies that reduced annual churn by 13% and generated an estimated $113K increase in annual revenue.</p>
-                    </div>
+        .social-link:hover { border-color: var(--teal); color: var(--teal); }
 
-                    <!-- TCS -->
-                    <div class="exp-card muted">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="mb-0" data-key="exp4.title">Data Analyst</h3>
-                                <div class="subheading mb-0" data-key="exp4.company">Tata Consultancy Services</div>
-                            </div>
-                            <span class="exp-dates" data-key="exp4.dates">October 2019 – January 2021</span>
-                        </div>
-                        <p data-key="exp4.desc">Analyzed KPI and operational performance data to identify inefficiencies and capacity bottlenecks across teams. Built dashboards and reports that gave operations managers a clearer view of performance and supported data-driven improvements in day-to-day operations.</p>
-                    </div>
+        .hero-dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--teal);
+            color: #fff;
+            border-radius: 8px;
+            padding: 8px 20px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            font-family: 'Nunito', sans-serif;
+            text-decoration: none;
+            transition: background 0.15s;
+        }
 
-                    <!-- Willis -->
-                    <div class="exp-card muted">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="mb-0" data-key="exp5.title">Junior Researcher</h3>
-                                <div class="subheading mb-0" data-key="exp5.company">Willis Towers Watson</div>
-                            </div>
-                            <span class="exp-dates" data-key="exp5.dates">January 2019 – July 2019</span>
-                        </div>
-                        <p data-key="exp5.desc">Collected and analyzed structured financial and workforce datasets for research-oriented internal reports. Wrote comparative summaries on pension obligations and workforce metrics across companies.</p>
-                    </div>
+        .hero-dl-btn:hover { background: #125f68; color: #fff; }
 
-                </div>
-            </section>
-            <hr class="m-0" />
+        .hero-photo-wrap img {
+            width: 160px; height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            border: 3px solid var(--teal);
+            box-shadow: 0 0 50px rgba(23,126,137,0.28);
+            display: block;
+        }
 
-            <!-- Education -->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-key="section.education">Education</h2>
-                    <div class="exp-card" style="margin-bottom:0">
-                        <div class="exp-header">
-                            <div>
-                                <h3 class="mb-0" data-key="edu.institution">Universidad Católica del Uruguay</h3>
-                                <div class="subheading mb-0" data-key="edu.degree">Bachelor's Degree in Economics</div>
-                                <div class="text-muted mt-1" data-key="edu.location">Montevideo, Uruguay</div>
-                            </div>
-                            <span class="exp-dates" data-key="edu.dates">Graduated December 2023</span>
-                        </div>
-                        <p class="mt-3" data-key="edu.notes">Merit-based scholarship for academic excellence · Elective coursework in Big Data and Financial Crimes · Ranked #1 in class for Bridge.</p>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
+        /* ═══════════════════════════════════════════
+           SHARED SECTION STYLES
+        ═══════════════════════════════════════════ */
+        .s-wrap { padding: 5rem 0; }
+        .s-wrap.alt { background: var(--alt-bg); }
 
-            <!-- Skills -->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-key="section.skills">Skills</h2>
+        .s-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-                    <div class="subheading mb-3" data-key="skills.data.title">Data & Analytics</div>
-                    <ul class="list-inline dev-icons mb-4">
-                        <li class="list-inline-item"><i class="fab fa-python" title="Python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-r-project" title="R"></i></li>
-                        <li class="list-inline-item"><i class="fas fa-database" title="SQL"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-microsoft" title="Power BI / Excel"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-github" title="GitHub"></i></li>
-                    </ul>
+        .s-title {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid var(--teal);
+            display: inline-block;
+            margin-bottom: 2.25rem;
+        }
 
-                    <div class="subheading mb-3" data-key="skills.tools.title">Tools & Platforms</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.tools.list">Power BI · Tableau · Qlik Sense · Looker Studio · Alteryx</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.languages.list">Python · R · SQL · BigQuery · Excel</span></li>
-                    </ul>
+        /* ═══════════════════════════════════════════
+           EXPERIENCE
+        ═══════════════════════════════════════════ */
+        .exp-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
 
-                    <div class="subheading mb-3" data-key="skills.method.title">Technical Expertise</div>
-                    <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m1">Predictive Modeling & Machine Learning (Churn, Fraud Detection)</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m2">KPI Design & Dashboard Architecture</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m3">Data Pipeline Design & BI Migration</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-key="skills.m4">Agile & Six Sigma</span></li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
+        .exp-card {
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--teal);
+            border-radius: 10px;
+            padding: 1.35rem 1.6rem;
+            background: #fff;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
 
-            <!-- Interests -->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-key="section.interests">Interests</h2>
-                    <p data-key="interests.p1">Outside of data and analytics, I enjoy traveling and experiencing different cultures — something living in Japan has made a daily part of my life. I'm a board game enthusiast and value the strategic thinking they require.</p>
-                    <p class="mb-0" data-key="interests.p2">I'm also a movie fan and appreciate good storytelling in any format. I believe that the ability to communicate complex ideas clearly — whether in a dashboard or a conversation — is one of the most valuable skills a data professional can have.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
+        .exp-card:hover {
+            box-shadow: 0 4px 22px rgba(0,0,0,0.07);
+            transform: translateY(-1px);
+        }
 
-            <!-- Certifications -->
-            <section class="resume-section" id="certifications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-key="section.certifications">Certifications & Impact</h2>
+        .exp-card.muted {
+            border-left-color: #d1d5db;
+            opacity: 0.7;
+        }
 
-                    <div class="subheading mb-3" data-key="cert.sub1">Certifications</div>
-                    <ul class="fa-ul mb-5">
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span><span data-key="cert.1">C1 Business Higher — Cambridge English</span></li>
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span><span data-key="cert.2">Financial Markets — Yale University / Coursera</span></li>
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span><span data-key="cert.3">QlikView Business Analyst</span></li>
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span><span data-key="cert.4">Agile Methodologies</span></li>
-                        <li><span class="fa-li"><i class="fas fa-certificate text-warning"></i></span><span data-key="cert.5">Six Sigma</span></li>
-                    </ul>
+        .exp-card.muted:hover { opacity: 1; }
 
-                    <div class="subheading mb-4" data-key="cert.sub2">Key Impact</div>
-                    <div class="impact-row"><span class="impact-num" data-key="impact.1.num">$310K+</span><span class="impact-desc" data-key="impact.1.desc">in annual fraud losses prevented at Mercado Libre</span></div>
-                    <div class="impact-row"><span class="impact-num" data-key="impact.2.num">$113K</span><span class="impact-desc" data-key="impact.2.desc">in incremental annual revenue through churn reduction at Montecable</span></div>
-                    <div class="impact-row"><span class="impact-num" data-key="impact.3.num">13%</span><span class="impact-desc" data-key="impact.3.desc">reduction in annual customer churn via predictive ML models</span></div>
-                    <div class="impact-row"><span class="impact-num" data-key="impact.4.num">$20K</span><span class="impact-desc" data-key="impact.4.desc">in annual savings from BI platform migration (Qlik Sense → Power BI)</span></div>
-                    <div class="impact-row"><span class="impact-num" data-key="impact.5.num">6+</span><span class="impact-desc" data-key="impact.5.desc">years of experience across telecom, e-commerce, and consulting</span></div>
-                </div>
-            </section>
+        .exp-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 0.45rem;
+        }
 
+        @media (max-width: 560px) { .exp-row { flex-direction: column; gap: 0.2rem; } }
+
+        .exp-title { font-size: 0.95rem; font-weight: 800; color: var(--text); margin-bottom: 0.1rem; }
+        .exp-company { font-size: 0.83rem; font-weight: 700; color: var(--teal); }
+        .exp-dates { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; padding-top: 0.15rem; }
+
+        .exp-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin: 0.5rem 0;
+        }
+
+        .exp-badge {
+            background: var(--teal-dim);
+            color: var(--teal);
+            border: 1px solid var(--teal-border);
+            border-radius: 20px;
+            padding: 2px 11px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .exp-card.muted .exp-badge {
+            background: #f3f4f6;
+            color: #9ca3af;
+            border-color: #e5e7eb;
+        }
+
+        .exp-desc {
+            font-size: 0.84rem;
+            color: #4b5563;
+            line-height: 1.78;
+            margin: 0;
+        }
+
+        /* ═══════════════════════════════════════════
+           EDUCATION
+        ═══════════════════════════════════════════ */
+        .edu-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.4rem 1.6rem;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 560px) { .edu-card { flex-direction: column; gap: 0.75rem; } }
+
+        .edu-main { flex: 1; }
+        .edu-degree { font-size: 0.95rem; font-weight: 800; color: var(--text); margin-bottom: 0.12rem; }
+        .edu-inst { font-size: 0.84rem; font-weight: 700; color: var(--teal); margin-bottom: 0.35rem; }
+        .edu-loc { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.35rem; }
+        .edu-notes-text { font-size: 0.78rem; color: var(--text-muted); line-height: 1.6; }
+        .edu-dates-col { font-size: 0.76rem; color: var(--text-muted); text-align: right; white-space: nowrap; flex-shrink: 0; }
+
+        /* ═══════════════════════════════════════════
+           SKILLS
+        ═══════════════════════════════════════════ */
+        .skills-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.1rem;
+        }
+
+        .skill-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.2rem 1.4rem;
+        }
+
+        .skill-card-label {
+            font-size: 0.62rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--teal);
+            margin-bottom: 0.8rem;
+        }
+
+        .skill-text {
+            font-size: 0.84rem;
+            color: var(--text);
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.45rem;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            font-size: 0.82rem;
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .skill-item i {
+            color: var(--teal);
+            font-size: 0.55rem;
+            margin-top: 0.38rem;
+            flex-shrink: 0;
+        }
+
+        /* ═══════════════════════════════════════════
+           INTERESTS
+        ═══════════════════════════════════════════ */
+        .interests-text { max-width: 680px; }
+
+        .interests-text p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.85;
+            margin-bottom: 1rem;
+        }
+
+        .interests-text p:last-child { margin-bottom: 0; }
+
+        /* ═══════════════════════════════════════════
+           CERTIFICATIONS & IMPACT
+        ═══════════════════════════════════════════ */
+        .cert-impact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        @media (max-width: 680px) { .cert-impact-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+        .sub-heading {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text);
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cert-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cert-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            padding: 0.55rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text);
+        }
+
+        .cert-list li:last-child { border-bottom: none; }
+
+        .cert-list li i {
+            color: var(--teal);
+            font-size: 0.68rem;
+            margin-top: 0.22rem;
+            flex-shrink: 0;
+        }
+
+        .impact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+        }
+
+        .impact-row {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        .impact-num {
+            font-family: 'Saira Extra Condensed', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--teal);
+            min-width: 6rem;
+            line-height: 1;
+        }
+
+        .impact-desc {
+            font-size: 0.81rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+        }
+
+        /* ═══════════════════════════════════════════
+           FOOTER
+        ═══════════════════════════════════════════ */
+        footer {
+            background: var(--dark);
+            padding: 1.25rem 2rem;
+            text-align: center;
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.25);
+        }
+
+        footer a { color: inherit; }
+        footer a:hover { color: var(--teal); }
+    </style>
+</head>
+<body id="page-top">
+
+    <!-- ══════════════ TOP NAV ══════════════ -->
+    <nav id="topNav">
+        <a href="#page-top" class="tn-brand">SM</a>
+
+        <div class="tn-links">
+            <a href="#about"           class="js-scroll-trigger" data-key="nav.about">About</a>
+            <a href="#experience"      class="js-scroll-trigger" data-key="nav.experience">Experience</a>
+            <a href="#education"       class="js-scroll-trigger" data-key="nav.education">Education</a>
+            <a href="#skills"          class="js-scroll-trigger" data-key="nav.skills">Skills</a>
+            <a href="#interests"       class="js-scroll-trigger" data-key="nav.interests">Interests</a>
+            <a href="#certifications"  class="js-scroll-trigger" data-key="nav.certifications">Certifications</a>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/translations.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+        <div class="tn-right">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+                <button class="lang-btn"        data-lang="ja" onclick="setLang('ja')">日本語</button>
+                <button class="lang-btn"        data-lang="es" onclick="setLang('es')">ES</button>
+            </div>
+            <a class="tn-cv js-cv-btn" href="assets/cv/cv-en.pdf" download>
+                <i class="fas fa-download"></i>
+                <span data-key="about.cv.download">Download CV</span>
+            </a>
+        </div>
+
+        <button class="tn-hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu">
+        <a href="#about"          class="js-scroll-trigger" data-key="nav.about"          onclick="document.getElementById('mobileMenu').classList.remove('open')">About</a>
+        <a href="#experience"     class="js-scroll-trigger" data-key="nav.experience"     onclick="document.getElementById('mobileMenu').classList.remove('open')">Experience</a>
+        <a href="#education"      class="js-scroll-trigger" data-key="nav.education"      onclick="document.getElementById('mobileMenu').classList.remove('open')">Education</a>
+        <a href="#skills"         class="js-scroll-trigger" data-key="nav.skills"         onclick="document.getElementById('mobileMenu').classList.remove('open')">Skills</a>
+        <a href="#interests"      class="js-scroll-trigger" data-key="nav.interests"      onclick="document.getElementById('mobileMenu').classList.remove('open')">Interests</a>
+        <a href="#certifications" class="js-scroll-trigger" data-key="nav.certifications" onclick="document.getElementById('mobileMenu').classList.remove('open')">Certifications</a>
+    </div>
+
+
+    <!-- ══════════════ HERO / ABOUT ══════════════ -->
+    <section id="about">
+        <div class="hero-grid">
+            <div>
+                <h1 class="hero-name">Santiago <span class="accent">Martinez</span></h1>
+                <p class="hero-subtitle" data-key="about.subtitle">Lead Business Intelligence Analyst · Tokyo, Japan</p>
+                <p class="hero-bio" data-key="about.bio1">Economist by training, data professional by practice. Over the past 6+ years, across telecom, e-commerce and consulting, I've built analytics infrastructure that turns raw data into real decisions: dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.</p>
+                <p class="hero-bio" data-key="about.bio2">Currently based in Tokyo, working as Lead BI Analyst at Montecable. I work at the intersection of technology and business strategy, helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.</p>
+                <div class="hero-actions">
+                    <div class="social-row">
+                        <a class="social-link" href="https://www.linkedin.com/in/santiago-martinez-pezzatti-4241a3165/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-link" href="https://github.com/santimuru" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a id="cv-download-btn" class="hero-dl-btn js-cv-btn" href="assets/cv/cv-en.pdf" download>
+                        <i class="fas fa-download"></i>
+                        <span data-key="about.cv.download">Download CV</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo-wrap">
+                <img src="assets/img/profile.jpg" alt="Santiago Martinez" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════ EXPERIENCE ══════════════ -->
+    <section id="experience" class="s-wrap">
+        <div class="s-inner">
+            <h2 class="s-title" data-key="section.experience">Experience</h2>
+            <div class="exp-stack">
+
+                <div class="exp-card">
+                    <div class="exp-row">
+                        <div>
+                            <div class="exp-title"   data-key="exp1.title">Lead Business Intelligence Analyst</div>
+                            <div class="exp-company" data-key="exp1.company">Montecable</div>
+                        </div>
+                        <span class="exp-dates" data-key="exp1.dates">July 2025 – Present</span>
+                    </div>
+                    <div class="exp-badges">
+                        <span class="exp-badge" data-key="exp1.badge1">$20K saved</span>
+                        <span class="exp-badge" data-key="exp1.badge2">BI Migration</span>
+                    </div>
+                    <p class="exp-desc" data-key="exp1.desc">Led the full migration of the BI ecosystem from Qlik Sense to Power BI, rebuilding data models, recreating dashboards, and redesigning reporting pipelines while integrating CRM and operational data sources. The result: improved data quality and approximately $20,000 in annual savings on licensing and infrastructure. Beyond the technical migration, drove the adoption of a more data-driven culture by documenting key metrics, aligning definitions across departments, and positioning the BI team as the company's central reference point for data and analytics.</p>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-row">
+                        <div>
+                            <div class="exp-title"   data-key="exp2.title">Fraud Prevention Senior Analyst</div>
+                            <div class="exp-company" data-key="exp2.company">Mercado Libre</div>
+                        </div>
+                        <span class="exp-dates" data-key="exp2.dates">July 2024 – June 2025</span>
+                    </div>
+                    <div class="exp-badges">
+                        <span class="exp-badge" data-key="exp2.badge1">$310K+ prevented</span>
+                        <span class="exp-badge" data-key="exp2.badge2">Fraud Analytics</span>
+                    </div>
+                    <p class="exp-desc" data-key="exp2.desc">Worked inside Mercado Libre's logistics network analyzing shipping and operational datasets to surface anomalous patterns and fraud signals. The work contributed to detecting and preventing losses exceeding $310K annually. Built analytical models and monitoring dashboards to support faster risk mitigation, and collaborated with operations, engineering, and regional teams to translate findings into actions that reflected real operational constraints, not just theoretical models.</p>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-row">
+                        <div>
+                            <div class="exp-title"   data-key="exp3.title">Senior Business Intelligence Analyst</div>
+                            <div class="exp-company" data-key="exp3.company">Montecable</div>
+                        </div>
+                        <span class="exp-dates" data-key="exp3.dates">January 2021 – July 2024</span>
+                    </div>
+                    <div class="exp-badges">
+                        <span class="exp-badge" data-key="exp3.badge1">13% churn reduction</span>
+                        <span class="exp-badge" data-key="exp3.badge2">$113K revenue uplift</span>
+                    </div>
+                    <p class="exp-desc" data-key="exp3.desc">Designed and maintained executive and operational dashboards that tracked customer behavior, commercial performance, and business KPIs, giving leadership a clearer picture of what was happening and why. Beyond reporting, developed churn prediction and conversion models using statistical and ML techniques, translating analytical findings into targeted retention strategies that reduced annual churn by 13% and generated an estimated $113K increase in annual revenue.</p>
+                </div>
+
+                <div class="exp-card muted">
+                    <div class="exp-row">
+                        <div>
+                            <div class="exp-title"   data-key="exp4.title">Data Analyst</div>
+                            <div class="exp-company" data-key="exp4.company">Tata Consultancy Services</div>
+                        </div>
+                        <span class="exp-dates" data-key="exp4.dates">October 2019 – January 2021</span>
+                    </div>
+                    <p class="exp-desc" data-key="exp4.desc">Analyzed KPI and operational performance data to identify inefficiencies and capacity bottlenecks across teams. Built dashboards and reports that gave operations managers a clearer view of performance and supported data-driven improvements in day-to-day operations.</p>
+                </div>
+
+                <div class="exp-card muted">
+                    <div class="exp-row">
+                        <div>
+                            <div class="exp-title"   data-key="exp5.title">Junior Researcher</div>
+                            <div class="exp-company" data-key="exp5.company">Willis Towers Watson</div>
+                        </div>
+                        <span class="exp-dates" data-key="exp5.dates">January 2019 – July 2019</span>
+                    </div>
+                    <p class="exp-desc" data-key="exp5.desc">Collected and analyzed structured financial and workforce datasets for research-oriented internal reports. Wrote comparative summaries on pension obligations and workforce metrics across companies.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════ EDUCATION ══════════════ -->
+    <section id="education" class="s-wrap alt">
+        <div class="s-inner">
+            <h2 class="s-title" data-key="section.education">Education</h2>
+            <div class="edu-card">
+                <div class="edu-main">
+                    <div class="edu-degree"      data-key="edu.degree">Bachelor's Degree in Economics</div>
+                    <div class="edu-inst"        data-key="edu.institution">Universidad Católica del Uruguay</div>
+                    <div class="edu-loc"         data-key="edu.location">Montevideo, Uruguay</div>
+                    <div class="edu-notes-text"  data-key="edu.notes">Merit-based scholarship for academic excellence · Elective coursework in Big Data and Financial Crimes.</div>
+                </div>
+                <div class="edu-dates-col" data-key="edu.dates">Graduated December 2023</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════ SKILLS ══════════════ -->
+    <section id="skills" class="s-wrap">
+        <div class="s-inner">
+            <h2 class="s-title" data-key="section.skills">Skills</h2>
+            <div class="skills-layout">
+
+                <div class="skill-card">
+                    <div class="skill-card-label" data-key="skills.tools.title">Tools & Platforms</div>
+                    <p class="skill-text" data-key="skills.tools.list">Power BI · Tableau · Qlik Sense · Looker Studio · Alteryx</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-label" data-key="skills.data.title">Languages & Data</div>
+                    <p class="skill-text" data-key="skills.languages.list">Python · R · SQL · BigQuery · Excel</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-label" data-key="skills.method.title">Technical Expertise</div>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m1">Predictive Modeling & Machine Learning (Churn, Fraud Detection)</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m2">KPI Design & Dashboard Architecture</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m3">Data Pipeline Design & BI Migration</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m4">Agile & Six Sigma</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════ INTERESTS ══════════════ -->
+    <section id="interests" class="s-wrap alt">
+        <div class="s-inner">
+            <h2 class="s-title" data-key="section.interests">Interests</h2>
+            <div class="interests-text">
+                <p data-key="interests.p1">Outside of data and analytics, I enjoy traveling and experiencing different cultures, something living in Japan has made a daily part of my life. I am a board game enthusiast and value the strategic thinking they require.</p>
+                <p data-key="interests.p2">Cinema is another constant, particularly films that trade spectacle for character. Somewhere along the way I also picked up the habit of treating every problem as a design problem, which turns out to be useful in both work and games.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════ CERTIFICATIONS & IMPACT ══════════════ -->
+    <section id="certifications" class="s-wrap">
+        <div class="s-inner">
+            <h2 class="s-title" data-key="section.certifications">Certifications & Impact</h2>
+            <div class="cert-impact-grid">
+
+                <div>
+                    <p class="sub-heading" data-key="cert.sub1">Certifications</p>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-certificate"></i><span data-key="cert.1">C1 Business Higher · Cambridge English</span></li>
+                        <li><i class="fas fa-certificate"></i><span data-key="cert.2">Financial Markets · Yale University / Coursera</span></li>
+                        <li><i class="fas fa-certificate"></i><span data-key="cert.3">QlikView Business Analyst</span></li>
+                        <li><i class="fas fa-certificate"></i><span data-key="cert.4">Agile Methodologies</span></li>
+                        <li><i class="fas fa-certificate"></i><span data-key="cert.5">Six Sigma</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="sub-heading" data-key="cert.sub2">Key Impact</p>
+                    <div class="impact-list">
+                        <div class="impact-row">
+                            <span class="impact-num"  data-key="impact.1.num">$310K+</span>
+                            <span class="impact-desc" data-key="impact.1.desc">in annual fraud losses prevented at Mercado Libre</span>
+                        </div>
+                        <div class="impact-row">
+                            <span class="impact-num"  data-key="impact.2.num">$113K</span>
+                            <span class="impact-desc" data-key="impact.2.desc">in incremental annual revenue through churn reduction at Montecable</span>
+                        </div>
+                        <div class="impact-row">
+                            <span class="impact-num"  data-key="impact.3.num">13%</span>
+                            <span class="impact-desc" data-key="impact.3.desc">reduction in annual customer churn via predictive ML models</span>
+                        </div>
+                        <div class="impact-row">
+                            <span class="impact-num"  data-key="impact.4.num">$20K</span>
+                            <span class="impact-desc" data-key="impact.4.desc">in annual savings from BI platform migration (Qlik Sense → Power BI)</span>
+                        </div>
+                        <div class="impact-row">
+                            <span class="impact-num"  data-key="impact.5.num">6+</span>
+                            <span class="impact-desc" data-key="impact.5.desc">years of experience across telecom, e-commerce, and consulting</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        Santiago Martinez &nbsp;·&nbsp; Tokyo, Japan &nbsp;·&nbsp;
+        <a href="mailto:santiagomwp@gmail.com">santiagomwp@gmail.com</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 </html>

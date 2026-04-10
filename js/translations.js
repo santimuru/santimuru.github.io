@@ -305,8 +305,9 @@ function setLang(lang) {
   });
 
   const cvMap = { en: 'assets/cv/cv-en.pdf', es: 'assets/cv/cv-es.pdf', ja: 'assets/cv/cv-ja.pdf' };
-  const cvBtn = document.getElementById('cv-download-btn');
-  if (cvBtn) cvBtn.href = cvMap[lang] || cvMap['en'];
+  document.querySelectorAll('.js-cv-btn').forEach(btn => {
+    btn.href = cvMap[lang] || cvMap['en'];
+  });
 
   localStorage.setItem('lang', lang);
 }
