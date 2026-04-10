@@ -63,6 +63,11 @@ const translations = {
     'exp5.b2': 'Produced comparative analyses of pension obligations and workforce metrics across companies and industry sectors',
     'exp5.b3': 'Contributed to internal reports used by senior consultants in client-facing engagements across Latin America',
 
+    'proj4.title': 'Telecom Customer Churn Prediction',
+    'proj4.context': 'Open Source · IBM Telco Dataset',
+    'proj4.demo': 'Live Demo',
+    'proj4.desc': 'End-to-end ML pipeline that trains and compares <strong>3 classification models</strong> (Logistic Regression, Random Forest, Gradient Boosting) on the IBM Telco dataset. Features an interactive Streamlit dashboard with model metrics, feature importance, a customer risk simulator, and churn segmentation. Best model achieves <strong>~81% accuracy and 0.85 AUC-ROC</strong>. Applied similar techniques in production at Montecable, achieving a <strong>13% churn reduction</strong>.',
+
     'proj1.title': 'Customer Churn Prediction',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'End-to-end churn prediction pipeline for a 100K+ subscriber base. Combines <strong>ML classification models</strong> (logistic regression, gradient boosting) with a Power BI dashboard that surfaces at-risk segments for the retention team.',
@@ -180,6 +185,11 @@ const translations = {
     'exp5.b2': 'Redacté análisis comparativos de obligaciones de pensiones y métricas de workforce entre empresas y sectores',
     'exp5.b3': 'Contribuí a informes internos utilizados por consultores senior en compromisos con clientes en América Latina',
 
+    'proj4.title': 'Predicción de Churn en Telecom',
+    'proj4.context': 'Open Source · IBM Telco Dataset',
+    'proj4.demo': 'Demo en vivo',
+    'proj4.desc': 'Pipeline ML end-to-end que entrena y compara <strong>3 modelos de clasificación</strong> (Regresión Logística, Random Forest, Gradient Boosting) sobre el dataset IBM Telco. Incluye un dashboard interactivo en Streamlit con métricas de modelos, importancia de variables, simulador de riesgo de cliente y segmentación de churn. El mejor modelo alcanza <strong>~81% de accuracy y 0.85 AUC-ROC</strong>. Técnicas similares fueron aplicadas en producción en Montecable, logrando una <strong>reducción del 13% en el churn</strong>.',
+
     'proj1.title': 'Predicción de Churn de Clientes',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'Pipeline end-to-end de predicción de churn para una base de más de 100K abonados. Combina <strong>modelos de clasificación ML</strong> (regresión logística, gradient boosting) con un dashboard en Power BI que identifica segmentos en riesgo para el equipo de retención.',
@@ -296,6 +306,11 @@ const translations = {
     'exp5.b1': 'アクチュアリー・アドバイザリー向けの調査成果物を支援するため、財務・人材データセットを収集・構造化',
     'exp5.b2': '企業・業界をまたいだ年金債務・人材指標の比較分析を実施',
     'exp5.b3': 'ラテンアメリカ全域のクライアント向け案件で上級コンサルタントが活用する社内レポート作成に貢献',
+
+    'proj4.title': '通信顧客解約予測',
+    'proj4.context': 'オープンソース · IBM Telco データセット',
+    'proj4.demo': 'ライブデモ',
+    'proj4.desc': 'IBM Telcoデータセットを使用して<strong>3つの分類モデル</strong>（ロジスティック回帰・ランダムフォレスト・勾配ブースティング）を学習・比較するML パイプライン。モデル評価指標・特徴量の重要度・顧客リスクシミュレーター・解約セグメント分析を備えたインタラクティブなStreamlitダッシュボードを搭載。最良モデルは<strong>精度約81%・AUC-ROC 0.85</strong>を達成。同様の手法をMontecableの本番環境に適用し、<strong>解約率13%削減</strong>を実現。',
 
     'proj1.title': '顧客解約予測モデル',
     'proj1.context': '通信 · Montecable',
