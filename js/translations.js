@@ -80,7 +80,7 @@ const translations = {
     'proj3.context': 'Telecom · Montecable',
     'proj3.desc': 'Documentation and architecture for migrating an enterprise BI ecosystem from Qlik Sense to Power BI, including <strong>data model redesign</strong>, DAX patterns, and a department-wide metrics dictionary.',
 
-    'projects.note': 'Projects are based on real professional work. Code and full documentation available on request.',
+    'projects.note': 'Projects are example implementations built with open-source data to protect the privacy of real work datasets.',
 
     'edu.institution': 'Universidad Católica del Uruguay',
     'edu.degree': "Bachelor's Degree in Economics",
@@ -202,7 +202,7 @@ const translations = {
     'proj3.context': 'Telecom · Montecable',
     'proj3.desc': 'Documentación y arquitectura para la migración del ecosistema BI de Qlik Sense a Power BI, incluyendo <strong>rediseño de modelos de datos</strong>, patrones DAX y un diccionario de métricas para toda la organización.',
 
-    'projects.note': 'Proyectos basados en trabajo profesional real. Código y documentación completa disponibles bajo solicitud.',
+    'projects.note': 'Proyectos construidos como ejemplos con datos open source para proteger la privacidad de los datos de mi trabajo real.',
 
     'edu.institution': 'Universidad Católica del Uruguay',
     'edu.degree': 'Licenciatura en Economía',
@@ -324,7 +324,7 @@ const translations = {
     'proj3.context': '通信 · Montecable',
     'proj3.desc': 'Qlik SenseからPower BIへのBIエコシステム移行のための設計・文書化。<strong>データモデル再設計</strong>、DAXパターン、組織全体のメトリクス辞書を含む。',
 
-    'projects.note': 'プロジェクトは実際の業務に基づいています。コードや詳細なドキュメントはご要望に応じて提供可能です。',
+    'projects.note': '実務データのプライバシーを守るため、オープンソースのデータを用いたサンプル実装です。',
 
     'edu.institution': 'ウルグアイ・カトリック大学',
     'edu.degree': '経済学士',
