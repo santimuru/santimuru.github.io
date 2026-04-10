@@ -6,9 +6,9 @@ const translations = {
     'nav.name': 'Santiago Martinez',
     'nav.about': 'About',
     'nav.experience': 'Experience',
+    'nav.projects': 'Projects',
     'nav.education': 'Education',
     'nav.skills': 'Skills',
-    'nav.interests': 'Interests',
     'nav.certifications': 'Certifications',
 
     'about.subtitle': 'Data Analyst · Tokyo, Japan',
@@ -17,9 +17,9 @@ const translations = {
     'about.bio2': 'Currently based in Tokyo, working as Lead BI Analyst at Montecable. I work at the intersection of technology and business strategy, helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.',
 
     'section.experience': 'Experience',
+    'section.projects': 'Projects',
     'section.education': 'Education',
     'section.skills': 'Skills',
-    'section.interests': 'Interests',
     'section.certifications': 'Certifications & Impact',
 
     'exp1.title': 'Lead Business Intelligence Analyst',
@@ -27,23 +27,27 @@ const translations = {
     'exp1.dates': 'July 2025 – Present',
     'exp1.badge1': '$20K saved',
     'exp1.badge2': 'BI Migration',
-    'exp1.desc': 'Led the full migration of the BI ecosystem from Qlik Sense to Power BI, rebuilding data models, recreating dashboards, and redesigning reporting pipelines while integrating CRM and operational data sources. The result: improved data quality and approximately $20,000 in annual savings on licensing and infrastructure. Beyond the technical migration, drove the adoption of a more data-driven culture by documenting key metrics, aligning definitions across departments, and positioning the BI team as the company\'s central reference point for data and analytics.',
+    'exp1.b1': 'Led the full migration from <strong>Qlik Sense to Power BI</strong>, rebuilding data models, recreating dashboards and redesigning reporting pipelines across the organization',
+    'exp1.b2': 'Integrated <strong>CRM and operational data sources</strong>, improving data quality and reducing licensing and infrastructure costs by approximately <strong>$20K annually</strong>',
+    'exp1.b3': 'Drove <strong>data-driven culture adoption</strong> by documenting key metrics, aligning definitions across departments and positioning the BI team as the central analytics reference',
 
     'exp2.title': 'Fraud Prevention Senior Analyst',
     'exp2.company': 'Mercado Libre',
     'exp2.dates': 'July 2024 – June 2025',
     'exp2.badge1': '$310K+ prevented',
     'exp2.badge2': 'Fraud Analytics',
-    'exp2.desc': 'Worked inside Mercado Libre\'s logistics network analyzing shipping and operational datasets to surface anomalous patterns and fraud signals. The work contributed to detecting and preventing losses exceeding $310K annually. Built analytical models and monitoring dashboards to support faster risk mitigation, and collaborated with operations, engineering, and regional teams to translate findings into actions that reflected real operational constraints, not just theoretical models.',
+    'exp2.b1': 'Analyzed shipping and operational datasets within <strong>Mercado Libre\'s logistics network</strong> to surface fraud signals, anomalous patterns and operational risk',
+    'exp2.b2': 'Built <strong>analytical models and monitoring dashboards</strong> that contributed to detecting and preventing over <strong>$310K in annual losses</strong>',
+    'exp2.b3': 'Collaborated with operations, engineering and regional teams to translate analytical findings into <strong>concrete risk mitigation actions</strong> aligned with real operational constraints',
 
     'exp3.title': 'Senior Business Intelligence Analyst',
     'exp3.company': 'Montecable',
     'exp3.dates': 'January 2021 – July 2024',
     'exp3.badge1': '13% churn reduction',
     'exp3.badge2': '$113K revenue uplift',
-    'exp3.b1': 'Designed and maintained executive and operational dashboards for customer behavior tracking, commercial KPI monitoring and business performance reporting',
-    'exp3.b2': 'Developed churn prediction and conversion models using Python, R and machine learning techniques, translating outputs into targeted retention strategies',
-    'exp3.b3': 'Worked closely with commercial and marketing teams to turn analytical findings into campaigns and initiatives, reducing annual churn by 13% and generating an estimated $113K in revenue uplift',
+    'exp3.b1': 'Designed and maintained dashboards for <strong>customer behavior tracking</strong>, commercial KPI monitoring and business performance reporting across executive and operational levels',
+    'exp3.b2': 'Developed <strong>churn prediction and conversion models</strong> using Python, R and machine learning techniques, translating outputs into targeted retention strategies',
+    'exp3.b3': 'Worked with commercial and marketing teams to turn findings into campaigns, reducing annual churn by <strong>13%</strong> and generating an estimated <strong>$113K in revenue uplift</strong>',
 
     'exp4.title': 'Data Analyst',
     'exp4.company': 'Tata Consultancy Services',
@@ -59,6 +63,20 @@ const translations = {
     'exp5.b2': 'Produced comparative analyses of pension obligations and workforce metrics across companies and industry sectors',
     'exp5.b3': 'Contributed to internal reports used by senior consultants in client-facing engagements across Latin America',
 
+    'proj1.title': 'Customer Churn Prediction',
+    'proj1.context': 'Telecom · Montecable',
+    'proj1.desc': 'End-to-end churn prediction pipeline for a 100K+ subscriber base. Combines <strong>ML classification models</strong> (logistic regression, gradient boosting) with a Power BI dashboard that surfaces at-risk segments for the retention team.',
+
+    'proj2.title': 'Logistics Fraud Detection',
+    'proj2.context': 'E-commerce · Mercado Libre',
+    'proj2.desc': '<strong>Anomaly detection system</strong> built on shipment and operational data to identify fraud patterns across a large-scale logistics network. Contributed to over $310K in prevented annual losses.',
+
+    'proj3.title': 'BI Platform Migration Playbook',
+    'proj3.context': 'Telecom · Montecable',
+    'proj3.desc': 'Documentation and architecture for migrating an enterprise BI ecosystem from Qlik Sense to Power BI, including <strong>data model redesign</strong>, DAX patterns, and a department-wide metrics dictionary.',
+
+    'projects.note': 'Projects are based on real professional work. Code and full documentation available on request.',
+
     'edu.institution': 'Universidad Católica del Uruguay',
     'edu.degree': "Bachelor's Degree in Economics",
     'edu.location': 'Montevideo, Uruguay',
@@ -73,9 +91,7 @@ const translations = {
     'skills.m1': 'Predictive Modeling & Machine Learning (Churn, Fraud Detection)',
     'skills.m2': 'KPI Design & Dashboard Architecture',
     'skills.m3': 'Data Pipeline Design & BI Migration',
-    'skills.method2.title': 'Methodologies',
     'skills.m4': 'Agile & Six Sigma',
-
     'skills.lang.title': 'Languages',
     'skills.lang.1': 'Spanish — Native',
     'skills.lang.2': 'English — C1 · Cambridge Certified',
@@ -107,9 +123,9 @@ const translations = {
     'nav.name': 'Santiago Martinez',
     'nav.about': 'Sobre mí',
     'nav.experience': 'Experiencia',
+    'nav.projects': 'Proyectos',
     'nav.education': 'Formación',
     'nav.skills': 'Habilidades',
-    'nav.interests': 'Intereses',
     'nav.certifications': 'Certificaciones',
 
     'about.subtitle': 'Data Analyst · Tokio, Japón',
@@ -118,9 +134,9 @@ const translations = {
     'about.bio2': 'Actualmente en Tokio como Analista BI Líder en Montecable. Trabajo en la intersección entre tecnología y estrategia de negocio, ayudando a los equipos a ver con claridad y actuar con confianza. Los números y resultados están en la sección Experiencia más abajo.',
 
     'section.experience': 'Experiencia',
+    'section.projects': 'Proyectos',
     'section.education': 'Formación',
     'section.skills': 'Habilidades',
-    'section.interests': 'Intereses',
     'section.certifications': 'Certificaciones e Impacto',
 
     'exp1.title': 'Analista BI Líder',
@@ -128,23 +144,27 @@ const translations = {
     'exp1.dates': 'Julio 2025 – Presente',
     'exp1.badge1': '$20K ahorrados',
     'exp1.badge2': 'Migración BI',
-    'exp1.desc': 'Lideré la migración completa del ecosistema de BI de Qlik Sense a Power BI, reconstruyendo modelos de datos, recreando dashboards y rediseñando los pipelines de reporting, integrando fuentes de CRM y datos operativos. Resultado: mejora de la calidad de datos y aproximadamente $20,000 de ahorro anual en licencias e infraestructura. Más allá del aspecto técnico, impulsé la adopción de una cultura basada en datos documentando métricas clave, alineando definiciones entre áreas y posicionando al equipo de BI como referente central de datos y analítica.',
+    'exp1.b1': 'Lideré la migración completa de <strong>Qlik Sense a Power BI</strong>, reconstruyendo modelos de datos, recreando dashboards y rediseñando los pipelines de reporting en toda la organización',
+    'exp1.b2': 'Integré <strong>fuentes de CRM y datos operativos</strong>, mejorando la calidad de los datos y reduciendo costos de licencias e infraestructura en aproximadamente <strong>$20K anuales</strong>',
+    'exp1.b3': 'Impulsé la <strong>adopción de una cultura basada en datos</strong> documentando métricas clave, alineando definiciones entre áreas y posicionando al equipo de BI como referente central de analítica',
 
     'exp2.title': 'Analista Senior de Prevención de Fraude',
     'exp2.company': 'Mercado Libre',
     'exp2.dates': 'Julio 2024 – Junio 2025',
     'exp2.badge1': '$310K+ prevenidos',
     'exp2.badge2': 'Analítica de Fraude',
-    'exp2.desc': 'Trabajé dentro de la red logística de Mercado Libre analizando datasets de envíos y operaciones para detectar patrones anómalos y señales de fraude. El trabajo contribuyó a detectar y prevenir pérdidas superiores a $310K anuales. Construí modelos analíticos y dashboards de monitoreo para agilizar la mitigación de riesgos, y colaboré con equipos de operaciones, ingeniería y regionales para traducir los hallazgos en acciones alineadas con las restricciones operativas reales.',
+    'exp2.b1': 'Analicé datasets de envíos y operaciones dentro de la <strong>red logística de Mercado Libre</strong> para detectar señales de fraude, patrones anómalos y riesgo operativo',
+    'exp2.b2': 'Construí <strong>modelos analíticos y dashboards de monitoreo</strong> que contribuyeron a detectar y prevenir más de <strong>$310K en pérdidas anuales</strong>',
+    'exp2.b3': 'Colaboré con equipos de operaciones, ingeniería y regionales para traducir hallazgos en <strong>acciones concretas de mitigación de riesgo</strong> alineadas con las restricciones operativas reales',
 
     'exp3.title': 'Analista BI Senior',
     'exp3.company': 'Montecable',
     'exp3.dates': 'Enero 2021 – Julio 2024',
     'exp3.badge1': '13% reducción de churn',
     'exp3.badge2': '$113K de ingresos extra',
-    'exp3.b1': 'Diseñé y mantuve dashboards ejecutivos y operativos para el seguimiento del comportamiento de clientes, KPIs comerciales y métricas de negocio',
-    'exp3.b2': 'Desarrollé modelos de predicción de churn y conversión en Python y R usando técnicas de machine learning, traduciendo los resultados en estrategias de retención focalizadas',
-    'exp3.b3': 'Colaboré con los equipos comerciales y de marketing para convertir hallazgos analíticos en campañas e iniciativas concretas, logrando una reducción del 13% en churn anual y un incremento estimado de $113K en ingresos',
+    'exp3.b1': 'Diseñé y mantuve dashboards para el <strong>seguimiento del comportamiento de clientes</strong>, monitoreo de KPIs comerciales y reporting de desempeño de negocio a nivel ejecutivo y operativo',
+    'exp3.b2': 'Desarrollé <strong>modelos de predicción de churn y conversión</strong> en Python y R con técnicas de machine learning, traduciendo los resultados en estrategias de retención focalizadas',
+    'exp3.b3': 'Colaboré con equipos comerciales y de marketing para convertir hallazgos en campañas, logrando una reducción del <strong>13%</strong> en churn anual y un incremento estimado de <strong>$113K en ingresos</strong>',
 
     'exp4.title': 'Analista de Datos',
     'exp4.company': 'Tata Consultancy Services',
@@ -160,6 +180,20 @@ const translations = {
     'exp5.b2': 'Redacté análisis comparativos de obligaciones de pensiones y métricas de workforce entre empresas y sectores',
     'exp5.b3': 'Contribuí a informes internos utilizados por consultores senior en compromisos con clientes en América Latina',
 
+    'proj1.title': 'Predicción de Churn de Clientes',
+    'proj1.context': 'Telecom · Montecable',
+    'proj1.desc': 'Pipeline end-to-end de predicción de churn para una base de más de 100K abonados. Combina <strong>modelos de clasificación ML</strong> (regresión logística, gradient boosting) con un dashboard en Power BI que identifica segmentos en riesgo para el equipo de retención.',
+
+    'proj2.title': 'Detección de Fraude Logístico',
+    'proj2.context': 'E-commerce · Mercado Libre',
+    'proj2.desc': '<strong>Sistema de detección de anomalías</strong> construido sobre datos de envíos y operaciones para identificar patrones de fraude en una red logística a gran escala. Contribuyó a prevenir más de $310K en pérdidas anuales.',
+
+    'proj3.title': 'Playbook de Migración BI',
+    'proj3.context': 'Telecom · Montecable',
+    'proj3.desc': 'Documentación y arquitectura para la migración del ecosistema BI de Qlik Sense a Power BI, incluyendo <strong>rediseño de modelos de datos</strong>, patrones DAX y un diccionario de métricas para toda la organización.',
+
+    'projects.note': 'Proyectos basados en trabajo profesional real. Código y documentación completa disponibles bajo solicitud.',
+
     'edu.institution': 'Universidad Católica del Uruguay',
     'edu.degree': 'Licenciatura en Economía',
     'edu.location': 'Montevideo, Uruguay',
@@ -174,9 +208,7 @@ const translations = {
     'skills.m1': 'Modelado Predictivo y Machine Learning (Churn, Detección de Fraude)',
     'skills.m2': 'Diseño de KPIs y Arquitectura de Dashboards',
     'skills.m3': 'Diseño de Pipelines de Datos y Migración de BI',
-    'skills.method2.title': 'Metodologías',
     'skills.m4': 'Agile & Six Sigma',
-
     'skills.lang.title': 'Idiomas',
     'skills.lang.1': 'Español — Nativo',
     'skills.lang.2': 'Inglés — C1 · Certificado Cambridge',
@@ -208,9 +240,9 @@ const translations = {
     'nav.name': 'Santiago Martinez',
     'nav.about': '自己紹介',
     'nav.experience': '職務経歴',
+    'nav.projects': 'プロジェクト',
     'nav.education': '学歴',
     'nav.skills': 'スキル',
-    'nav.interests': '趣味・関心',
     'nav.certifications': '資格・実績',
 
     'about.subtitle': 'データアナリスト · 東京',
@@ -219,9 +251,9 @@ const translations = {
     'about.bio2': '現在は東京を拠点に、MontecableのリードBIアナリストとして活動しています。テクノロジーとビジネス戦略の接点で、チームが明確に判断し、自信を持って行動できるよう支援しています。具体的な数字と成果は、下の職務経歴セクションをご覧ください。',
 
     'section.experience': '職務経歴',
+    'section.projects': 'プロジェクト',
     'section.education': '学歴',
     'section.skills': 'スキル',
-    'section.interests': '趣味・関心',
     'section.certifications': '資格・実績',
 
     'exp1.title': 'リードBIアナリスト',
@@ -229,23 +261,27 @@ const translations = {
     'exp1.dates': '2025年7月 – 現在',
     'exp1.badge1': '$20K削減',
     'exp1.badge2': 'BI移行',
-    'exp1.desc': 'Qlik SenseからPower BIへのBIエコシステムの完全移行を主導しました。データモデルの再構築、ダッシュボードの再作成、CRMおよびオペレーションデータソースを統合したレポートパイプラインの再設計を実施。データ品質を向上させながら、年間約$20,000のライセンス・インフラコスト削減を実現しました。技術的な移行にとどまらず、主要メトリクスの文書化、部門間の定義統一を通じてデータドリブン文化の浸透を推進し、BIチームを組織のデータ・分析における中心的な参照点として確立しました。',
+    'exp1.b1': '<strong>Qlik SenseからPower BI</strong>へのBIエコシステムの完全移行を主導し、データモデルの再構築、ダッシュボードの再作成、レポートパイプラインの再設計を実施',
+    'exp1.b2': '<strong>CRMおよびオペレーションデータソース</strong>を統合し、データ品質を向上させながらライセンス・インフラコストを年間約<strong>$20K削減</strong>',
+    'exp1.b3': '主要メトリクスの文書化・部門間定義統一を通じて<strong>データドリブン文化</strong>の浸透を推進し、BIチームを分析の中心的参照点として確立',
 
     'exp2.title': '不正防止シニアアナリスト',
     'exp2.company': 'Mercado Libre',
     'exp2.dates': '2024年7月 – 2025年6月',
     'exp2.badge1': '$310K+防止',
     'exp2.badge2': '不正解析',
-    'exp2.desc': 'Mercado Libreの物流ネットワーク内で、配送・業務データセットを分析し、異常なパターンや不正シグナル、業務リスクを特定しました。この取り組みにより、年間$310K超の損失の検知・防止に貢献しました。疑わしい活動を検出するための分析モデルとモニタリングダッシュボードを構築し、オペレーション・エンジニアリング・各地域チームと連携して、分析結果を実際の業務制約に沿った具体的なアクションに落とし込みました。',
+    'exp2.b1': '<strong>Mercado Libreの物流ネットワーク</strong>内で配送・業務データセットを分析し、不正シグナル、異常パターン、業務リスクを特定',
+    'exp2.b2': '<strong>分析モデルとモニタリングダッシュボード</strong>を構築し、年間<strong>$310K超の損失</strong>の検知・防止に貢献',
+    'exp2.b3': 'オペレーション・エンジニアリング・地域チームと連携し、分析結果を実際の業務制約に沿った<strong>具体的なリスク軽減策</strong>に転換',
 
     'exp3.title': 'シニアBIアナリスト',
     'exp3.company': 'Montecable',
     'exp3.dates': '2021年1月 – 2024年7月',
     'exp3.badge1': '解約率13%削減',
     'exp3.badge2': '$113K増収',
-    'exp3.b1': '顧客行動・商業KPI・業績指標を可視化する経営・業務ダッシュボードを設計・維持管理',
-    'exp3.b2': 'PythonおよびRを用いた機械学習手法による解約予測・コンバージョンモデルを開発し、リテンション戦略に転換',
-    'exp3.b3': '商業・マーケティングチームと連携し分析結果を施策に落とし込み、年間解約率13%削減・$113K増収を達成',
+    'exp3.b1': '<strong>顧客行動追跡</strong>・商業KPIモニタリング・業績レポーティングのための経営・業務ダッシュボードを設計・維持管理',
+    'exp3.b2': 'PythonおよびRを用いた機械学習手法で<strong>解約予測・コンバージョンモデル</strong>を開発し、ターゲティング型リテンション戦略に転換',
+    'exp3.b3': '商業・マーケティングチームと連携し施策に落とし込み、年間解約率<strong>13%削減</strong>・<strong>$113K増収</strong>を達成',
 
     'exp4.title': 'データアナリスト',
     'exp4.company': 'タタ・コンサルタンシー・サービシズ',
@@ -261,6 +297,20 @@ const translations = {
     'exp5.b2': '企業・業界をまたいだ年金債務・人材指標の比較分析を実施',
     'exp5.b3': 'ラテンアメリカ全域のクライアント向け案件で上級コンサルタントが活用する社内レポート作成に貢献',
 
+    'proj1.title': '顧客解約予測モデル',
+    'proj1.context': '通信 · Montecable',
+    'proj1.desc': '100K以上の契約者ベースを対象とした解約予測パイプライン。<strong>MLによる分類モデル</strong>（ロジスティック回帰・勾配ブースティング）とPower BIダッシュボードを組み合わせ、リテンションチームにリスクセグメントを提供。',
+
+    'proj2.title': '物流不正検知システム',
+    'proj2.context': 'EC · Mercado Libre',
+    'proj2.desc': '大規模物流ネットワークの配送・業務データを基にした<strong>異常検知システム</strong>。不正パターンを特定し、年間$310K超の損失防止に貢献。',
+
+    'proj3.title': 'BIプラットフォーム移行プレイブック',
+    'proj3.context': '通信 · Montecable',
+    'proj3.desc': 'Qlik SenseからPower BIへのBIエコシステム移行のための設計・文書化。<strong>データモデル再設計</strong>、DAXパターン、組織全体のメトリクス辞書を含む。',
+
+    'projects.note': 'プロジェクトは実際の業務に基づいています。コードや詳細なドキュメントはご要望に応じて提供可能です。',
+
     'edu.institution': 'ウルグアイ・カトリック大学',
     'edu.degree': '経済学士',
     'edu.location': 'ウルグアイ・モンテビデオ',
@@ -275,9 +325,7 @@ const translations = {
     'skills.m1': '予測モデリング・機械学習（解約予測、不正検知）',
     'skills.m2': 'KPI設計・ダッシュボードアーキテクチャ',
     'skills.m3': 'データパイプライン設計・BI移行',
-    'skills.method2.title': '方法論',
     'skills.m4': 'アジャイル & シックスシグマ',
-
     'skills.lang.title': '語学',
     'skills.lang.1': 'スペイン語 — ネイティブ',
     'skills.lang.2': '英語 — C1 · ケンブリッジ認定',
@@ -313,7 +361,7 @@ function setLang(lang) {
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.getAttribute('data-key');
     if (t[key] !== undefined) {
-      el.textContent = t[key];
+      el.innerHTML = t[key];
     }
   });
 

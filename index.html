@@ -632,6 +632,99 @@
         }
 
         /* ═══════════════════════════════════════════
+           PROJECTS
+        ═══════════════════════════════════════════ */
+        .projects-note {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 1.75rem;
+            font-style: italic;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.1rem;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.35rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 4px 22px rgba(0,0,0,0.07);
+            transform: translateY(-1px);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .project-title {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text);
+            margin: 0;
+        }
+
+        .project-gh {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: color 0.15s;
+            flex-shrink: 0;
+            padding-top: 0.05rem;
+        }
+
+        .project-gh:hover { color: var(--teal); }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .project-tag {
+            background: var(--teal-dim);
+            border: 1px solid var(--teal-border);
+            border-radius: 5px;
+            padding: 1px 8px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--teal);
+            letter-spacing: 0.03em;
+        }
+
+        .project-desc {
+            font-size: 0.84rem;
+            color: #4b5563;
+            line-height: 1.72;
+            margin: 0;
+            flex: 1;
+        }
+
+        .project-context {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-top: 1px solid var(--border);
+            padding-top: 0.6rem;
+            margin-top: 0.1rem;
+        }
+
+        /* ═══════════════════════════════════════════
            FOOTER
         ═══════════════════════════════════════════ */
         footer {
@@ -657,6 +750,7 @@
             <a href="#experience"      class="js-scroll-trigger" data-key="nav.experience">Experience</a>
             <a href="#education"       class="js-scroll-trigger" data-key="nav.education">Education</a>
             <a href="#skills"          class="js-scroll-trigger" data-key="nav.skills">Skills</a>
+            <a href="#projects"        class="js-scroll-trigger" data-key="nav.projects">Projects</a>
             <a href="#certifications"  class="js-scroll-trigger" data-key="nav.certifications">Certifications</a>
         </div>
 
@@ -683,6 +777,7 @@
         <a href="#experience"     class="js-scroll-trigger" data-key="nav.experience"     onclick="document.getElementById('mobileMenu').classList.remove('open')">Experience</a>
         <a href="#education"      class="js-scroll-trigger" data-key="nav.education"      onclick="document.getElementById('mobileMenu').classList.remove('open')">Education</a>
         <a href="#skills"         class="js-scroll-trigger" data-key="nav.skills"         onclick="document.getElementById('mobileMenu').classList.remove('open')">Skills</a>
+        <a href="#projects"      class="js-scroll-trigger" data-key="nav.projects"      onclick="document.getElementById('mobileMenu').classList.remove('open')">Projects</a>
         <a href="#certifications" class="js-scroll-trigger" data-key="nav.certifications" onclick="document.getElementById('mobileMenu').classList.remove('open')">Certifications</a>
     </div>
 
@@ -734,7 +829,11 @@
                         <span class="exp-badge" data-key="exp1.badge1">$20K saved</span>
                         <span class="exp-badge" data-key="exp1.badge2">BI Migration</span>
                     </div>
-                    <p class="exp-desc" data-key="exp1.desc">Led the full migration of the BI ecosystem from Qlik Sense to Power BI, rebuilding data models, recreating dashboards, and redesigning reporting pipelines while integrating CRM and operational data sources. The result: improved data quality and approximately $20,000 in annual savings on licensing and infrastructure. Beyond the technical migration, drove the adoption of a more data-driven culture by documenting key metrics, aligning definitions across departments, and positioning the BI team as the company's central reference point for data and analytics.</p>
+                    <ul class="exp-bullets">
+                        <li><span data-key="exp1.b1">Led the full migration from Qlik Sense to Power BI, rebuilding data models, recreating dashboards and redesigning reporting pipelines across the organization</span></li>
+                        <li><span data-key="exp1.b2">Integrated CRM and operational data sources, improving data quality and reducing licensing and infrastructure costs by approximately $20K annually</span></li>
+                        <li><span data-key="exp1.b3">Drove data-driven culture adoption by documenting key metrics, aligning definitions across departments and positioning the BI team as the central analytics reference</span></li>
+                    </ul>
                 </div>
 
                 <div class="exp-card">
@@ -752,7 +851,11 @@
                         <span class="exp-badge" data-key="exp2.badge1">$310K+ prevented</span>
                         <span class="exp-badge" data-key="exp2.badge2">Fraud Analytics</span>
                     </div>
-                    <p class="exp-desc" data-key="exp2.desc">Worked inside Mercado Libre's logistics network analyzing shipping and operational datasets to surface anomalous patterns and fraud signals. The work contributed to detecting and preventing losses exceeding $310K annually. Built analytical models and monitoring dashboards to support faster risk mitigation, and collaborated with operations, engineering, and regional teams to translate findings into actions that reflected real operational constraints, not just theoretical models.</p>
+                    <ul class="exp-bullets">
+                        <li><span data-key="exp2.b1">Analyzed shipping and operational datasets within Mercado Libre's logistics network to surface fraud signals, anomalous patterns and operational risk</span></li>
+                        <li><span data-key="exp2.b2">Built analytical models and monitoring dashboards that contributed to detecting and preventing over $310K in annual losses</span></li>
+                        <li><span data-key="exp2.b3">Collaborated with operations, engineering and regional teams to translate analytical findings into concrete risk mitigation actions aligned with real operational constraints</span></li>
+                    </ul>
                 </div>
 
                 <div class="exp-card">
@@ -868,6 +971,63 @@
                         <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.lang.2">English — C1 · Cambridge Certified</span></div>
                         <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.lang.3">Japanese — Conversational</span></div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════ PROJECTS ══════════════ -->
+    <section id="projects" class="s-wrap alt">
+        <div class="s-inner">
+            <h2 class="s-title" data-key="section.projects">Projects</h2>
+            <p class="projects-note" data-key="projects.note">Projects are based on real professional work. Code and full documentation available on request.</p>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-key="proj1.title">Customer Churn Prediction</h3>
+                        <a class="project-gh" href="https://github.com/santimuru" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">scikit-learn</span>
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">SQL</span>
+                    </div>
+                    <p class="project-desc" data-key="proj1.desc">End-to-end churn prediction pipeline for a 100K+ subscriber base. Combines ML classification models (logistic regression, gradient boosting) with a Power BI dashboard that surfaces at-risk segments for the retention team.</p>
+                    <span class="project-context" data-key="proj1.context">Telecom · Montecable</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-key="proj2.title">Logistics Fraud Detection</h3>
+                        <a class="project-gh" href="https://github.com/santimuru" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQL</span>
+                        <span class="project-tag">BigQuery</span>
+                        <span class="project-tag">Looker Studio</span>
+                    </div>
+                    <p class="project-desc" data-key="proj2.desc">Anomaly detection system built on shipment and operational data to identify fraud patterns across a large-scale logistics network. Contributed to over $310K in prevented annual losses.</p>
+                    <span class="project-context" data-key="proj2.context">E-commerce · Mercado Libre</span>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title" data-key="proj3.title">BI Platform Migration Playbook</h3>
+                        <a class="project-gh" href="https://github.com/santimuru" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Power BI</span>
+                        <span class="project-tag">DAX</span>
+                        <span class="project-tag">M / Power Query</span>
+                        <span class="project-tag">ETL</span>
+                    </div>
+                    <p class="project-desc" data-key="proj3.desc">Documentation and architecture for migrating an enterprise BI ecosystem from Qlik Sense to Power BI, including data model redesign, DAX patterns, and a department-wide metrics dictionary.</p>
+                    <span class="project-context" data-key="proj3.context">Telecom · Montecable</span>
                 </div>
 
             </div>
