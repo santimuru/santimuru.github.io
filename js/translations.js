@@ -15,6 +15,7 @@ const translations = {
     'about.cv.download': 'Download CV',
     'connect.title': "Let's Connect",
     'connect.sub': 'Find me on LinkedIn for work, collaborations or just to say hi',
+    'connect.button': 'View Profile',
     'about.bio1': "Economist by training, data professional by practice. Over the past 6+ years, across telecom, e-commerce and consulting, I've built analytics infrastructure that turns raw data into real decisions: dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.",
     'about.bio2': 'Currently based in Tokyo, working as Lead BI Analyst at Montecable. I work at the intersection of technology and business strategy, helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.',
 
@@ -144,6 +145,7 @@ const translations = {
     'about.cv.download': 'Descargar CV',
     'connect.title': 'Conectemos',
     'connect.sub': 'Encontrame en LinkedIn para trabajo, colaboraciones o simplemente para saludar',
+    'connect.button': 'Ver Perfil',
     'about.bio1': 'Economista de formación y profesional de datos en la práctica. Durante más de 6 años, trabajando en telecomunicaciones, e-commerce y consultoría, he construido la infraestructura analítica que convierte datos en decisiones reales: dashboards que realmente se usan, modelos predictivos que guían la estrategia, y pipelines que mantienen todo en movimiento.',
     'about.bio2': 'Actualmente en Tokio como Analista BI Líder en Montecable. Trabajo en la intersección entre tecnología y estrategia de negocio, ayudando a los equipos a ver con claridad y actuar con confianza. Los números y resultados están en la sección Experiencia más abajo.',
 
@@ -273,6 +275,7 @@ const translations = {
     'about.cv.download': '職務経歴書をダウンロード',
     'connect.title': 'お気軽にご連絡ください',
     'connect.sub': 'お仕事・コラボレーション・ご挨拶など、LinkedInでお待ちしています',
+    'connect.button': 'プロフィールを見る',
     'about.bio1': '経済学を学び、データの専門家として実践を積んできました。この6年以上、通信・EC・コンサルティングの各分野にわたり、生のデータを実際の意思決定につなげる分析基盤を構築してきました。実際に使われるダッシュボード、戦略を支える予測モデル、業務を動かし続けるデータパイプラインがその成果です。',
     'about.bio2': '現在は東京を拠点に、MontecableのリードBIアナリストとして活動しています。テクノロジーとビジネス戦略の接点で、チームが明確に判断し、自信を持って行動できるよう支援しています。具体的な数字と成果は、下の職務経歴セクションをご覧ください。',
 

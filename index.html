@@ -217,7 +217,7 @@
             margin: 0 auto;
             padding: 0 2rem;
             display: grid;
-            grid-template-columns: 1fr 200px;
+            grid-template-columns: 1fr 270px;
             gap: 4rem;
             align-items: center;
         }
@@ -305,13 +305,17 @@
         .hero-dl-btn:hover { background: #125f68; color: #fff; }
 
         .hero-photo-wrap img {
-            width: 160px; height: 160px;
+            width: 250px; height: 250px;
             border-radius: 50%;
             object-fit: cover;
             object-position: center 20%;
-            border: 3px solid var(--teal);
-            box-shadow: 0 0 50px rgba(23,126,137,0.28);
+            border: 4px solid var(--teal);
+            box-shadow: 0 0 60px rgba(23,126,137,0.32);
             display: block;
+        }
+
+        @media (max-width: 680px) {
+            .hero-photo-wrap img { width: 180px; height: 180px; }
         }
 
         /* ═══════════════════════════════════════════
@@ -725,17 +729,17 @@
         }
 
         /* ═══════════════════════════════════════════
-           CONNECT (LinkedIn badge)
+           CONNECT (LinkedIn-style card)
         ═══════════════════════════════════════════ */
         #connect {
             background: var(--alt-bg);
-            padding: 3rem 2rem;
+            padding: 4rem 2rem;
             text-align: center;
             border-top: 1px solid var(--border);
         }
         #connect .connect-title {
             font-family: 'Saira Extra Condensed', sans-serif;
-            font-size: 1.6rem;
+            font-size: 1.9rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.06em;
@@ -743,13 +747,74 @@
             margin-bottom: 0.3rem;
         }
         #connect .connect-sub {
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             color: #666;
-            margin-bottom: 1.4rem;
+            margin-bottom: 1.8rem;
         }
-        #connect .badge-base {
+        .li-card {
             display: inline-block;
+            width: 280px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 0 0 1.2rem;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            font-family: 'Nunito', sans-serif;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
         }
+        .li-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+        }
+        .li-card-banner {
+            height: 58px;
+            background: linear-gradient(135deg, #0a66c2 0%, #177e89 100%);
+        }
+        .li-card-photo {
+            width: 96px; height: 96px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            object-position: center 20%;
+            margin: -48px auto 0.6rem;
+            display: block;
+            background: #fff;
+        }
+        .li-card-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 0.15rem;
+        }
+        .li-card-title {
+            font-size: 0.78rem;
+            color: #555;
+            padding: 0 1rem;
+            line-height: 1.4;
+            margin: 0 0 0.25rem;
+        }
+        .li-card-location {
+            font-size: 0.72rem;
+            color: #888;
+            margin: 0 0 0.9rem;
+        }
+        .li-card-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            background: #0a66c2;
+            color: #fff;
+            border-radius: 20px;
+            padding: 7px 18px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.15s;
+        }
+        .li-card-btn:hover { background: #084a8f; color: #fff; }
+        .li-card-btn i { font-size: 0.9rem; }
 
         /* ═══════════════════════════════════════════
            FOOTER
@@ -1208,8 +1273,16 @@
     <section id="connect">
         <div class="connect-title" data-key="connect.title">Let's Connect</div>
         <p class="connect-sub" data-key="connect.sub">Find me on LinkedIn for work, collaborations or just to say hi</p>
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="santiago-martinez-4241a3165" data-version="v1">
-            <a class="badge-base__link LI-simple-link" href="https://jp.linkedin.com/in/santiago-martinez-4241a3165?trk=profile-badge">Santiago Martinez</a>
+        <div class="li-card">
+            <div class="li-card-banner"></div>
+            <img class="li-card-photo" src="assets/img/profile.jpg" alt="Santiago Martinez">
+            <p class="li-card-name">Santiago Martinez</p>
+            <p class="li-card-title" data-key="about.subtitle">Data Analyst · Tokyo, Japan</p>
+            <p class="li-card-location">Montecable · Lead BI Analyst</p>
+            <a class="li-card-btn" href="https://www.linkedin.com/in/santiago-martinez-pezzatti-4241a3165/" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+                <span data-key="connect.button">View Profile</span>
+            </a>
         </div>
     </section>
 
@@ -1219,7 +1292,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     <script src="js/translations.js"></script>
     <script src="js/scripts.js"></script>
 </body>
