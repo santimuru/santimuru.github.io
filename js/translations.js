@@ -68,6 +68,11 @@ const translations = {
     'proj4.demo': 'Live Demo',
     'proj4.desc': 'End-to-end ML pipeline that trains and compares <strong>3 classification models</strong> (Logistic Regression, Random Forest, Gradient Boosting) on the IBM Telco dataset. Features an interactive Streamlit dashboard with model metrics, feature importance, a customer risk simulator, and churn segmentation. Best model achieves <strong>~81% accuracy and 0.85 AUC-ROC</strong>. Applied similar techniques in production at Montecable, achieving a <strong>13% churn reduction</strong>.',
 
+    'proj5.title': 'Customer Lifetime Value Prediction',
+    'proj5.context': 'Open Source · UCI Online Retail Dataset',
+    'proj5.demo': 'Live Demo',
+    'proj5.desc': 'End-to-end CLV prediction using <strong>BG/NBD + Gamma-Gamma</strong> probabilistic models on the UCI Online Retail dataset. Dashboard includes RFM segmentation, cohort retention heatmap, 6/12-month CLV forecasts, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers — top 20% of customers represent <strong>65%+ of total CLV</strong>.',
+
     'proj1.title': 'Customer Churn Prediction',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'End-to-end churn prediction pipeline for a 100K+ subscriber base. Combines <strong>ML classification models</strong> (logistic regression, gradient boosting) with a Power BI dashboard that surfaces at-risk segments for the retention team.',
@@ -190,6 +195,11 @@ const translations = {
     'proj4.demo': 'Demo en vivo',
     'proj4.desc': 'Pipeline ML end-to-end que entrena y compara <strong>3 modelos de clasificación</strong> (Regresión Logística, Random Forest, Gradient Boosting) sobre el dataset IBM Telco. Incluye un dashboard interactivo en Streamlit con métricas de modelos, importancia de variables, simulador de riesgo de cliente y segmentación de churn. El mejor modelo alcanza <strong>~81% de accuracy y 0.85 AUC-ROC</strong>. Técnicas similares fueron aplicadas en producción en Montecable, logrando una <strong>reducción del 13% en el churn</strong>.',
 
+    'proj5.title': 'Predicción de Valor de Vida del Cliente',
+    'proj5.context': 'Open Source · UCI Online Retail Dataset',
+    'proj5.demo': 'Demo en vivo',
+    'proj5.desc': 'Pipeline end-to-end de predicción de CLV usando modelos probabilísticos <strong>BG/NBD + Gamma-Gamma</strong> sobre el dataset UCI Online Retail. El dashboard incluye segmentación RFM, mapa de calor de retención por cohortes, proyecciones de CLV a 6 y 12 meses, y un simulador de clientes. Proyecta <strong>£8M+ en CLV a 12 meses</strong> para 2.790 clientes — el 20% superior representa <strong>más del 65% del CLV total</strong>.',
+
     'proj1.title': 'Predicción de Churn de Clientes',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'Pipeline end-to-end de predicción de churn para una base de más de 100K abonados. Combina <strong>modelos de clasificación ML</strong> (regresión logística, gradient boosting) con un dashboard en Power BI que identifica segmentos en riesgo para el equipo de retención.',
@@ -311,6 +321,11 @@ const translations = {
     'proj4.context': 'オープンソース · IBM Telco データセット',
     'proj4.demo': 'ライブデモ',
     'proj4.desc': 'IBM Telcoデータセットを使用して<strong>3つの分類モデル</strong>（ロジスティック回帰・ランダムフォレスト・勾配ブースティング）を学習・比較するML パイプライン。モデル評価指標・特徴量の重要度・顧客リスクシミュレーター・解約セグメント分析を備えたインタラクティブなStreamlitダッシュボードを搭載。最良モデルは<strong>精度約81%・AUC-ROC 0.85</strong>を達成。同様の手法をMontecableの本番環境に適用し、<strong>解約率13%削減</strong>を実現。',
+
+    'proj5.title': '顧客生涯価値予測',
+    'proj5.context': 'オープンソース · UCI Online Retail データセット',
+    'proj5.demo': 'ライブデモ',
+    'proj5.desc': 'UCI Online RetailデータセットにおいてBG/NBD + Gamma-Gamma確率モデルを用いたCLV予測パイプライン。RFMセグメンテーション・コホート別リテンションヒートマップ・6/12ヶ月CLV予測・顧客シミュレーターを搭載したダッシュボード。2,790顧客の<strong>12ヶ月CLV合計£8M超</strong>を予測 — 上位20%の顧客が<strong>CLV全体の65%以上</strong>を占める。',
 
     'proj1.title': '顧客解約予測モデル',
     'proj1.context': '通信 · Montecable',
