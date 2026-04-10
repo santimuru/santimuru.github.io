@@ -414,6 +414,55 @@
             margin: 0;
         }
 
+        .exp-industry {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            background: var(--alt-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1px 7px;
+            margin-left: 0.55rem;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+        }
+
+        .exp-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.45rem;
+        }
+
+        .exp-bullets li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.55rem;
+            font-size: 0.84rem;
+            color: #4b5563;
+            line-height: 1.65;
+        }
+
+        .exp-bullets li::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--teal);
+            flex-shrink: 0;
+            margin-top: 0.45rem;
+        }
+
+        .exp-card.muted .exp-bullets li::before {
+            background: #d1d5db;
+        }
+
         /* ═══════════════════════════════════════════
            EDUCATION
         ═══════════════════════════════════════════ */
@@ -645,7 +694,7 @@
         <div class="hero-grid">
             <div>
                 <h1 class="hero-name">Santiago <span class="accent">Martinez</span></h1>
-                <p class="hero-subtitle" data-key="about.subtitle">Lead Business Intelligence Analyst · Tokyo, Japan</p>
+                <p class="hero-subtitle" data-key="about.subtitle">Data Analyst · Tokyo, Japan</p>
                 <p class="hero-bio" data-key="about.bio1">Economist by training, data professional by practice. Over the past 6+ years, across telecom, e-commerce and consulting, I've built analytics infrastructure that turns raw data into real decisions: dashboards people actually use, predictive models that drive strategy, and data pipelines that keep things moving.</p>
                 <p class="hero-bio" data-key="about.bio2">Currently based in Tokyo, working as Lead BI Analyst at Montecable. I work at the intersection of technology and business strategy, helping teams see clearly and act with confidence. The numbers and outcomes are in the Experience section below.</p>
                 <div class="hero-actions">
@@ -675,8 +724,11 @@
                 <div class="exp-card">
                     <div class="exp-row">
                         <div>
-                            <div class="exp-title"   data-key="exp1.title">Lead Business Intelligence Analyst</div>
-                            <div class="exp-company" data-key="exp1.company">Montecable</div>
+                            <div class="exp-title" data-key="exp1.title">Lead Business Intelligence Analyst</div>
+                            <div class="exp-company">
+                                <span data-key="exp1.company">Montecable</span>
+                                <span class="exp-industry">Telecom</span>
+                            </div>
                         </div>
                         <span class="exp-dates" data-key="exp1.dates">July 2025 – Present</span>
                     </div>
@@ -690,8 +742,11 @@
                 <div class="exp-card">
                     <div class="exp-row">
                         <div>
-                            <div class="exp-title"   data-key="exp2.title">Fraud Prevention Senior Analyst</div>
-                            <div class="exp-company" data-key="exp2.company">Mercado Libre</div>
+                            <div class="exp-title" data-key="exp2.title">Fraud Prevention Senior Analyst</div>
+                            <div class="exp-company">
+                                <span data-key="exp2.company">Mercado Libre</span>
+                                <span class="exp-industry">E-commerce</span>
+                            </div>
                         </div>
                         <span class="exp-dates" data-key="exp2.dates">July 2024 – June 2025</span>
                     </div>
@@ -705,8 +760,11 @@
                 <div class="exp-card">
                     <div class="exp-row">
                         <div>
-                            <div class="exp-title"   data-key="exp3.title">Senior Business Intelligence Analyst</div>
-                            <div class="exp-company" data-key="exp3.company">Montecable</div>
+                            <div class="exp-title" data-key="exp3.title">Senior Business Intelligence Analyst</div>
+                            <div class="exp-company">
+                                <span data-key="exp3.company">Montecable</span>
+                                <span class="exp-industry">Telecom</span>
+                            </div>
                         </div>
                         <span class="exp-dates" data-key="exp3.dates">January 2021 – July 2024</span>
                     </div>
@@ -714,29 +772,47 @@
                         <span class="exp-badge" data-key="exp3.badge1">13% churn reduction</span>
                         <span class="exp-badge" data-key="exp3.badge2">$113K revenue uplift</span>
                     </div>
-                    <p class="exp-desc" data-key="exp3.desc">Designed and maintained executive and operational dashboards that tracked customer behavior, commercial performance, and business KPIs, giving leadership a clearer picture of what was happening and why. Beyond reporting, developed churn prediction and conversion models using statistical and ML techniques, translating analytical findings into targeted retention strategies that reduced annual churn by 13% and generated an estimated $113K increase in annual revenue.</p>
+                    <ul class="exp-bullets">
+                        <li><span data-key="exp3.b1">Designed and maintained executive and operational dashboards for customer behavior tracking, commercial KPI monitoring and business performance reporting</span></li>
+                        <li><span data-key="exp3.b2">Developed churn prediction and conversion models using Python, R and machine learning techniques, translating outputs into targeted retention strategies</span></li>
+                        <li><span data-key="exp3.b3">Worked closely with commercial and marketing teams to turn analytical findings into campaigns and initiatives, reducing annual churn by 13% and generating an estimated $113K in revenue uplift</span></li>
+                    </ul>
                 </div>
 
                 <div class="exp-card muted">
                     <div class="exp-row">
                         <div>
-                            <div class="exp-title"   data-key="exp4.title">Data Analyst</div>
-                            <div class="exp-company" data-key="exp4.company">Tata Consultancy Services</div>
+                            <div class="exp-title" data-key="exp4.title">Data Analyst</div>
+                            <div class="exp-company">
+                                <span data-key="exp4.company">Tata Consultancy Services</span>
+                                <span class="exp-industry">Consulting</span>
+                            </div>
                         </div>
                         <span class="exp-dates" data-key="exp4.dates">October 2019 – January 2021</span>
                     </div>
-                    <p class="exp-desc" data-key="exp4.desc">Analyzed KPI and operational performance data to identify inefficiencies and capacity bottlenecks across teams. Built dashboards and reports that gave operations managers a clearer view of performance and supported data-driven improvements in day-to-day operations.</p>
+                    <ul class="exp-bullets">
+                        <li><span data-key="exp4.b1">Analyzed KPI and operational performance data to identify inefficiencies, capacity bottlenecks and process gaps across client teams</span></li>
+                        <li><span data-key="exp4.b2">Built and maintained dashboards giving operations managers clearer daily and weekly visibility into team performance and workload distribution</span></li>
+                        <li><span data-key="exp4.b3">Worked across multiple client engagements, adapting analytical frameworks and reporting standards to each operational context</span></li>
+                    </ul>
                 </div>
 
                 <div class="exp-card muted">
                     <div class="exp-row">
                         <div>
-                            <div class="exp-title"   data-key="exp5.title">Junior Researcher</div>
-                            <div class="exp-company" data-key="exp5.company">Willis Towers Watson</div>
+                            <div class="exp-title" data-key="exp5.title">Junior Researcher</div>
+                            <div class="exp-company">
+                                <span data-key="exp5.company">Willis Towers Watson</span>
+                                <span class="exp-industry">Consulting</span>
+                            </div>
                         </div>
                         <span class="exp-dates" data-key="exp5.dates">January 2019 – July 2019</span>
                     </div>
-                    <p class="exp-desc" data-key="exp5.desc">Collected and analyzed structured financial and workforce datasets for research-oriented internal reports. Wrote comparative summaries on pension obligations and workforce metrics across companies.</p>
+                    <ul class="exp-bullets">
+                        <li><span data-key="exp5.b1">Collected and structured financial and workforce datasets to support actuarial and advisory research deliverables</span></li>
+                        <li><span data-key="exp5.b2">Produced comparative analyses of pension obligations and workforce metrics across companies and industry sectors</span></li>
+                        <li><span data-key="exp5.b3">Contributed to internal reports used by senior consultants in client-facing engagements across Latin America</span></li>
+                    </ul>
                 </div>
 
             </div>
