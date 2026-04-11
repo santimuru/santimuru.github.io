@@ -76,6 +76,11 @@ const translations = {
     'proj5.demo': 'Live Demo',
     'proj5.desc': 'End-to-end CLV prediction using <strong>BG/NBD + Gamma-Gamma</strong> probabilistic models on the UCI Online Retail dataset. Dashboard includes RFM segmentation, cohort retention heatmap, 6/12-month CLV forecasts, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers — top 20% of customers represent <strong>65%+ of total CLV</strong>.',
 
+    'proj6.title': 'Tokyo Real Estate Explorer',
+    'proj6.context': 'Open Source · Modeled after MLIT Public Statistics',
+    'proj6.demo': 'Live Demo',
+    'proj6.desc': 'Interactive data visualization dashboard for Tokyo\'s <strong>23 Special Wards</strong> real estate market (2020–2024). Features a <strong>Pydeck 3D map</strong> with per-ward pricing, Plotly charts for trends and distributions, ward-level deep dives, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Built on ~50K transactions modeled after MLIT public aggregates — architected to swap into the live <strong>MLIT Real Estate Information Library API</strong>.',
+
     'proj1.title': 'Customer Churn Prediction',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'End-to-end churn prediction pipeline for a 100K+ subscriber base. Combines <strong>ML classification models</strong> (logistic regression, gradient boosting) with a Power BI dashboard that surfaces at-risk segments for the retention team.',
@@ -206,6 +211,11 @@ const translations = {
     'proj5.demo': 'Demo en vivo',
     'proj5.desc': 'Pipeline end-to-end de predicción de CLV usando modelos probabilísticos <strong>BG/NBD + Gamma-Gamma</strong> sobre el dataset UCI Online Retail. El dashboard incluye segmentación RFM, mapa de calor de retención por cohortes, proyecciones de CLV a 6 y 12 meses, y un simulador de clientes. Proyecta <strong>£8M+ en CLV a 12 meses</strong> para 2.790 clientes — el 20% superior representa <strong>más del 65% del CLV total</strong>.',
 
+    'proj6.title': 'Explorador del Mercado Inmobiliario de Tokio',
+    'proj6.context': 'Open Source · Modelado sobre Estadísticas Públicas MLIT',
+    'proj6.demo': 'Demo en vivo',
+    'proj6.desc': 'Dashboard interactivo de visualización de datos del mercado inmobiliario de los <strong>23 distritos especiales de Tokio</strong> (2020–2024). Incluye un <strong>mapa 3D en Pydeck</strong> con precios por ward, gráficos Plotly de tendencias y distribuciones, análisis detallado por distrito, y un <strong>estimador de precios k-NN</strong> con rangos P10/P50/P90. Construido sobre ~50K transacciones modeladas a partir de agregados públicos de MLIT — arquitectura preparada para conectarse al <strong>MLIT Real Estate Information Library API</strong>.',
+
     'proj1.title': 'Predicción de Churn de Clientes',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'Pipeline end-to-end de predicción de churn para una base de más de 100K abonados. Combina <strong>modelos de clasificación ML</strong> (regresión logística, gradient boosting) con un dashboard en Power BI que identifica segmentos en riesgo para el equipo de retención.',
@@ -335,6 +345,11 @@ const translations = {
     'proj5.context': 'オープンソース · UCI Online Retail データセット',
     'proj5.demo': 'ライブデモ',
     'proj5.desc': 'UCI Online RetailデータセットにおいてBG/NBD + Gamma-Gamma確率モデルを用いたCLV予測パイプライン。RFMセグメンテーション・コホート別リテンションヒートマップ・6/12ヶ月CLV予測・顧客シミュレーターを搭載したダッシュボード。2,790顧客の<strong>12ヶ月CLV合計£8M超</strong>を予測 — 上位20%の顧客が<strong>CLV全体の65%以上</strong>を占める。',
+
+    'proj6.title': '東京不動産マーケット エクスプローラー',
+    'proj6.context': 'オープンソース · 国土交通省公開統計に基づくモデル',
+    'proj6.demo': 'ライブデモ',
+    'proj6.desc': '東京<strong>23特別区</strong>の不動産市場（2020〜2024年）をインタラクティブに可視化するダッシュボード。<strong>Pydeckによる3Dマップ</strong>で区別価格を表示し、Plotlyグラフでトレンド・分布を分析、区単位のディープダイブ、<strong>k近傍法による価格推定</strong>（P10/P50/P90）機能を搭載。国土交通省の公開統計に基づきモデル化した<strong>約5万件の取引データ</strong>を使用 — <strong>国土交通省 不動産情報ライブラリAPI</strong>への接続に対応した設計。',
 
     'proj1.title': '顧客解約予測モデル',
     'proj1.context': '通信 · Montecable',
