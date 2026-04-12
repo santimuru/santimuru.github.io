@@ -1093,30 +1093,61 @@
 
                 <div class="project-card">
                     <div class="project-preview">
-                        <img src="assets/img/proj-churn.png" alt="Telecom Churn Prediction Dashboard" loading="lazy">
-                        <a class="project-preview-link" href="https://telecom-churn-prediction-santimuru.streamlit.app" target="_blank">
+                        <img src="assets/img/proj-churn.png" alt="Telecom Churn Survival Analysis Dashboard" loading="lazy">
+                        <a class="project-preview-link" href="https://telecom-churn-survival-santiagomuru.streamlit.app/" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
                     </div>
                     <div class="project-header">
-                        <p class="project-title" data-key="proj4.title">Telecom Customer Churn Prediction</p>
-                        <a class="project-gh" href="https://github.com/santimuru/telecom-churn-prediction" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <p class="project-title" data-key="proj4.title">Telecom Customer Churn · Survival Analysis</p>
+                        <a class="project-gh" href="https://github.com/santimuru/telecom-churn-survival" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
-                        <span class="project-tag">Machine Learning</span>
-                        <span class="project-tag">Scikit-learn</span>
+                        <span class="project-tag">Survival Analysis</span>
+                        <span class="project-tag">XGBoost</span>
+                        <span class="project-tag">SHAP</span>
                         <span class="project-tag">Streamlit</span>
                         <span class="project-tag">Plotly</span>
                     </div>
-                    <p class="project-desc" data-key="proj4.desc">End-to-end ML pipeline that trains and compares <strong>3 classification models</strong> (Logistic Regression, Random Forest, Gradient Boosting) on the IBM Telco dataset. Features an interactive Streamlit dashboard with model metrics, feature importance, a customer risk simulator, and churn segmentation. Best model achieves <strong>~81% accuracy and 0.85 AUC-ROC</strong>. Applied similar techniques in production at Montecable, achieving a <strong>13% churn reduction</strong>.</p>
+                    <p class="project-desc" data-key="proj4.desc">End-to-end churn analysis combining <strong>Kaplan-Meier + Cox Proportional Hazards</strong> survival models with an <strong>XGBoost classifier (AUC 0.842)</strong>. Features 6 interactive sections: survival curves by segment, hazard ratio forest plot, SHAP beeswarm, individual customer waterfall explanations, a churn simulator, and a revenue impact calculator. Applied similar techniques in production at Montecable, achieving a <strong>13% churn reduction</strong>.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
-                        <a href="https://telecom-churn-prediction-santimuru.streamlit.app" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
+                        <a href="https://telecom-churn-survival-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
                             <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
                             <span data-key="proj4.demo">Live Demo</span>
                         </a>
                     </div>
-                    <p class="project-context" data-key="proj4.context">Open Source · IBM Telco Dataset</p>
+                    <p class="project-context" data-key="proj4.context">Open Source · IBM Telco Dataset · lifelines</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="assets/img/proj-nlp.png" alt="Customer Review Intelligence Dashboard" loading="lazy">
+                        <a class="project-preview-link" href="https://customer-review-intelligence-santiagomuru.streamlit.app/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                    <div class="project-header">
+                        <p class="project-title" data-key="proj5.title">Customer Review Intelligence</p>
+                        <a class="project-gh" href="https://github.com/santimuru/customer-review-intelligence" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">NLP</span>
+                        <span class="project-tag">LLM</span>
+                        <span class="project-tag">XGBoost</span>
+                        <span class="project-tag">SHAP</span>
+                        <span class="project-tag">Streamlit</span>
+                        <span class="project-tag">Gemini API</span>
+                    </div>
+                    <p class="project-desc" data-key="proj5.desc">NLP pipeline that detects <strong>customer churn risk from review text</strong> using 4 progressive methods — TF-IDF + LR (<strong>AUC 0.981</strong>), Sentence Embeddings + XGBoost (0.945), Zero-Shot LLM (0.930), and Engineered Features (0.925). Features SHAP text explanations, a live text analyzer, and <strong>Google Gemini API</strong> for structured complaint categorization.</p>
+                    <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
+                        <a href="https://customer-review-intelligence-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
+                            <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                            <span data-key="proj5.demo">Live Demo</span>
+                        </a>
+                    </div>
+                    <p class="project-context" data-key="proj5.context">Open Source · Yelp Review Full Dataset · HuggingFace</p>
                 </div>
 
                 <div class="project-card">
@@ -1127,7 +1158,7 @@
                         </a>
                     </div>
                     <div class="project-header">
-                        <p class="project-title" data-key="proj5.title">Customer Lifetime Value Prediction</p>
+                        <p class="project-title" data-key="proj6.title">Customer Lifetime Value Prediction</p>
                         <a class="project-gh" href="https://github.com/santimuru/customer-clv-prediction" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="project-tags">
@@ -1137,14 +1168,14 @@
                         <span class="project-tag">Plotly</span>
                         <span class="project-tag">Statistics</span>
                     </div>
-                    <p class="project-desc" data-key="proj5.desc">End-to-end CLV prediction using <strong>BG/NBD + Gamma-Gamma</strong> probabilistic models on the UCI Online Retail dataset. Dashboard includes RFM segmentation, cohort retention heatmap, 6/12-month CLV forecasts, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers — top 20% of customers represent <strong>65%+ of total CLV</strong>.</p>
+                    <p class="project-desc" data-key="proj6.desc">End-to-end CLV prediction using <strong>BG/NBD + Gamma-Gamma</strong> probabilistic models on the UCI Online Retail dataset. Dashboard includes RFM segmentation, cohort retention heatmap, 6/12-month CLV forecasts, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers — top 20% of customers represent <strong>65%+ of total CLV</strong>.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
                         <a href="https://customer-clv-prediction-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
                             <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
-                            <span data-key="proj5.demo">Live Demo</span>
+                            <span data-key="proj6.demo">Live Demo</span>
                         </a>
                     </div>
-                    <p class="project-context" data-key="proj5.context">Open Source · UCI Online Retail Dataset</p>
+                    <p class="project-context" data-key="proj6.context">Open Source · UCI Online Retail Dataset</p>
                 </div>
 
                 <div class="project-card">
@@ -1155,7 +1186,7 @@
                         </a>
                     </div>
                     <div class="project-header">
-                        <p class="project-title" data-key="proj6.title">Tokyo Real Estate Explorer</p>
+                        <p class="project-title" data-key="proj7.title">Tokyo Real Estate Explorer</p>
                         <a class="project-gh" href="https://github.com/santimuru/tokyo-real-estate-explorer" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="project-tags">
@@ -1165,14 +1196,14 @@
                         <span class="project-tag">Plotly</span>
                         <span class="project-tag">Data Viz</span>
                     </div>
-                    <p class="project-desc" data-key="proj6.desc">Interactive data visualization dashboard for Tokyo's <strong>23 Special Wards</strong> real estate market (2020–2024). Features a <strong>Pydeck 3D map</strong> with per-ward pricing, Plotly charts for trends and distributions, ward-level deep dives, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Built on ~50K transactions modeled after MLIT public aggregates — architected to swap into the live <strong>MLIT Real Estate Information Library API</strong>.</p>
+                    <p class="project-desc" data-key="proj7.desc">Interactive data visualization dashboard for Tokyo's <strong>23 Special Wards</strong> real estate market (2020–2024). Features a <strong>Pydeck 3D map</strong> with per-ward pricing, Plotly charts for trends and distributions, ward-level deep dives, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Built on ~50K transactions modeled after MLIT public aggregates — architected to swap into the live <strong>MLIT Real Estate Information Library API</strong>.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
                         <a href="https://tokyo-real-estate-explorer-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
                             <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
-                            <span data-key="proj6.demo">Live Demo</span>
+                            <span data-key="proj7.demo">Live Demo</span>
                         </a>
                     </div>
-                    <p class="project-context" data-key="proj6.context">Open Source · Modeled after MLIT Public Statistics</p>
+                    <p class="project-context" data-key="proj7.context">Open Source · Modeled after MLIT Public Statistics</p>
                 </div>
 
             </div>
