@@ -868,6 +868,23 @@
         }
         .project-card:hover .project-preview-link { opacity: 1; }
 
+        .project-featured-badge {
+            position: absolute;
+            top: 0.55rem;
+            right: 0.55rem;
+            background: var(--teal);
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 800;
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border-radius: 20px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
         /* ═══════════════════════════════════════════
            SKILL PILLS
         ═══════════════════════════════════════════ */
@@ -1097,6 +1114,7 @@
                         <a class="project-preview-link" href="https://telecom-churn-survival-santiagomuru.streamlit.app/" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
+                        <span class="project-featured-badge">★ Featured</span>
                     </div>
                     <div class="project-header">
                         <p class="project-title" data-key="proj4.title">Telecom Customer Churn · Survival Analysis</p>
@@ -1110,7 +1128,7 @@
                         <span class="project-tag">Streamlit</span>
                         <span class="project-tag">Plotly</span>
                     </div>
-                    <p class="project-desc" data-key="proj4.desc">End-to-end churn analysis combining <strong>Kaplan-Meier + Cox Proportional Hazards</strong> survival models with an <strong>XGBoost classifier (AUC 0.842)</strong>. Features 6 interactive sections: survival curves by segment, hazard ratio forest plot, SHAP beeswarm, individual customer waterfall explanations, a churn simulator, and a revenue impact calculator. Applied similar techniques in production at Montecable, achieving a <strong>13% churn reduction</strong>.</p>
+                    <p class="project-desc" data-key="proj4.desc">Survival analysis (Kaplan-Meier + Cox PH) paired with an <strong>XGBoost classifier (AUC 0.842)</strong> and SHAP explanations across 6 interactive sections including a churn simulator and revenue calculator. Built on the same techniques applied in production at Montecable, where the model drove a <strong>13% churn reduction</strong>.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
                         <a href="https://telecom-churn-survival-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
                             <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
@@ -1126,6 +1144,7 @@
                         <a class="project-preview-link" href="https://customer-review-intelligence-santiagomuru.streamlit.app/" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
+                        <span class="project-featured-badge">★ Featured</span>
                     </div>
                     <div class="project-header">
                         <p class="project-title" data-key="proj5.title">Customer Review Intelligence</p>
@@ -1140,7 +1159,7 @@
                         <span class="project-tag">Streamlit</span>
                         <span class="project-tag">Gemini API</span>
                     </div>
-                    <p class="project-desc" data-key="proj5.desc">NLP pipeline that detects <strong>customer churn risk from review text</strong> using 4 progressive methods — TF-IDF + LR (<strong>AUC 0.981</strong>), Sentence Embeddings + XGBoost (0.945), Zero-Shot LLM (0.930), and Engineered Features (0.925). Features SHAP text explanations, a live text analyzer, and <strong>Google Gemini API</strong> for structured complaint categorization.</p>
+                    <p class="project-desc" data-key="proj5.desc">NLP pipeline benchmarking 4 methods — from TF-IDF to LLMs — for detecting <strong>churn risk in review text</strong>, with the best model reaching <strong>AUC 0.981</strong>. Includes SHAP text explanations, a live analyzer, and <strong>Google Gemini API</strong> for structured complaint categorization.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
                         <a href="https://customer-review-intelligence-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
                             <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
@@ -1168,7 +1187,7 @@
                         <span class="project-tag">Plotly</span>
                         <span class="project-tag">Statistics</span>
                     </div>
-                    <p class="project-desc" data-key="proj6.desc">End-to-end CLV prediction using <strong>BG/NBD + Gamma-Gamma</strong> probabilistic models on the UCI Online Retail dataset. Dashboard includes RFM segmentation, cohort retention heatmap, 6/12-month CLV forecasts, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers — top 20% of customers represent <strong>65%+ of total CLV</strong>.</p>
+                    <p class="project-desc" data-key="proj6.desc"><strong>BG/NBD + Gamma-Gamma</strong> probabilistic models predict individual CLV with RFM segmentation, cohort heatmaps, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers, with the top 20% accounting for over 65% of total value.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
                         <a href="https://customer-clv-prediction-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
                             <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
@@ -1196,7 +1215,7 @@
                         <span class="project-tag">Plotly</span>
                         <span class="project-tag">Data Viz</span>
                     </div>
-                    <p class="project-desc" data-key="proj7.desc">Interactive data visualization dashboard for Tokyo's <strong>23 Special Wards</strong> real estate market (2020–2024). Features a <strong>Pydeck 3D map</strong> with per-ward pricing, Plotly charts for trends and distributions, ward-level deep dives, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Built on ~50K transactions modeled after MLIT public aggregates — architected to swap into the live <strong>MLIT Real Estate Information Library API</strong>.</p>
+                    <p class="project-desc" data-key="proj7.desc">Interactive dashboard covering ~50K transactions across Tokyo's <strong>23 Special Wards</strong> (2020–2024), with a Pydeck 3D map, Plotly trend charts, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Architected for live connection to the <strong>MLIT Real Estate Information Library API</strong>.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
                         <a href="https://tokyo-real-estate-explorer-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
                             <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
