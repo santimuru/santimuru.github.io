@@ -160,16 +160,20 @@
         .kpi-list {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         .kpi-list li {
-            padding-left: 1em;
-            text-indent: -1em;
-            margin-bottom: 1px;
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 3px;
         }
         .kpi-list li::before {
-            content: "◆ ";
+            content: "◆";
             color: #177e89;
-            font-size: 8pt;
+            font-size: 7.5pt;
+            position: absolute;
+            left: 0;
+            top: 0.35em;
         }
 
         .badge-inline {
@@ -252,8 +256,6 @@
                 <div>GitHub：<a href="https://github.com/santimuru">github.com/santimuru</a></div>
             </div>
         </div>
-        <img src="../img/profile.jpg" class="profile-photo" alt="Santiago Martinez" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="photo-placeholder" style="display:none;">写真</div>
     </div>
 
     <!-- Summary -->
