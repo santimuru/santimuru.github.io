@@ -257,7 +257,7 @@
     <div class="cv-section">
         <div class="section-title">職務要約</div>
         <div class="summary-text">
-            ビジネスインテリジェンス・データ分析・不正防止の分野で6年以上の経験を持つデータプロフェッショナルです。通信・EC・コンサルティング業界において、データ基盤の構築から経営意思決定支援まで幅広く担当してきました。ダッシュボード開発、予測モデリング、データパイプライン設計を通じ、年間$310K超の不正損失防止、解約率13%削減、$113K増収などの具体的な成果を実現してきました。現在は東京を拠点に、MontecableのリードBIアナリストとして、組織全体のデータ活用推進に取り組んでいます。
+            ビジネスインテリジェンス・データ分析・不正防止の分野で6年以上の経験を持つデータプロフェッショナルです。通信・EC・コンサルティング業界において、データ基盤の構築から経営意思決定支援まで幅広く担当してきました。ダッシュボード開発、予測モデリング（XGBoost・MLOps）、LLMアプリケーション開発（OpenAI GPT-4o）を通じ、年間$310K超の不正損失防止、解約率13%削減、$113K増収などの具体的な成果を実現してきました。現在は東京を拠点に、MontecableのリードBIアナリストとして、LLMを活用した通話品質審査システムの実装を含め、組織全体のデータ活用推進に取り組んでいます。
         </div>
     </div>
 
@@ -278,9 +278,9 @@
                 <div class="exp-label">職務内容</div>
                 <div class="exp-value">
                     <ul class="kpi-list">
-                        <li>Qlik SenseからPower BIへのBIエコシステム全面移行をリード</li>
+                        <li>Qlik SenseからPower BIへのBIエコシステム全面移行をリード（Azureクラウド上へのデプロイを含む）</li>
                         <li>データモデルの再構築、ダッシュボード再作成、レポートパイプライン再設計</li>
-                        <li>CRM・オペレーションデータソースの統合と品質管理</li>
+                        <li>LLM（OpenAI GPT-4o）を活用した通話品質自動審査システムを設計・実装。1日約1,500件の顧客対応音声を自動採点し、人手によるQA（カバー率2%未満）を代替。Python製エンドツーエンドパイプライン（音声取込→話者分離→多次元LLMスコアリング→SQL Server→Power BI）を構築し、7バージョンのプロンプト改善とプロンプトキャッシングにより運用コストを約$8/日に最適化</li>
                         <li>部門横断での指標定義統一によるデータドリブン文化の推進</li>
                     </ul>
                 </div>
@@ -288,6 +288,7 @@
                 <div class="exp-label">主な実績</div>
                 <div class="exp-value">
                     <span class="badge-inline">$20K/年　コスト削減</span>
+                    <span class="badge-inline">LLM / GPT-4o</span>
                     <span style="font-size:8.5pt; color:#444">ライセンス・インフラコストの年間約$20,000削減を実現</span>
                 </div>
             </div>
@@ -306,9 +307,9 @@
                 <div class="exp-label">職務内容</div>
                 <div class="exp-value">
                     <ul class="kpi-list">
-                        <li>物流ネットワーク内の配送・業務データを分析し、異常パターンや不正シグナルを検出</li>
-                        <li>不正検知モデルおよびリアルタイムモニタリングダッシュボードの構築</li>
-                        <li>オペレーション・エンジニアリング・各地域チームと連携した対応策の実装</li>
+                        <li>Pythonで分類・時系列・グラフ分析モデルを構築し、物流ネットワークにおける不正パターンを検出</li>
+                        <li>TableauおよびLookerダッシュボードを設計し、モデル出力をオペレーション・エンジニアリングチームが即時活用できるシグナルとして可視化</li>
+                        <li>分析結果・施策提言をシニアマネジメントおよび地域ディレクターに報告し、具体的なリスク軽減戦略の策定を支援</li>
                     </ul>
                 </div>
 
@@ -334,8 +335,8 @@
                 <div class="exp-value">
                     <ul class="kpi-list">
                         <li>顧客行動・商業パフォーマンス・KPIを可視化する経営・業務ダッシュボードの設計・運用</li>
-                        <li>統計および機械学習手法を用いた解約予測・コンバージョンモデルの開発</li>
-                        <li>分析結果を活用したターゲティング型リテンション施策の立案・実行</li>
+                        <li>XGBoost（Plattキャリブレーション・ウォークフォワード交差検証）を用いた解約予測モデルを開発し、CLVベースのROIランキングで介入優先度を決定</li>
+                        <li>約33,000アカウントを対象とした月次自動スコアリングパイプラインを実装。バージョン管理されたモデル成果物・PSIドリフトモニタリング・A/Bテストでリテンション施策の効果を継続検証</li>
                     </ul>
                 </div>
 
@@ -343,6 +344,7 @@
                 <div class="exp-value">
                     <span class="badge-inline">解約率13%削減</span>
                     <span class="badge-inline">$113K/年　増収</span>
+                    <span class="badge-inline">XGBoost · MLOps</span>
                 </div>
             </div>
         </div>
@@ -357,7 +359,7 @@
                 <div class="exp-label">役職</div>
                 <div class="exp-value"><span class="exp-role-title">データアナリスト</span></div>
                 <div class="exp-label">職務内容</div>
-                <div class="exp-value">KPI・業務パフォーマンスデータの分析による非効率性・ボトルネックの特定。データドリブンな業務改善を支援するダッシュボード・レポートの構築。</div>
+                <div class="exp-value">業務レポーティングをExcelからインタラクティブなダッシュボードへ移行し、ワークフロー分析の深化と各チームにおけるデータドリブンな改善を支援。</div>
             </div>
         </div>
 
@@ -371,7 +373,7 @@
                 <div class="exp-label">役職</div>
                 <div class="exp-value"><span class="exp-role-title">ジュニアリサーチャー</span></div>
                 <div class="exp-label">職務内容</div>
-                <div class="exp-value">社内研究レポート向けの財務・人材データセットの収集・分析。企業間の年金債務と人材指標の比較調査レポート作成。</div>
+                <div class="exp-value">グローバルな保険・アクチュアリーコンサルティングファームにて調査プロジェクトに参加。企業間の年金債務・人材指標に関する比較レポート作成に向け、財務・人材データセットを収集・分析。</div>
             </div>
         </div>
 
@@ -390,8 +392,12 @@
                 <td>Python &nbsp;·&nbsp; R &nbsp;·&nbsp; SQL &nbsp;·&nbsp; BigQuery &nbsp;·&nbsp; Excel</td>
             </tr>
             <tr>
+                <th>AI・機械学習</th>
+                <td>LLMアプリケーション開発（OpenAI GPT-4o）&nbsp;·&nbsp; プロンプトエンジニアリング &nbsp;·&nbsp; XGBoost &nbsp;·&nbsp; 時系列分析 &nbsp;·&nbsp; グラフ分析 &nbsp;·&nbsp; MLOps（ドリフトモニタリング、バージョン管理、A/Bテスト）</td>
+            </tr>
+            <tr>
                 <th>技術的専門分野</th>
-                <td>予測モデリング・機械学習（解約予測、不正検知）&nbsp;·&nbsp; KPI設計・ダッシュボード設計 &nbsp;·&nbsp; データパイプライン設計・BI移行</td>
+                <td>KPI設計・ダッシュボード設計 &nbsp;·&nbsp; データパイプライン設計・BI移行</td>
             </tr>
             <tr>
                 <th>方法論</th>
