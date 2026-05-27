@@ -79,7 +79,7 @@ const translations = {
     'proj6.demo': 'Live Demo',
     'proj6.desc': '<strong>BG/NBD + Gamma-Gamma</strong> probabilistic models predict individual CLV with RFM segmentation, cohort heatmaps, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers, with the top 20% accounting for over 65% of total value.',
 
-    'proj7.title': 'Tokyo Real Estate Explorer',
+    'proj7.title': 'Japan Real Estate Intelligence',
     'proj7.context': 'Open Source · Modeled after MLIT Public Statistics',
     'proj7.demo': 'Live Demo',
     'proj7.desc': 'Interactive dashboard covering ~50K transactions across Tokyo\'s <strong>23 Special Wards</strong> (2020–2024), with a Pydeck 3D map, Plotly trend charts, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Architected for live connection to the <strong>MLIT Real Estate Information Library API</strong>.',
@@ -217,7 +217,7 @@ const translations = {
     'proj6.demo': 'Demo en vivo',
     'proj6.desc': 'Modelos probabilísticos <strong>BG/NBD + Gamma-Gamma</strong> predicen el CLV individual con segmentación RFM, mapas de cohortes y simulador de clientes. Proyecta <strong>£8M+ en CLV a 12 meses</strong> para 2.790 clientes, con el 20% superior representando más del 65% del valor total.',
 
-    'proj7.title': 'Explorador del Mercado Inmobiliario de Tokio',
+    'proj7.title': 'Inteligencia del Mercado Inmobiliario Japonés',
     'proj7.context': 'Open Source · Modelado sobre Estadísticas Públicas MLIT',
     'proj7.demo': 'Demo en vivo',
     'proj7.desc': 'Dashboard interactivo con ~50K transacciones en los <strong>23 distritos especiales de Tokio</strong> (2020–2024), con mapa 3D en Pydeck, gráficos de tendencias y un <strong>estimador de precios k-NN</strong> con rangos P10/P50/P90. Arquitectura preparada para conectarse en vivo al <strong>MLIT Real Estate Information Library API</strong>.',
@@ -355,7 +355,7 @@ const translations = {
     'proj6.demo': 'ライブデモ',
     'proj6.desc': '<strong>BG/NBD + Gamma-Gamma</strong>確率モデルでCLVを予測し、RFMセグメンテーション・コホートヒートマップ・顧客シミュレーターを搭載。2,790顧客の<strong>12ヶ月CLV合計£8M超</strong>を予測し、上位20%が全CLVの65%以上を占める。',
 
-    'proj7.title': '東京不動産マーケット エクスプローラー',
+    'proj7.title': '日本不動産インテリジェンス',
     'proj7.context': 'オープンソース · 国土交通省公開統計に基づくモデル',
     'proj7.demo': 'ライブデモ',
     'proj7.desc': '東京<strong>23特別区</strong>の約5万件の取引データ（2020〜2024年）を可視化するダッシュボード。Pydeck 3Dマップ・Plotlyトレンドチャート・<strong>k近傍法による価格推定</strong>（P10/P50/P90）を搭載。<strong>国土交通省 不動産情報ライブラリAPI</strong>へのライブ接続に対応した設計。',
