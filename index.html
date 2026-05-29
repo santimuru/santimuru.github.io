@@ -387,30 +387,6 @@
         .exp-company { font-size: 0.83rem; font-weight: 700; color: var(--teal); }
         .exp-dates { font-size: 0.74rem; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; padding-top: 0.15rem; }
 
-        .exp-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.35rem;
-            margin: 0.5rem 0;
-        }
-
-        .exp-badge {
-            background: var(--teal-dim);
-            color: var(--teal);
-            border: 1px solid var(--teal-border);
-            border-radius: 20px;
-            padding: 2px 11px;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-        }
-
-        .exp-card.muted .exp-badge {
-            background: #f3f4f6;
-            color: #9ca3af;
-            border-color: #e5e7eb;
-        }
-
         .exp-desc {
             font-size: 0.84rem;
             color: #4b5563;
@@ -692,23 +668,6 @@
 
         .project-gh:hover { color: var(--teal); }
 
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.3rem;
-        }
-
-        .project-tag {
-            background: var(--teal-dim);
-            border: 1px solid var(--teal-border);
-            border-radius: 5px;
-            padding: 1px 8px;
-            font-size: 0.68rem;
-            font-weight: 700;
-            color: var(--teal);
-            letter-spacing: 0.03em;
-        }
-
         .project-desc {
             font-size: 0.84rem;
             color: #4b5563;
@@ -868,42 +827,6 @@
         }
         .project-card:hover .project-preview-link { opacity: 1; }
 
-        .project-featured-badge {
-            position: absolute;
-            top: 0.55rem;
-            right: 0.55rem;
-            background: var(--teal);
-            color: #fff;
-            font-size: 0.65rem;
-            font-weight: 800;
-            font-family: 'Nunito', sans-serif;
-            letter-spacing: 0.07em;
-            text-transform: uppercase;
-            padding: 2px 8px;
-            border-radius: 20px;
-            z-index: 2;
-            pointer-events: none;
-        }
-
-        /* ═══════════════════════════════════════════
-           SKILL PILLS
-        ═══════════════════════════════════════════ */
-        .skill-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-top: 0.3rem;
-        }
-        .skill-pill {
-            background: var(--teal-dim);
-            border: 1px solid var(--teal-border);
-            border-radius: 20px;
-            padding: 3px 12px;
-            font-size: 0.74rem;
-            font-weight: 700;
-            color: var(--teal);
-            letter-spacing: 0.02em;
-        }
 
         /* ═══════════════════════════════════════════
            FADE-IN ON SCROLL
@@ -1005,11 +928,6 @@
                         </div>
                         <span class="exp-dates" data-key="exp1.dates">July 2025 – Present</span>
                     </div>
-                    <div class="exp-badges">
-                        <span class="exp-badge" data-key="exp1.badge1">$20K saved</span>
-                        <span class="exp-badge" data-key="exp1.badge2">BI Migration</span>
-                        <span class="exp-badge" data-key="exp1.badge3">LLM / GPT-4o</span>
-                    </div>
                     <ul class="exp-bullets">
                         <li><span data-key="exp1.b1">Led the full migration from Qlik Sense to Power BI, rebuilding data models, recreating dashboards and redesigning reporting pipelines with deployment on Azure cloud, reducing licensing and infrastructure costs by approximately $20K annually</span></li>
                         <li><span data-key="exp1.b2">Designed and deployed an LLM-powered call-quality audit system processing ~1,500 customer calls per day using OpenAI GPT-4o, replacing a manual QA process that covered less than 2% of call volume. Built the end-to-end Python pipeline (ingestion → diarized transcription → multi-dimensional LLM scoring → SQL Server → Power BI dashboards), iterated through 7 prompt versions with a human-calibration loop, and optimized operating cost to ~$8/day via prompt caching</span></li>
@@ -1028,10 +946,6 @@
                         </div>
                         <span class="exp-dates" data-key="exp2.dates">July 2024 – June 2025</span>
                     </div>
-                    <div class="exp-badges">
-                        <span class="exp-badge" data-key="exp2.badge1">$310K+ prevented</span>
-                        <span class="exp-badge" data-key="exp2.badge2">Fraud Analytics</span>
-                    </div>
                     <ul class="exp-bullets">
                         <li><span data-key="exp2.b1">Built classification, time-series, and graph-analysis models in Python on logistics and shipping datasets to detect fraud patterns across Mercado Libre's delivery network, contributing to over $310K in annual loss prevention</span></li>
                         <li><span data-key="exp2.b2">Designed Tableau and Looker dashboards that translated model output into actionable signals for operations and engineering teams</span></li>
@@ -1049,11 +963,6 @@
                             </div>
                         </div>
                         <span class="exp-dates" data-key="exp3.dates">January 2021 – July 2024</span>
-                    </div>
-                    <div class="exp-badges">
-                        <span class="exp-badge" data-key="exp3.badge1">13% churn reduction</span>
-                        <span class="exp-badge" data-key="exp3.badge2">$113K revenue uplift</span>
-                        <span class="exp-badge" data-key="exp3.badge3">XGBoost · MLOps</span>
                     </div>
                     <ul class="exp-bullets">
                         <li><span data-key="exp3.b1">Designed and maintained dashboards for customer behavior tracking, commercial KPI monitoring and business performance reporting across executive and operational levels</span></li>
@@ -1112,19 +1021,10 @@
                         <a class="project-preview-link" href="https://telecom-churn-survival-santiagomuru.streamlit.app/" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
-                        <span class="project-featured-badge">★ Featured</span>
                     </div>
                     <div class="project-header">
                         <p class="project-title" data-key="proj4.title">Telecom Customer Churn · Survival Analysis</p>
                         <a class="project-gh" href="https://github.com/santimuru/telecom-churn-survival" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Survival Analysis</span>
-                        <span class="project-tag">XGBoost</span>
-                        <span class="project-tag">SHAP</span>
-                        <span class="project-tag">Streamlit</span>
-                        <span class="project-tag">Plotly</span>
                     </div>
                     <p class="project-desc" data-key="proj4.desc">Survival analysis (Kaplan-Meier + Cox PH) paired with an <strong>XGBoost classifier (AUC 0.842)</strong> and SHAP explanations across 6 interactive sections including a churn simulator and revenue calculator. Built on the same techniques applied in production at Montecable, where the model drove a <strong>13% churn reduction</strong>.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
@@ -1142,20 +1042,10 @@
                         <a class="project-preview-link" href="https://customer-review-intelligence-santiagomuru.streamlit.app/" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
-                        <span class="project-featured-badge">★ Featured</span>
                     </div>
                     <div class="project-header">
                         <p class="project-title" data-key="proj5.title">Customer Review Intelligence</p>
                         <a class="project-gh" href="https://github.com/santimuru/customer-review-intelligence" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">NLP</span>
-                        <span class="project-tag">LLM</span>
-                        <span class="project-tag">XGBoost</span>
-                        <span class="project-tag">SHAP</span>
-                        <span class="project-tag">Streamlit</span>
-                        <span class="project-tag">Gemini API</span>
                     </div>
                     <p class="project-desc" data-key="proj5.desc">NLP pipeline benchmarking 4 methods — from TF-IDF to LLMs — for detecting <strong>churn risk in review text</strong>, with the best model reaching <strong>AUC 0.981</strong>. Includes SHAP text explanations, a live analyzer, and <strong>Google Gemini API</strong> for structured complaint categorization.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
@@ -1178,13 +1068,6 @@
                         <p class="project-title" data-key="proj6.title">Customer Lifetime Value Prediction</p>
                         <a class="project-gh" href="https://github.com/santimuru/customer-clv-prediction" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Machine Learning</span>
-                        <span class="project-tag">Streamlit</span>
-                        <span class="project-tag">Plotly</span>
-                        <span class="project-tag">Statistics</span>
-                    </div>
                     <p class="project-desc" data-key="proj6.desc"><strong>BG/NBD + Gamma-Gamma</strong> probabilistic models predict individual CLV with RFM segmentation, cohort heatmaps, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers, with the top 20% accounting for over 65% of total value.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
                         <a href="https://customer-clv-prediction-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
@@ -1205,13 +1088,6 @@
                     <div class="project-header">
                         <p class="project-title" data-key="proj7.title">Japan Real Estate Intelligence</p>
                         <a class="project-gh" href="https://github.com/santimuru/japan-real-estate" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Streamlit</span>
-                        <span class="project-tag">Pydeck</span>
-                        <span class="project-tag">Plotly</span>
-                        <span class="project-tag">Data Viz</span>
                     </div>
                     <p class="project-desc" data-key="proj7.desc">Interactive dashboard covering ~50K transactions across Tokyo's <strong>23 Special Wards</strong> (2020–2024), with a Pydeck 3D map, Plotly trend charts, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Architected for live connection to the <strong>MLIT Real Estate Information Library API</strong>.</p>
                     <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
@@ -1253,23 +1129,23 @@
 
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.tools.title">Tools & Platforms</div>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Power BI</span>
-                        <span class="skill-pill">Tableau</span>
-                        <span class="skill-pill">Qlik Sense</span>
-                        <span class="skill-pill">Looker Studio</span>
-                        <span class="skill-pill">Alteryx</span>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Power BI</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Tableau</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Qlik Sense</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Looker Studio</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Alteryx</span></div>
                     </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.data.title">Languages & Data</div>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Python</span>
-                        <span class="skill-pill">R</span>
-                        <span class="skill-pill">SQL</span>
-                        <span class="skill-pill">BigQuery</span>
-                        <span class="skill-pill">Excel</span>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Python</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>R</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>SQL</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>BigQuery</span></div>
+                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Excel</span></div>
                     </div>
                 </div>
 
