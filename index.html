@@ -242,7 +242,7 @@
             margin: 0 0 0.5rem;
         }
 
-        h1.hero-name .accent { color: var(--teal); }
+        h1.hero-name .accent { color: inherit; }
 
         .hero-subtitle {
             font-size: 0.9rem;
@@ -363,7 +363,6 @@
 
         .exp-card:hover {
             box-shadow: 0 4px 22px rgba(0,0,0,0.07);
-            transform: translateY(-1px);
         }
 
         .exp-card.muted {
@@ -513,13 +512,6 @@
             line-height: 1.5;
         }
 
-        .skill-item i {
-            color: var(--teal);
-            font-size: 0.55rem;
-            margin-top: 0.38rem;
-            flex-shrink: 0;
-        }
-
         /* ═══════════════════════════════════════════
            INTERESTS
         ═══════════════════════════════════════════ */
@@ -577,13 +569,6 @@
 
         .cert-list li:last-child { border-bottom: none; }
 
-        .cert-list li i {
-            color: var(--teal);
-            font-size: 0.68rem;
-            margin-top: 0.22rem;
-            flex-shrink: 0;
-        }
-
         .impact-list {
             display: grid;
             grid-template-columns: max-content 1fr;
@@ -640,7 +625,6 @@
 
         .project-card:hover {
             box-shadow: 0 4px 22px rgba(0,0,0,0.07);
-            transform: translateY(-1px);
         }
 
         .project-header {
@@ -763,9 +747,7 @@
             object-fit: cover;
             object-position: top center;
             display: block;
-            transition: transform 0.35s ease;
         }
-        .project-card:hover .project-preview img { transform: scale(1.03); }
         .project-preview-link {
             position: absolute;
             inset: 0;
@@ -1087,41 +1069,41 @@
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.tools.title">Tools & Platforms</div>
                     <div class="skill-items">
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Power BI</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Tableau</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Qlik Sense</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Looker Studio</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Alteryx</span></div>
+                        <div class="skill-item"><span>Power BI</span></div>
+                        <div class="skill-item"><span>Tableau</span></div>
+                        <div class="skill-item"><span>Qlik Sense</span></div>
+                        <div class="skill-item"><span>Looker Studio</span></div>
+                        <div class="skill-item"><span>Alteryx</span></div>
                     </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.data.title">Languages & Data</div>
                     <div class="skill-items">
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Python</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>R</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>SQL</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>BigQuery</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span>Excel</span></div>
+                        <div class="skill-item"><span>Python</span></div>
+                        <div class="skill-item"><span>R</span></div>
+                        <div class="skill-item"><span>SQL</span></div>
+                        <div class="skill-item"><span>BigQuery</span></div>
+                        <div class="skill-item"><span>Excel</span></div>
                     </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.method.title">Technical Expertise</div>
                     <div class="skill-items">
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m1">Predictive Modeling & Machine Learning (Churn, Fraud Detection)</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m2">KPI Design & Dashboard Architecture</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m3">Data Pipeline Design & BI Migration</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.m4">Agile & Six Sigma</span></div>
+                        <div class="skill-item"><span data-key="skills.m1">Predictive Modeling & Machine Learning (Churn, Fraud Detection)</span></div>
+                        <div class="skill-item"><span data-key="skills.m2">KPI Design & Dashboard Architecture</span></div>
+                        <div class="skill-item"><span data-key="skills.m3">Data Pipeline Design & BI Migration</span></div>
+                        <div class="skill-item"><span data-key="skills.m4">Agile & Six Sigma</span></div>
                     </div>
                 </div>
 
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.lang.title">Languages</div>
                     <div class="skill-items">
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.lang.1">Spanish — Native</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.lang.2">English — C1 · Cambridge Certified</span></div>
-                        <div class="skill-item"><i class="fas fa-chevron-right"></i><span data-key="skills.lang.3">Japanese — Conversational</span></div>
+                        <div class="skill-item"><span data-key="skills.lang.1">Spanish — Native</span></div>
+                        <div class="skill-item"><span data-key="skills.lang.2">English — C1 · Cambridge Certified</span></div>
+                        <div class="skill-item"><span data-key="skills.lang.3">Japanese — Conversational</span></div>
                     </div>
                 </div>
 
@@ -1139,11 +1121,11 @@
                 <div>
                     <p class="sub-heading" data-key="cert.sub1">Certifications</p>
                     <ul class="cert-list">
-                        <li><i class="fas fa-certificate"></i><span data-key="cert.1">C1 Business Higher · Cambridge English</span></li>
-                        <li><i class="fas fa-certificate"></i><span data-key="cert.2">Financial Markets · Yale University / Coursera</span></li>
-                        <li><i class="fas fa-certificate"></i><span data-key="cert.3">QlikView Business Analyst</span></li>
-                        <li><i class="fas fa-certificate"></i><span data-key="cert.4">Agile Methodologies</span></li>
-                        <li><i class="fas fa-certificate"></i><span data-key="cert.5">Six Sigma</span></li>
+                        <li><span data-key="cert.1">C1 Business Higher · Cambridge English</span></li>
+                        <li><span data-key="cert.2">Financial Markets · Yale University / Coursera</span></li>
+                        <li><span data-key="cert.3">QlikView Business Analyst</span></li>
+                        <li><span data-key="cert.4">Agile Methodologies</span></li>
+                        <li><span data-key="cert.5">Six Sigma</span></li>
                     </ul>
                 </div>
 
