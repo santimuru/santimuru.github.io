@@ -84,6 +84,11 @@ const translations = {
     'proj7.demo': 'Live Demo',
     'proj7.desc': 'Interactive dashboard covering ~50K transactions across Tokyo\'s <strong>23 Special Wards</strong> (2020–2024), with a Pydeck 3D map, Plotly trend charts, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Architected for live connection to the <strong>MLIT Real Estate Information Library API</strong>.',
 
+    'proj8.title': 'Life Insurance Lapse Analytics · Japan Market',
+    'proj8.context': 'Python · scikit-learn · SHAP · ECharts · Insurance / Financial Analytics',
+    'proj8.demo': 'Live Demo',
+    'proj8.desc': 'End-to-end lapse prediction and customer segmentation for the Japanese life insurance market. Gradient boosting and logistic regression models with <strong>k-means clustering and SHAP explanations</strong>, plus a fairness audit. Delivered as a single-page interactive report built with <strong>ECharts</strong>. Market data is real and cited; the policy book is synthetic and declared.',
+
     'proj1.title': 'Customer Churn Prediction',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'End-to-end churn prediction pipeline for a 100K+ subscriber base. Combines <strong>ML classification models</strong> (logistic regression, gradient boosting) with a Power BI dashboard that surfaces at-risk segments for the retention team.',
@@ -222,6 +227,11 @@ const translations = {
     'proj7.demo': 'Demo en vivo',
     'proj7.desc': 'Dashboard interactivo con ~50K transacciones en los <strong>23 distritos especiales de Tokio</strong> (2020–2024), con mapa 3D en Pydeck, gráficos de tendencias y un <strong>estimador de precios k-NN</strong> con rangos P10/P50/P90. Arquitectura preparada para conectarse en vivo al <strong>MLIT Real Estate Information Library API</strong>.',
 
+    'proj8.title': 'Analítica de Lapse en Seguros de Vida · Mercado Japonés',
+    'proj8.context': 'Python · scikit-learn · SHAP · ECharts · Seguros / Analítica Financiera',
+    'proj8.demo': 'Demo en vivo',
+    'proj8.desc': 'Predicción de lapse y segmentación de clientes end-to-end para el mercado de seguros de vida japonés. Modelos de gradient boosting y regresión logística con <strong>clustering k-means y explicaciones SHAP</strong>, más una auditoría de equidad. Entregado como reporte interactivo de una página construido con <strong>ECharts</strong>. Los datos de mercado son reales y citados; el libro de pólizas es sintético y declarado.',
+
     'proj1.title': 'Predicción de Churn de Clientes',
     'proj1.context': 'Telecom · Montecable',
     'proj1.desc': 'Pipeline end-to-end de predicción de churn para una base de más de 100K abonados. Combina <strong>modelos de clasificación ML</strong> (regresión logística, gradient boosting) con un dashboard en Power BI que identifica segmentos en riesgo para el equipo de retención.',
@@ -359,6 +369,11 @@ const translations = {
     'proj7.context': 'オープンソース · 国土交通省公開統計に基づくモデル',
     'proj7.demo': 'ライブデモ',
     'proj7.desc': '東京<strong>23特別区</strong>の約5万件の取引データ（2020〜2024年）を可視化するダッシュボード。Pydeck 3Dマップ・Plotlyトレンドチャート・<strong>k近傍法による価格推定</strong>（P10/P50/P90）を搭載。<strong>国土交通省 不動産情報ライブラリAPI</strong>へのライブ接続に対応した設計。',
+
+    'proj8.title': '生命保険失効分析 · 日本市場',
+    'proj8.context': 'Python · scikit-learn · SHAP · ECharts · 保険 / 金融アナリティクス',
+    'proj8.demo': 'ライブデモ',
+    'proj8.desc': '日本の生命保険市場を対象とした、失効予測と顧客セグメンテーションのend-to-endパイプライン。勾配ブースティング・ロジスティック回帰モデルに<strong>k-meansクラスタリングとSHAP説明</strong>および公平性監査を組み合わせ。<strong>ECharts</strong>で構築した1ページのインタラクティブレポートとして提供。市場データは実データ・引用あり。保険契約データは合成データ・明示済み。',
 
     'proj1.title': '顧客解約予測モデル',
     'proj1.context': '通信 · Montecable',
