@@ -837,7 +837,7 @@
                 <h1 class="hero-name">Santiago <span class="accent">Martinez</span></h1>
                 <p class="hero-subtitle" data-key="about.subtitle">Data Analyst · Tokyo, Japan</p>
                 <p class="hero-bio" data-key="about.bio1">Economist by training, data analyst by trade. For the past 6+ years I've worked across telecom, e-commerce and consulting, building dashboards, predictive models and the data pipelines that feed them.</p>
-                <p class="hero-bio" data-key="about.bio2">Currently in Tokyo as Lead BI Analyst at Montecable, focused on churn prediction, fraud analytics and BI migration. The specific numbers are in the Experience section below.</p>
+                <p class="hero-bio" data-key="about.bio2">Currently in Tokyo as Lead BI Analyst at Montecable -- including building an LLM system that audits ~1,500 customer calls per day. The specific numbers are in the Experience section below.</p>
                 <div class="hero-actions">
                     <div class="social-row">
                         <a class="social-link" href="https://www.linkedin.com/in/santiago-martinez-pezzatti-4241a3165/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -874,9 +874,9 @@
                         <span class="exp-dates" data-key="exp1.dates">July 2025 – Present</span>
                     </div>
                     <ul class="exp-bullets">
-                        <li><span data-key="exp1.b1">Led the full migration from Qlik Sense to Power BI, rebuilding data models, recreating dashboards and redesigning reporting pipelines with deployment on Azure cloud, reducing licensing and infrastructure costs by approximately $20K annually</span></li>
-                        <li><span data-key="exp1.b2">Designed and deployed an LLM-powered call-quality audit system processing ~1,500 customer calls per day using OpenAI GPT-4o, replacing a manual QA process that covered less than 2% of call volume. Built the end-to-end Python pipeline (ingestion → diarized transcription → multi-dimensional LLM scoring → SQL Server → Power BI dashboards), iterated through 7 prompt versions with a human-calibration loop, and optimized operating cost to ~$8/day via prompt caching</span></li>
-                        <li><span data-key="exp1.b3">Drove data-driven culture adoption by documenting key metrics, aligning definitions across departments and positioning the BI team as the central analytics reference</span></li>
+                        <li><span data-key="exp1.b1"><strong>$20K/year saved</strong> -- led full migration from Qlik Sense to Power BI, rebuilding data models and reporting pipelines on Azure cloud</span></li>
+                        <li><span data-key="exp1.b2"><strong>~1,500 calls/day audited</strong> -- designed and deployed an LLM-powered call-quality system (OpenAI GPT-4o) that replaced a manual QA process covering less than 2% of volume, optimized to ~$8/day via prompt caching after 7 prompt iterations</span></li>
+                        <li><span data-key="exp1.b3">Drove data-driven culture adoption by aligning metric definitions across departments and positioning the BI team as the central analytics reference</span></li>
                     </ul>
                 </div>
 
@@ -892,9 +892,9 @@
                         <span class="exp-dates" data-key="exp2.dates">July 2024 – June 2025</span>
                     </div>
                     <ul class="exp-bullets">
-                        <li><span data-key="exp2.b1">Built classification, time-series, and graph-analysis models in Python on logistics and shipping datasets to detect fraud patterns across Mercado Libre's delivery network, contributing to over $310K in annual loss prevention</span></li>
-                        <li><span data-key="exp2.b2">Designed Tableau and Looker dashboards that translated model output into actionable signals for operations and engineering teams</span></li>
-                        <li><span data-key="exp2.b3">Presented findings and recommendations to senior management and regional directors, translating analytical results into concrete risk mitigation strategies</span></li>
+                        <li><span data-key="exp2.b1"><strong>$310K+ in annual losses prevented</strong> -- built classification, time-series, and graph-analysis models in Python to detect fraud patterns across Mercado Libre's delivery network</span></li>
+                        <li><span data-key="exp2.b2">Designed Tableau and Looker dashboards translating model output into actionable signals for operations and engineering teams</span></li>
+                        <li><span data-key="exp2.b3">Presented findings to senior management and regional directors, translating analytical results into concrete risk mitigation strategies</span></li>
                     </ul>
                 </div>
 
@@ -910,9 +910,9 @@
                         <span class="exp-dates" data-key="exp3.dates">January 2021 – July 2024</span>
                     </div>
                     <ul class="exp-bullets">
-                        <li><span data-key="exp3.b1">Designed and maintained dashboards for customer behavior tracking, commercial KPI monitoring and business performance reporting across executive and operational levels</span></li>
-                        <li><span data-key="exp3.b2">Developed churn-prediction models using XGBoost with Platt calibration and walk-forward cross-validation, prioritizing intervention targets via CLV-based ROI ranking — reducing annual churn by 13% and generating an estimated $113K in incremental annual revenue</span></li>
-                        <li><span data-key="exp3.b3">Implemented a monthly automated scoring pipeline covering ~33,000 accounts, with versioned model artifacts, PSI drift monitoring, and A/B testing to validate retention campaign impact</span></li>
+                        <li><span data-key="exp3.b1">Designed and maintained dashboards for customer behavior tracking, commercial KPI monitoring and business performance reporting</span></li>
+                        <li><span data-key="exp3.b2"><strong>13% churn reduction, $113K incremental revenue</strong> -- developed XGBoost churn-prediction models with Platt calibration and CLV-based ROI prioritization</span></li>
+                        <li><span data-key="exp3.b3">Automated monthly scoring pipeline covering ~33,000 accounts, with versioned model artifacts, PSI drift monitoring, and A/B testing</span></li>
                     </ul>
                 </div>
 
@@ -972,12 +972,6 @@
                         <a class="project-gh" href="https://github.com/santimuru/telecom-churn-survival" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                     <p class="project-desc" data-key="proj4.desc">Survival analysis (Kaplan-Meier + Cox PH) paired with an <strong>XGBoost classifier (AUC 0.842)</strong> and SHAP explanations across 6 interactive sections including a churn simulator and revenue calculator. Built on the same techniques applied in production at Montecable, where the model drove a <strong>13% churn reduction</strong>.</p>
-                    <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
-                        <a href="https://telecom-churn-survival-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
-                            <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
-                            <span data-key="proj4.demo">Live Demo</span>
-                        </a>
-                    </div>
                     <p class="project-context" data-key="proj4.context">Open Source · IBM Telco Dataset · lifelines</p>
                 </div>
 
@@ -992,13 +986,7 @@
                         <p class="project-title" data-key="proj5.title">Customer Review Intelligence</p>
                         <a class="project-gh" href="https://github.com/santimuru/customer-review-intelligence" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
-                    <p class="project-desc" data-key="proj5.desc">NLP pipeline benchmarking 4 methods — from TF-IDF to LLMs — for detecting <strong>churn risk in review text</strong>, with the best model reaching <strong>AUC 0.981</strong>. Includes SHAP text explanations, a live analyzer, and <strong>Google Gemini API</strong> for structured complaint categorization.</p>
-                    <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
-                        <a href="https://customer-review-intelligence-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
-                            <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
-                            <span data-key="proj5.demo">Live Demo</span>
-                        </a>
-                    </div>
+                    <p class="project-desc" data-key="proj5.desc">NLP pipeline benchmarking 4 methods -- from TF-IDF to LLMs -- for detecting <strong>churn risk in review text</strong>, with the best model reaching <strong>AUC 0.981</strong>. Includes SHAP text explanations, a live analyzer, and <strong>Google Gemini API</strong> for structured complaint categorization.</p>
                     <p class="project-context" data-key="proj5.context">Open Source · Yelp Review Full Dataset · HuggingFace</p>
                 </div>
 
@@ -1014,12 +1002,6 @@
                         <a class="project-gh" href="https://github.com/santimuru/customer-clv-prediction" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                     <p class="project-desc" data-key="proj6.desc"><strong>BG/NBD + Gamma-Gamma</strong> probabilistic models predict individual CLV with RFM segmentation, cohort heatmaps, and a customer simulator. Projects <strong>£8M+ in 12-month CLV</strong> across 2,790 customers, with the top 20% accounting for over 65% of total value.</p>
-                    <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
-                        <a href="https://customer-clv-prediction-santiagomuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
-                            <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
-                            <span data-key="proj6.demo">Live Demo</span>
-                        </a>
-                    </div>
                     <p class="project-context" data-key="proj6.context">Open Source · UCI Online Retail Dataset</p>
                 </div>
 
@@ -1034,13 +1016,7 @@
                         <p class="project-title" data-key="proj7.title">Japan Real Estate Intelligence</p>
                         <a class="project-gh" href="https://github.com/santimuru/japan-real-estate" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
-                    <p class="project-desc" data-key="proj7.desc">Interactive dashboard covering ~50K transactions across Tokyo's <strong>23 Special Wards</strong> (2020–2024), with a Pydeck 3D map, Plotly trend charts, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Architected for live connection to the <strong>MLIT Real Estate Information Library API</strong>.</p>
-                    <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
-                        <a href="https://japan-real-estate-santimuru.streamlit.app/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
-                            <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
-                            <span data-key="proj7.demo">Live Demo</span>
-                        </a>
-                    </div>
+                    <p class="project-desc" data-key="proj7.desc">Interactive dashboard covering ~50K transactions across Tokyo's <strong>23 Special Wards</strong> (2020-2024), with a Pydeck 3D map, Plotly trend charts, and a <strong>k-NN price estimator</strong> with P10/P50/P90 ranges. Architected for live connection to the <strong>MLIT Real Estate Information Library API</strong>.</p>
                     <p class="project-context" data-key="proj7.context">Open Source · Modeled after MLIT Public Statistics</p>
                 </div>
 
@@ -1056,12 +1032,6 @@
                         <a class="project-gh" href="https://github.com/santimuru/metlife-japan-retention" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                     <p class="project-desc" data-key="proj8.desc">End-to-end lapse prediction and customer segmentation for the Japanese life insurance market. Gradient boosting and logistic regression models with <strong>k-means clustering and SHAP explanations</strong>, plus a fairness audit. Delivered as a single-page interactive report built with <strong>ECharts</strong>. Market data is real and cited; the policy book is synthetic and declared.</p>
-                    <div style="display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap; margin-top:0.1rem;">
-                        <a href="https://santimuru.github.io/metlife-japan-retention/" target="_blank" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.76rem; font-weight:700; color:var(--teal); text-decoration:none; border:1px solid var(--teal-border); border-radius:6px; padding:3px 10px; background:var(--teal-dim); transition:background 0.15s;">
-                            <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
-                            <span data-key="proj8.demo">Live Demo</span>
-                        </a>
-                    </div>
                     <p class="project-context" data-key="proj8.context">Python · scikit-learn · SHAP · ECharts · Insurance / Financial Analytics</p>
                 </div>
 
@@ -1096,7 +1066,7 @@
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.tools.title">Tools & Platforms</div>
                     <div class="skill-items">
-                        <div class="skill-item"><span>Power BI</span></div>
+                        <div class="skill-item"><span style="font-weight:800;">Power BI</span></div>
                         <div class="skill-item"><span>Tableau</span></div>
                         <div class="skill-item"><span>Qlik Sense</span></div>
                         <div class="skill-item"><span>Looker Studio</span></div>
@@ -1107,10 +1077,10 @@
                 <div class="skill-card">
                     <div class="skill-card-label" data-key="skills.data.title">Languages & Data</div>
                     <div class="skill-items">
-                        <div class="skill-item"><span>Python</span></div>
+                        <div class="skill-item"><span style="font-weight:800;">Python</span></div>
                         <div class="skill-item"><span>R</span></div>
-                        <div class="skill-item"><span>SQL</span></div>
-                        <div class="skill-item"><span>BigQuery</span></div>
+                        <div class="skill-item"><span style="font-weight:800;">SQL</span></div>
+                        <div class="skill-item"><span style="font-weight:800;">BigQuery</span></div>
                         <div class="skill-item"><span>Excel</span></div>
                     </div>
                 </div>
