@@ -258,6 +258,7 @@
             line-height: 1.82;
             margin-bottom: 0.85rem;
             max-width: 560px;
+            overflow-wrap: break-word;
         }
 
         @media (max-width: 680px) { .hero-bio { max-width: 100%; } }
@@ -323,6 +324,7 @@
         ═══════════════════════════════════════════ */
         .s-wrap { padding: 5rem 0; }
         .s-wrap.alt { background: var(--alt-bg); }
+        @media (max-width: 560px) { .s-wrap { padding: 3rem 0; } }
 
         .s-inner {
             max-width: 1080px;
@@ -391,6 +393,7 @@
             color: #4b5563;
             line-height: 1.78;
             margin: 0;
+            overflow-wrap: break-word;
         }
 
         .exp-industry {
@@ -426,6 +429,7 @@
             font-size: 0.84rem;
             color: #4b5563;
             line-height: 1.65;
+            overflow-wrap: break-word;
         }
 
         .exp-bullets li::before {
@@ -621,6 +625,7 @@
             flex-direction: column;
             gap: 0.7rem;
             transition: box-shadow 0.2s, transform 0.2s;
+            overflow: hidden;
         }
 
         .project-card:hover {
@@ -658,6 +663,7 @@
             line-height: 1.72;
             margin: 0;
             flex: 1;
+            overflow-wrap: break-word;
         }
 
         .project-context {
@@ -698,6 +704,8 @@
             display: flex;
             justify-content: center;
             margin-bottom: 1.75rem;
+            overflow: hidden;
+            max-width: 100%;
         }
 
         .connect-links {
@@ -1022,7 +1030,7 @@
 
                 <div class="project-card">
                     <div class="project-preview">
-                        <img src="assets/img/proj-japan-lapse.png" alt="Policyholder Lapse Analytics - What drives lapse chart" loading="lazy">
+                        <img src="assets/img/proj-metlife-lapse.png" alt="Policyholder Lapse Analytics - What drives lapse chart" loading="lazy">
                         <a class="project-preview-link" href="https://santimuru.github.io/japan-insurance-retention/" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
